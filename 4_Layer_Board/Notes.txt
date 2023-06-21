@@ -1,4 +1,45 @@
-################ Component Details #############################
+###############TO-DOs###########################################
+
+*IMPACT
+    |
+    |___
+        * via Hall effect sensors (how to calibrate ?)
+          enough resolution via 3.3 reference voltage?
+          switch to teensy 3.6 with 1.2Vref ?
+
+        Interpolation for radial position detection ?
+
+
+                distance between sensors 7mm
+                ---|___|---|___|---|___|---|___|
+                 S  7mm  S  7mm  S  7mm  S  7mm
+
+        algorythm could possibly consider nonlinear readings (thus threshold) along the radial sensor array
+        --add readings of neighbours, check for threshold and calculate proportional distribution of reading, for maximum radial resolution
+
+        possibly one gets away with a resolution of 2*NumSensors per AngularReading. checking for 64 tresholds/ positions on the radial dimension. One reading perpendicular to each Sensor plus one reading perpendicular to the middle between 2 Sensors
+
+*VELOCITY:
+ While we hope to have reasonable time between single impacts on the skin (e.g. 400bpm = 6,67Hz) there will be a sort of phasing in the readings as they will either occur while the magnet is falling or rising. At 75 Hz there is ca. 10 readings between impacts at stupidly fast drumming of 400bpm, hopefully enough to average out the position.
+ A time measurement between a first and a second treshold could possibly generate usable velocity readings if the rotor wasn't moving.
+ With a moving Rotor we get a local samplerate of the rotational Frequency (e.g 1500rpm = 25Hz / 4500rpm = 75Hz)
+ For reliable velocity readings we need to track the nanoseconds until a certain peak is reached, thus we need a much higher samplerate.
+
+ Sampling another impact Sensor for the whole surface at a higher rate could provide velocity readings which we could map to position readings.
+
+*SURFACE / Sticks / Hands etc.:
+
+ -When hitting with the hands, capacity measurements of a steel mesh drumskin could provide impact readings
+ -If using the hands, we want to break down different regions of the hand and mark them with magnets in order to derive useful parameters for synthesis. Gloves are a reasonable result adressing those needs.
+
+ -When using Sticks, the readings are less complex but capacity is harder to derive. Sticks might connect to a ground plane through a thin wire, when using a metal mesh skin
+
+ -Velocity sensing below the Skin allow for a different design of the skin. even a translucent layer of plastic with a film of silicon for the rebound, a standard Meshhead or else is possible
+
+ -other Possibilities:
+   Gauge Sensors, Piezoelements, resistive Sensors (velostat)
+
+ ################ Component Details #############################
 
 *SS39ET Hall Effekt Sensor
 https://www.farnell.com/datasheets/2007294.pdf
