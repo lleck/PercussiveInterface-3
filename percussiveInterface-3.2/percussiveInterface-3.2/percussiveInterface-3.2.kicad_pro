@@ -420,16 +420,27 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "Net-(C36-Pad2)": "GND",
       "Net-(D1-GND)": "GND",
       "Net-(D1-VDD)": "5V",
       "Net-(IC1-GND)": "GND",
       "Net-(IC1-VDD_1)": "3.3V",
+      "Net-(IC2-VCCA)": "3.3V",
+      "Net-(IC3-GND_2)": "GND",
       "Net-(U1-GND)": "GND",
       "Net-(U1-VDD)": "3.3V",
+      "Net-(U34-GND-Pad1)": "GND",
+      "Net-(U34-VDD)": "3.3V",
       "unconnected-(C34-Pad2)": "GND",
+      "unconnected-(C35-Pad2)": "GND",
       "unconnected-(IC2-GND-Pad7)": "GND",
-      "unconnected-(IC2-VCCA-Pad1)": "3.3V",
-      "unconnected-(IC2-VCCB-Pad14)": "3.3V"
+      "unconnected-(IC3-GND_1-Pad2)": "GND",
+      "unconnected-(IC3-IN-Pad1)": "5V",
+      "unconnected-(IC3-OUT-Pad3)": "3.3V",
+      "unconnected-(J2-Pad1)": "5V",
+      "unconnected-(J2-Pad10)": "GND",
+      "unconnected-(J2-Pad3)": "3.3V",
+      "unconnected-(J2-Pad9)": "GND"
     },
     "netclass_patterns": []
   },
@@ -468,6 +479,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
