@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP VCNL4040M3OE
+D Fully Integrated Proximity and Ambient Light Sensor with Infrared Emitter, I2C Interface, and Interrupt Function
+K
+F http://www.vishay.com/docs/84274/vcnl4040.pdf
+$ENDCMP
+#
+#End Doc Library

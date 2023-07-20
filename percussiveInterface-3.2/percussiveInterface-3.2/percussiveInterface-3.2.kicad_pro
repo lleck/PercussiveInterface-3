@@ -427,8 +427,6 @@
       "Net-(IC1-VDD_1)": "3.3V",
       "Net-(IC2-VCCA)": "3.3V",
       "Net-(IC3-GND_2)": "GND",
-      "Net-(IC4-GND)": "GND",
-      "Net-(IC4-VCC)": "3.3V",
       "Net-(U1-GND)": "GND",
       "Net-(U1-VDD)": "3.3V",
       "Net-(U34-GND-Pad1)": "GND",
@@ -443,7 +441,10 @@
       "unconnected-(J2-Pad10)": "GND",
       "unconnected-(J2-Pad3)": "3.3V",
       "unconnected-(J2-Pad9)": "GND",
-      "unconnected-(R1-Pad1)": "3.3V"
+      "unconnected-(R1-Pad1)": "3.3V",
+      "unconnected-(R2-Pad2)": "3.3V",
+      "unconnected-(U35-K-Pad2)": "GND",
+      "unconnected-(U35-Pad4)": "GND"
     },
     "netclass_patterns": []
   },
@@ -451,7 +452,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "./",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
