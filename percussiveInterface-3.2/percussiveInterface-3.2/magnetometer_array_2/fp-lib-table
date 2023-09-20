@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "NVE")(type "KiCad")(uri "/home/lukas/Dokumente/Kicad/Footprints/NVE")(options "")(descr ""))
+)
