@@ -1,4 +1,4 @@
-764421835995070
+776313464882389
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64896,6 +64896,55 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 0
 4
 4
+Own_Library
+Hirose_MDF7-05S-2.54DSA(55)
+Through hole straight socket strip, 1x05, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x05 2.54mm single row
+0
+5
+5
+Own_Library
+Hirose_MDF7-12S-2.54DSA(55)
+Through hole straight socket strip, 1x12, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x12 2.54mm single row
+0
+12
+12
+Own_Library
+NVE SM225 10E
+
+
+0
+7
+7
+Own_Library
+SAMTEC-SLW-105-01-X-S
+translated Allegro footprint
+
+0
+5
+5
+Own_Library
+SAMTEC-SLW-112-01-X-S
+translated Allegro footprint
+
+0
+12
+12
+Own_Library
+SAMTEC_TSM-105-04-T-SH
+
+
+0
+5
+5
+Own_Library
+SAMTEC_TSM-112-04-T-SH
+
+
+0
+12
+12
 Package_BGA
 Analog_BGA-28_4.0x6.25mm_Layout4x7_P0.8mm_Ball0.45mm_Pad0.4
 Analog BGA-28 4.0mm x 6.25mm package, pitch 0.4mm pad, based on https://www.analog.com/media/en/technical-documentation/data-sheets/8063fa.pdf

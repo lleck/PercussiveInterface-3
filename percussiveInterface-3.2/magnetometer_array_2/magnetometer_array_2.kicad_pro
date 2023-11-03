@@ -35,8 +35,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.4,
-          "width": 0.46
+          "height": 3.18,
+          "width": 1.27
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -438,7 +438,7 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
+      "gencad": "magnetometer_array_2.cad",
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
