@@ -1,0 +1,78 @@
+(footprint "mill_max 328-HORIZONTAL SURFACE MOUNT HEADER" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr smd)
+  (fp_text reference "REF**" (at 0 -4 unlocked) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.1)))
+    (tstamp 6fe25984-9f90-4324-a333-4dedde88413a)
+  )
+  (fp_text value "mill_max 328-HORIZONTAL SURFACE MOUNT HEADER" (at 0.02 3.34 unlocked) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp b53696c5-a455-4998-862b-c8ac18f512e3)
+  )
+  (fp_text user "${REFERENCE}" (at -0.01 4.64 unlocked) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 4f4beb6b-befe-4272-8414-491bb2caf698)
+  )
+  (fp_line (start -2.16 -2.67) (end -1.525 -2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 714573b2-0bd5-41c2-bf72-aa2f005b1f40))
+  (fp_line (start -2.16 2.67) (end -2.16 -2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 6c7fc568-397f-44ae-9d75-85b9bd4bfdd4))
+  (fp_line (start -1.525 -5.845) (end -1.015 -5.845)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 826c43ee-373a-4b3e-8da4-ae23715cb77d))
+  (fp_line (start -1.525 -2.67) (end -1.525 -5.845)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 0eaa2e29-8e71-42c4-b3df-440e838ca93b))
+  (fp_line (start -1.015 -2.67) (end -1.015 -5.845)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 770f0c04-6760-44e1-b53f-12e685bf659e))
+  (fp_line (start -1.015 -2.67) (end -0.38 -2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 2a69af43-bdf5-491b-83f5-c528a8b8f3bd))
+  (fp_line (start -0.38 -2.67) (end -0.38 2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp fb1b098f-a7d9-4080-aaa7-b8cfe48f819c))
+  (fp_line (start -0.38 2.67) (end -2.16 2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 3795fe99-2605-4b39-878a-220e7193bd4d))
+  (fp_line (start 0.38 -2.67) (end 1.015 -2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp d6a105fd-0a66-477d-a564-81502c471973))
+  (fp_line (start 0.38 2.67) (end 0.38 -2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 47e655ef-1928-44d9-b589-0964e3a70a03))
+  (fp_line (start 1.015 -5.845) (end 1.525 -5.845)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 8f42e267-a3a9-4056-97c2-45c59a863ccf))
+  (fp_line (start 1.015 -2.67) (end 1.015 -5.845)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 1715308a-c3fb-4c86-bc25-b869db2a7121))
+  (fp_line (start 1.525 -2.67) (end 1.525 -5.845)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp cec838b3-ff00-4c51-a9f9-7a28481af2bf))
+  (fp_line (start 1.525 -2.67) (end 2.16 -2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 9617179e-f69c-48f9-ba24-2100a1408966))
+  (fp_line (start 2.16 -2.67) (end 2.16 2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 7b509c9d-b4cb-46cc-b7ba-6bc38f09857c))
+  (fp_line (start 2.16 2.67) (end 0.38 2.67)
+    (stroke (width 0.1) (type default)) (layer "F.Fab") (tstamp 0bd28fed-3135-4d45-bd87-6b2222933a35))
+  (pad "1" smd rect (at -1.27 0) (size 1.778 5.338) (layers "F.Cu" "F.Paste" "F.Mask")
+    (thermal_bridge_angle 45) (tstamp ae474851-03b9-4b38-84c2-c008e472fc52))
+  (pad "2" smd rect (at 1.27 0) (size 1.778 5.338) (layers "F.Cu" "F.Paste" "F.Mask")
+    (thermal_bridge_angle 45) (tstamp 13238dba-ae54-4c83-855d-20af7e82256b))
+  (group "" (id 5692ede5-7d4c-4ff6-b58c-6fbeeed8e2b3)
+    (members
+      0bd28fed-3135-4d45-bd87-6b2222933a35
+      13238dba-ae54-4c83-855d-20af7e82256b
+      1715308a-c3fb-4c86-bc25-b869db2a7121
+      47e655ef-1928-44d9-b589-0964e3a70a03
+      7b509c9d-b4cb-46cc-b7ba-6bc38f09857c
+      8f42e267-a3a9-4056-97c2-45c59a863ccf
+      9617179e-f69c-48f9-ba24-2100a1408966
+      cec838b3-ff00-4c51-a9f9-7a28481af2bf
+      d6a105fd-0a66-477d-a564-81502c471973
+    )
+  )
+  (group "" (id f6846975-cc94-4f76-835a-e95354e08529)
+    (members
+      0eaa2e29-8e71-42c4-b3df-440e838ca93b
+      2a69af43-bdf5-491b-83f5-c528a8b8f3bd
+      3795fe99-2605-4b39-878a-220e7193bd4d
+      6c7fc568-397f-44ae-9d75-85b9bd4bfdd4
+      714573b2-0bd5-41c2-bf72-aa2f005b1f40
+      770f0c04-6760-44e1-b53f-12e685bf659e
+      826c43ee-373a-4b3e-8da4-ae23715cb77d
+      ae474851-03b9-4b38-84c2-c008e472fc52
+      fb1b098f-a7d9-4080-aaa7-b8cfe48f819c
+    )
+  )
+)
