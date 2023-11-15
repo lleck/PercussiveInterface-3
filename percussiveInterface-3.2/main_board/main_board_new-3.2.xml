@@ -1,0 +1,2049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/lukasl/Masterarbeit/PercussiveInterface-3/percussiveInterface-3.2/main_board/main_board_new-3.2.kicad_sch</source>
+    <date>Mi 15 Nov 2023 15:44:42 CET</date>
+    <tool>Eeschema 7.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Rotor Platine</title>
+        <company/>
+        <rev/>
+        <date>2023-07-15</date>
+        <source>main_board_new-3.2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>22µ</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd129dd9-7825-4b00-95a6-3a11973cec7a</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1µ</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>acb2c28a-9b52-4150-94d4-991b592a5844</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>22pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c19e366d-ab2c-483f-9d2f-7f6665d27a07</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>22pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>75704069-ce52-494c-84eb-dbc079354dac</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>0.1µ</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>51e055dd-7795-4911-940c-283b778e6e61</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>0.1µ</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>127abcca-26d1-4cca-a0e0-60b22527b9f0</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>0.1µ</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9faa9d31-3525-4357-8752-2b130a582cda</tstamps>
+    </comp>
+    <comp ref="C34">
+      <value>0.1µ</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c493249d-5ab5-41ba-acd0-32defb10acfd</tstamps>
+    </comp>
+    <comp ref="C35">
+      <value>0.1µ</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a358e4a1-5cb1-4f9b-a818-1630e1f85964</tstamps>
+    </comp>
+    <comp ref="C36">
+      <value>0.1µ</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b9cb4cf-688d-4684-a410-d1101c54eaad</tstamps>
+    </comp>
+    <comp ref="C37">
+      <value>33µF</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce9be2b4-0206-41e7-9d28-b0a9fbd743ca</tstamps>
+    </comp>
+    <comp ref="C38">
+      <value>0.47µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9e0d4ea9-a922-4f7a-adf4-e5364230e82a</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>APA102-2020</value>
+      <footprint>LED_SMD:LED-APA102-2020</footprint>
+      <datasheet>http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf</datasheet>
+      <libsource lib="LED" part="APA102-2020" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="RGB LED with integrated controller"/>
+      <property name="ki_keywords" value="RGB LED addressable 8bit pwm 5bit greyscale"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c485c4f6-61f6-45e8-9a24-5fb4fc295479</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:MountingHole_M2_own</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2115631f-ba15-4211-a20e-772941697be3</tstamps>
+    </comp>
+    <comp ref="H12">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="" part="MountingHole_Pad_1" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d12de23b-3e94-489c-99e0-b81bd443603f</tstamps>
+    </comp>
+    <comp ref="H13">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e475c872-24e9-457f-a475-804073372ca9</tstamps>
+    </comp>
+    <comp ref="H14">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f52f061-7546-4faf-997f-90a7af8bdfc5</tstamps>
+    </comp>
+    <comp ref="H15">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>edba7dc6-1218-49ad-8367-0c4e79514538</tstamps>
+    </comp>
+    <comp ref="H16">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe3e5f20-8b94-4b67-94d2-e6afca40e74f</tstamps>
+    </comp>
+    <comp ref="H17">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7df85ccd-afd3-44fe-8a51-c8d81839d346</tstamps>
+    </comp>
+    <comp ref="H18">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c4fe89a5-a6cc-40d2-b593-19de8fd3e4fd</tstamps>
+    </comp>
+    <comp ref="H19">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91a7623f-fba4-4f28-8ff5-ffa9bdde00a2</tstamps>
+    </comp>
+    <comp ref="H20">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b2f518c0-3f3f-4452-a0d0-43469fb10b98</tstamps>
+    </comp>
+    <comp ref="H21">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12f8e009-0605-432d-8f7f-473bec1b0b77</tstamps>
+    </comp>
+    <comp ref="H22">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9fe0ccd-3e9b-4d32-8fd0-2c8fc1c57881</tstamps>
+    </comp>
+    <comp ref="H23">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4262debe-4eda-4d30-aca4-fd7c52117279</tstamps>
+    </comp>
+    <comp ref="H24">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4263f189-5dea-4228-8812-ee977b775476</tstamps>
+    </comp>
+    <comp ref="H25">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c566e488-20b3-4bb7-8b26-25fe36b4387b</tstamps>
+    </comp>
+    <comp ref="H26">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32f2a0a7-adba-4dc9-b78c-e9608c5f9dc5</tstamps>
+    </comp>
+    <comp ref="H27">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c62e33a1-ad29-4a30-bef3-1349562f0b9a</tstamps>
+    </comp>
+    <comp ref="H28">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd23e337-1c60-48f6-aad3-0c7503c9cc82</tstamps>
+    </comp>
+    <comp ref="H29">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d8ed8b7-fb95-408f-b3d0-ede9df7f5d09</tstamps>
+    </comp>
+    <comp ref="H30">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>14217b02-d0cf-46ce-b9c4-4c71694e6325</tstamps>
+    </comp>
+    <comp ref="H31">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f2bf5a5-3fb8-4e7a-b62b-0e644d49409e</tstamps>
+    </comp>
+    <comp ref="H32">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>427b8a96-a79d-4eb2-a57e-c858f3110ca8</tstamps>
+    </comp>
+    <comp ref="H33">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f1e0185-7f25-483c-96f9-ae5e1fd95eb8</tstamps>
+    </comp>
+    <comp ref="H34">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>366cf2f7-461d-446c-a9fc-2ef02f60c761</tstamps>
+    </comp>
+    <comp ref="H35">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30b50467-e670-4cce-bf74-809f2c7dbecf</tstamps>
+    </comp>
+    <comp ref="H36">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9854ec49-379c-4ad3-b079-f18f3fd64413</tstamps>
+    </comp>
+    <comp ref="H37">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>01120ca1-014d-4888-8b13-1954fe85a57a</tstamps>
+    </comp>
+    <comp ref="H38">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f1a7e68-12bd-49ae-804a-66f27cf4f87c</tstamps>
+    </comp>
+    <comp ref="H39">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e032d9e-cb30-495b-b4fa-f7d0b6202423</tstamps>
+    </comp>
+    <comp ref="H40">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7d6ca59-7b86-47b0-952f-331959cfbcc9</tstamps>
+    </comp>
+    <comp ref="H41">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b397ebfc-def5-4166-af08-b848069e844f</tstamps>
+    </comp>
+    <comp ref="H42">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e98fb26d-4494-4824-ba91-40a5a737502a</tstamps>
+    </comp>
+    <comp ref="H43">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d16f569f-d0ae-4c91-a4d6-33125b9b13af</tstamps>
+    </comp>
+    <comp ref="H44">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3577b4d-d693-45b3-b789-f39fad6b42be</tstamps>
+    </comp>
+    <comp ref="H45">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac608ed6-9415-4cb3-b823-eeaf652413d1</tstamps>
+    </comp>
+    <comp ref="H46">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb3f9934-a3c5-410a-aaaf-8a94007da202</tstamps>
+    </comp>
+    <comp ref="H47">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e7c1fa4-673c-4b98-861c-00692d5cff23</tstamps>
+    </comp>
+    <comp ref="H48">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f82cea82-1beb-4d65-b1df-c2dc66640989</tstamps>
+    </comp>
+    <comp ref="H49">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4399e1b2-c46b-4da6-92e4-ca09eea55f8b</tstamps>
+    </comp>
+    <comp ref="H50">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5efe3587-4738-4337-b06c-88d653da8b2b</tstamps>
+    </comp>
+    <comp ref="H51">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3bbcec8a-970a-43cd-98c2-b112c1d29e75</tstamps>
+    </comp>
+    <comp ref="H52">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8350d6d7-c79b-4ccc-9250-58cdb9562b12</tstamps>
+    </comp>
+    <comp ref="H53">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>103ecf09-2361-48fb-8cd9-4f68b15802f1</tstamps>
+    </comp>
+    <comp ref="H54">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2709a9d2-df1a-4a12-984b-46fcce947832</tstamps>
+    </comp>
+    <comp ref="H55">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>966718a6-2a9a-4caa-87be-754270e7413c</tstamps>
+    </comp>
+    <comp ref="H56">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>66290b4d-d0ef-4c4f-a611-ed1ce687d301</tstamps>
+    </comp>
+    <comp ref="H57">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3068cf98-2b92-48fd-ba4b-c8c70315ba34</tstamps>
+    </comp>
+    <comp ref="H58">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ceb9d117-0519-433b-9df8-adc888f5945b</tstamps>
+    </comp>
+    <comp ref="H59">
+      <value>MountingHole_Pad</value>
+      <footprint>Own_Library:mill_max - 0670 RECEPTACLE WITH NO TAIL</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>929a3a94-0300-4ead-a059-46bcaad90dab</tstamps>
+    </comp>
+    <comp ref="H60">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a907109-924e-4eb9-a923-14bc92495668</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>ADG731BSUZ</value>
+      <footprint>Package_QFP:TQFP-48_7x7mm_P0.5mm</footprint>
+      <datasheet>https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-4/DSA-69834.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">ADG731BSUZ</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/adg731bsuz/analog-devices?region=nac</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">ADG731BSUZ</field>
+        <field name="Mouser Part Number">584-ADG731BSUZ</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADG731BSUZ?qs=BpaRKvA4VqEJueulxDCy6w%3D%3D</field>
+      </fields>
+      <libsource lib="ADG731BSUZ" part="ADG731BSUZ" description="ADG731BSUZ, Multiplexer Single 32:1, 3, 5V, 48-Pin, TQFP"/>
+      <property name="Height" value="1.2"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="ADG731BSUZ"/>
+      <property name="Mouser Part Number" value="584-ADG731BSUZ"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADG731BSUZ?qs=BpaRKvA4VqEJueulxDCy6w%3D%3D"/>
+      <property name="Arrow Part Number" value="ADG731BSUZ"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/adg731bsuz/analog-devices?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="ADG731BSUZ, Multiplexer Single 32:1, 3, 5V, 48-Pin, TQFP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>897a17b6-0df4-4269-b6b0-67dac5969952</tstamps>
+    </comp>
+    <comp ref="IC2">
+      <value>TXU0304PWR</value>
+      <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1627717511667&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTXU0304</datasheet>
+      <fields>
+        <field name="Arrow Part Number">TXU0304PWR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/txu0304pwr/texas-instruments?region=nac</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TXU0304PWR</field>
+        <field name="Mouser Part Number">595-TXU0304PWR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXU0304PWR?qs=QNEnbhJQKvZVYXIKZoXs0A%3D%3D</field>
+      </fields>
+      <libsource lib="TXU0304PWR" part="TXU0304PWR" description="Translation - Voltage Levels Four channel unidirectional level shifter"/>
+      <property name="Height" value="1.2"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="TXU0304PWR"/>
+      <property name="Mouser Part Number" value="595-TXU0304PWR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXU0304PWR?qs=QNEnbhJQKvZVYXIKZoXs0A%3D%3D"/>
+      <property name="Arrow Part Number" value="TXU0304PWR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/txu0304pwr/texas-instruments?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Translation - Voltage Levels Four channel unidirectional level shifter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c37fc15-b4d5-4ce5-9f31-80efc5c58093</tstamps>
+    </comp>
+    <comp ref="IC3">
+      <value>LM3940IMP-3.3_NOPB</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm3940.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">LM3940IMP-3.3/NOPB</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lm3940imp-3.3nopb/texas-instruments?region=nac</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">LM3940IMP-3.3/NOPB</field>
+        <field name="Mouser Part Number">926-LM3940IMP3.3NOPB</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM3940IMP-3.3-NOPB?qs=QbsRYf82W3EIVCEt3IRFTQ%3D%3D</field>
+      </fields>
+      <libsource lib="LM3940IMP-3_3_NOPB" part="LM3940IMP-3.3_NOPB" description="LM3940IMP-3.3/NOPB, Low Dropout Voltage Regulator, 1A, 3.3 V, 4.5  7.5 Vin, 4-Pin SOT-223"/>
+      <property name="Height" value="1.8"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="LM3940IMP-3.3/NOPB"/>
+      <property name="Mouser Part Number" value="926-LM3940IMP3.3NOPB"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM3940IMP-3.3-NOPB?qs=QbsRYf82W3EIVCEt3IRFTQ%3D%3D"/>
+      <property name="Arrow Part Number" value="LM3940IMP-3.3/NOPB"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/lm3940imp-3.3nopb/texas-instruments?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="LM3940IMP-3.3/NOPB, Low Dropout Voltage Regulator, 1A, 3.3 V, 4.5  7.5 Vin, 4-Pin SOT-223"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>22aecff5-41c9-4342-88fd-445c306e447e</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>0022232041</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal</footprint>
+      <datasheet>https://www.molex.com/pdm_docs/sd/022232041_sd.pdf</datasheet>
+      <fields>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="DK_Datasheet_Link">https://www.molex.com/pdm_docs/sd/022232041_sd.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/molex/0022232041/WM4202-ND/26671</field>
+        <field name="Description">CONN HEADER VERT 4POS 2.54MM</field>
+        <field name="Digi-Key_PN">WM4202-ND</field>
+        <field name="Family">Rectangular Connectors - Headers, Male Pins</field>
+        <field name="MPN">0022232041</field>
+        <field name="Manufacturer">Molex</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Rectangular-Connectors-Headers-Male-Pins" part="0022232041" description="CONN HEADER VERT 4POS 2.54MM"/>
+      <property name="Digi-Key_PN" value="WM4202-ND"/>
+      <property name="MPN" value="0022232041"/>
+      <property name="Category" value="Connectors, Interconnects"/>
+      <property name="Family" value="Rectangular Connectors - Headers, Male Pins"/>
+      <property name="DK_Datasheet_Link" value="https://www.molex.com/pdm_docs/sd/022232041_sd.pdf"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/molex/0022232041/WM4202-ND/26671"/>
+      <property name="Description" value="CONN HEADER VERT 4POS 2.54MM"/>
+      <property name="Manufacturer" value="Molex"/>
+      <property name="Status" value="Active"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="CONN HEADER VERT 4POS 2.54MM"/>
+      <property name="ki_keywords" value="WM4202-ND KK 6373"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d8b28805-4130-4a44-8047-d7ae893ebb47</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>SLW-104-01-G-S</value>
+      <footprint>Own_Library:SAMTEC_SLW-104-01-G-S</footprint>
+      <fields>
+        <field name="MANUFACTURER">Samtec</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">4.57mm</field>
+        <field name="PARTREV">B</field>
+        <field name="SNAPEDA_PN">SLW-104-01-T-S</field>
+        <field name="STANDARD">Manufactuer Recommendations</field>
+      </fields>
+      <libsource lib="SLW-104-01-G-S" part="SLW-104-01-G-S" description=""/>
+      <property name="PARTREV" value="B"/>
+      <property name="SNAPEDA_PN" value="SLW-104-01-T-S"/>
+      <property name="STANDARD" value="Manufactuer Recommendations"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="4.57mm"/>
+      <property name="MANUFACTURER" value="Samtec"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70767cdc-d043-4acc-ae00-b40cec79135c</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>SLW-104-01-G-S</value>
+      <footprint>Own_Library:SAMTEC_SLW-104-01-G-S</footprint>
+      <fields>
+        <field name="MANUFACTURER">Samtec</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">4.57mm</field>
+        <field name="PARTREV">B</field>
+        <field name="SNAPEDA_PN">SLW-104-01-T-S</field>
+        <field name="STANDARD">Manufactuer Recommendations</field>
+      </fields>
+      <libsource lib="SLW-104-01-G-S" part="SLW-104-01-G-S" description=""/>
+      <property name="PARTREV" value="B"/>
+      <property name="SNAPEDA_PN" value="SLW-104-01-T-S"/>
+      <property name="STANDARD" value="Manufactuer Recommendations"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="4.57mm"/>
+      <property name="MANUFACTURER" value="Samtec"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3360fe32-278b-4a5f-b723-f7e54a3b86e7</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>SLW-104-01-G-S</value>
+      <footprint>Own_Library:SAMTEC_SLW-104-01-G-S</footprint>
+      <fields>
+        <field name="MANUFACTURER">Samtec</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">4.57mm</field>
+        <field name="PARTREV">B</field>
+        <field name="SNAPEDA_PN">SLW-104-01-T-S</field>
+        <field name="STANDARD">Manufactuer Recommendations</field>
+      </fields>
+      <libsource lib="SLW-104-01-G-S" part="SLW-104-01-G-S" description=""/>
+      <property name="PARTREV" value="B"/>
+      <property name="SNAPEDA_PN" value="SLW-104-01-T-S"/>
+      <property name="STANDARD" value="Manufactuer Recommendations"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="4.57mm"/>
+      <property name="MANUFACTURER" value="Samtec"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e92d9ed3-05a9-4878-89c9-9f131923ddb5</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>SLW-104-01-G-S</value>
+      <footprint>Own_Library:SAMTEC_SLW-104-01-G-S</footprint>
+      <fields>
+        <field name="MANUFACTURER">Samtec</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">4.57mm</field>
+        <field name="PARTREV">B</field>
+        <field name="SNAPEDA_PN">SLW-104-01-T-S</field>
+        <field name="STANDARD">Manufactuer Recommendations</field>
+      </fields>
+      <libsource lib="SLW-104-01-G-S" part="SLW-104-01-G-S" description=""/>
+      <property name="PARTREV" value="B"/>
+      <property name="SNAPEDA_PN" value="SLW-104-01-T-S"/>
+      <property name="STANDARD" value="Manufactuer Recommendations"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="4.57mm"/>
+      <property name="MANUFACTURER" value="Samtec"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>27bb2476-7bc0-4b6b-813a-d89e4d60e40b</tstamps>
+    </comp>
+    <comp ref="J9">
+      <value>SAMTEC-SLW-108-01-X-S</value>
+      <footprint>Own_Library:SAMTEC-SLW-108-01-X-S</footprint>
+      <libsource lib="SAMTEC-SLW-108-01-X-S" part="SAMTEC-SLW-108-01-X-S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1aa59567-d281-44b2-adbe-b1096ffb084d</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>SAMTEC-SLW-108-01-X-S</value>
+      <footprint>Own_Library:SAMTEC-SLW-108-01-X-S</footprint>
+      <libsource lib="SAMTEC-SLW-108-01-X-S" part="SAMTEC-SLW-108-01-X-S" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a36628fd-5c0f-4c9d-9ade-aecfb58dc006</tstamps>
+    </comp>
+    <comp ref="J11">
+      <value>Screw_Terminal_01x02</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <libsource lib="ConnectorZZ" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b095da68-fad5-4d83-a2e4-ec10c32ee9a5</tstamps>
+    </comp>
+    <comp ref="JP1">
+      <value>SolderJumper_2_Bridged</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Solder Jumper, 2-pole, closed/bridged"/>
+      <property name="ki_keywords" value="solder jumper SPST"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7538ffe2-a065-406d-bde0-6cb2dd3fd37c</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8654f5f6-e166-4994-9b83-829a72e114ca</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2298b7c8-897c-4b8d-bc4d-661e33ed89e4</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>97f4dc64-c89b-4b76-9a59-7cd05eda0f0d</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Boot</value>
+      <footprint>Button_Switch_SMD:SW_SPST_B3U-1000P</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Push button switch, generic, two pins"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>700df4a8-2412-459f-b6af-8dee89990eab</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Reset</value>
+      <footprint>Button_Switch_SMD:SW_SPST_B3U-1000P</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Push button switch, generic, two pins"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7b8f793-fffb-4d15-bc7b-ca000203264e</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>SN74LV1T34DBV</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf</datasheet>
+      <libsource lib="Logic_LevelTranslator" part="SN74LV1T34DBV" description="Single Power Supply, Single Buffer GATE, CMOS Logic, Level Shifter, SOT-23-5"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Single Power Supply, Single Buffer GATE, CMOS Logic, Level Shifter, SOT-23-5"/>
+      <property name="ki_keywords" value="single buffer level shift"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d81a4b9c-a7d2-4630-9863-319f46ed8105</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>SN74LV1T34DBV</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf</datasheet>
+      <libsource lib="Logic_LevelTranslator" part="SN74LV1T34DBV" description="Single Power Supply, Single Buffer GATE, CMOS Logic, Level Shifter, SOT-23-5"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Single Power Supply, Single Buffer GATE, CMOS Logic, Level Shifter, SOT-23-5"/>
+      <property name="ki_keywords" value="single buffer level shift"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3acf96c-47a9-4a6a-9e43-58788df2c62b</tstamps>
+    </comp>
+    <comp ref="U34">
+      <value>ESP32-S3-WROOM-1-n16r8</value>
+      <footprint>Own_Library:ESP32-S3-WROOM-1-N16R2</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</datasheet>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/ESP32-S3-WROOM-1-N16R2/Espressif+Systems/view-part/?ref=eda</field>
+        <field name="Description">
+Bluetooth, WiFi 802.11b/g/n, Bluetooth v5.0 Transceiver Module 2.4GHz PCB Trace Surface Mount
+</field>
+        <field name="MANUFACTURER">Espressif</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.25mm</field>
+        <field name="MF">Espressif Systems</field>
+        <field name="MP">ESP32-S3-WROOM-1-N16R8</field>
+        <field name="PARTREV">v1.0</field>
+        <field name="Package">NON STANDARD Espressif Systems</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=11099128&amp;manufacturer=Espressif Systems&amp;part_name=ESP32-S3-WROOM-1-N16R2&amp;search_term=None</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/ESP32-S3-WROOM-1-N16R2/Espressif+Systems/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="ESP32-S3-WROOM-1-N16R2" part="ESP32-S3-WROOM-1-N16R2" description=""/>
+      <property name="MF" value="Espressif Systems"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="3.25mm"/>
+      <property name="Package" value="NON STANDARD Espressif Systems"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/ESP32-S3-WROOM-1-N16R2/Espressif+Systems/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="v1.0"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/ESP32-S3-WROOM-1-N16R2/Espressif+Systems/view-part/?ref=snap"/>
+      <property name="MP" value="ESP32-S3-WROOM-1-N16R8"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=11099128&amp;manufacturer=Espressif Systems&amp;part_name=ESP32-S3-WROOM-1-N16R2&amp;search_term=None"/>
+      <property name="Description" value="&#xA;Bluetooth, WiFi 802.11b/g/n, Bluetooth v5.0 Transceiver Module 2.4GHz PCB Trace Surface Mount&#xA;"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="MANUFACTURER" value="Espressif"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d9459c2-acf2-4a89-85f1-b8d9c374ab7c</tstamps>
+    </comp>
+    <comp ref="U35">
+      <value>QRE1113GR</value>
+      <footprint>OptoDevice:OnSemi_CASE100CY</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF</datasheet>
+      <libsource lib="Sensor_Proximity" part="QRE1113GR" description="Miniature Reflective Optical Object Sensor, SMD-4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main_board_new-3.2.kicad_sch"/>
+      <property name="ki_description" value="Miniature Reflective Optical Object Sensor, SMD-4"/>
+      <property name="ki_keywords" value="Reflective Optical Sensor Opto reflex coupler"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9095f58c-9ac1-4b02-85c1-b1ebcc01cb37</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="" part="MountingHole_Pad_1">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H12</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ADG731BSUZ" part="ADG731BSUZ">
+      <description>ADG731BSUZ, Multiplexer Single 32:1, 3, 5V, 48-Pin, TQFP</description>
+      <docs>https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-4/DSA-69834.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ADG731BSUZ</field>
+        <field name="Footprint">QFP50P900X900X120-48N</field>
+        <field name="Datasheet">https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-4/DSA-69834.pdf</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">ADG731BSUZ</field>
+        <field name="Mouser Part Number">584-ADG731BSUZ</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADG731BSUZ?qs=BpaRKvA4VqEJueulxDCy6w%3D%3D</field>
+        <field name="Arrow Part Number">ADG731BSUZ</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/adg731bsuz/analog-devices?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S12" type="passive"/>
+        <pin num="2" name="S11" type="passive"/>
+        <pin num="3" name="S10" type="passive"/>
+        <pin num="4" name="S9" type="passive"/>
+        <pin num="5" name="S8" type="passive"/>
+        <pin num="6" name="S7" type="passive"/>
+        <pin num="7" name="S6" type="passive"/>
+        <pin num="8" name="S5" type="passive"/>
+        <pin num="9" name="S4" type="passive"/>
+        <pin num="10" name="S3" type="passive"/>
+        <pin num="11" name="S2" type="passive"/>
+        <pin num="12" name="S1" type="passive"/>
+        <pin num="13" name="VDD_1" type="passive"/>
+        <pin num="14" name="VDD_2" type="passive"/>
+        <pin num="15" name="NC_1" type="passive"/>
+        <pin num="16" name="NC_2" type="passive"/>
+        <pin num="17" name="~{SYNC}" type="passive"/>
+        <pin num="18" name="DIN" type="passive"/>
+        <pin num="19" name="SCLK" type="passive"/>
+        <pin num="20" name="NC_3" type="passive"/>
+        <pin num="21" name="NC_4" type="passive"/>
+        <pin num="22" name="NC_5" type="passive"/>
+        <pin num="23" name="GND" type="passive"/>
+        <pin num="24" name="VSS" type="passive"/>
+        <pin num="25" name="S17" type="passive"/>
+        <pin num="26" name="S18" type="passive"/>
+        <pin num="27" name="S19" type="passive"/>
+        <pin num="28" name="S20" type="passive"/>
+        <pin num="29" name="S21" type="passive"/>
+        <pin num="30" name="S22" type="passive"/>
+        <pin num="31" name="S23" type="passive"/>
+        <pin num="32" name="S24" type="passive"/>
+        <pin num="33" name="S25" type="passive"/>
+        <pin num="34" name="S26" type="passive"/>
+        <pin num="35" name="S27" type="passive"/>
+        <pin num="36" name="S28" type="passive"/>
+        <pin num="37" name="S29" type="passive"/>
+        <pin num="38" name="S30" type="passive"/>
+        <pin num="39" name="S31" type="passive"/>
+        <pin num="40" name="S32" type="passive"/>
+        <pin num="41" name="NC_6" type="passive"/>
+        <pin num="42" name="NC_7" type="passive"/>
+        <pin num="43" name="D" type="passive"/>
+        <pin num="44" name="NC_8" type="passive"/>
+        <pin num="45" name="S16" type="passive"/>
+        <pin num="46" name="S15" type="passive"/>
+        <pin num="47" name="S14" type="passive"/>
+        <pin num="48" name="S13" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ConnectorZZ" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP32-S3-WROOM-1-N16R2" part="ESP32-S3-WROOM-1-N16R2">
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</docs>
+      <fields>
+        <field name="Reference">U34</field>
+        <field name="Value">ESP32-S3-WROOM-1-n16r8</field>
+        <field name="Footprint">Own_Library:ESP32-S3-WROOM-1-N16R2</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.25mm</field>
+        <field name="MF">Espressif Systems</field>
+        <field name="Package">NON STANDARD Espressif Systems</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/ESP32-S3-WROOM-1-N16R2/Espressif+Systems/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">v1.0</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/ESP32-S3-WROOM-1-N16R2/Espressif+Systems/view-part/?ref=snap</field>
+        <field name="MP">ESP32-S3-WROOM-1-N16R8</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=11099128&amp;manufacturer=Espressif Systems&amp;part_name=ESP32-S3-WROOM-1-N16R2&amp;search_term=None</field>
+        <field name="Description">
+Bluetooth, WiFi 802.11b/g/n, Bluetooth v5.0 Transceiver Module 2.4GHz PCB Trace Surface Mount
+</field>
+        <field name="Availability">In Stock</field>
+        <field name="MANUFACTURER">Espressif</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="3V3" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="IO4" type="bidirectional"/>
+        <pin num="5" name="IO5" type="bidirectional"/>
+        <pin num="6" name="IO6" type="bidirectional"/>
+        <pin num="7" name="IO7" type="bidirectional"/>
+        <pin num="8" name="IO15" type="bidirectional"/>
+        <pin num="9" name="IO16" type="bidirectional"/>
+        <pin num="10" name="IO17" type="bidirectional"/>
+        <pin num="11" name="IO18" type="bidirectional"/>
+        <pin num="12" name="IO8" type="bidirectional"/>
+        <pin num="13" name="IO19" type="bidirectional"/>
+        <pin num="14" name="IO20" type="bidirectional"/>
+        <pin num="15" name="IO3" type="bidirectional"/>
+        <pin num="16" name="IO46" type="bidirectional"/>
+        <pin num="17" name="IO9" type="bidirectional"/>
+        <pin num="18" name="IO10" type="bidirectional"/>
+        <pin num="19" name="IO11" type="bidirectional"/>
+        <pin num="20" name="IO12" type="bidirectional"/>
+        <pin num="21" name="IO13" type="bidirectional"/>
+        <pin num="22" name="IO14" type="bidirectional"/>
+        <pin num="23" name="IO21" type="bidirectional"/>
+        <pin num="24" name="IO47" type="bidirectional"/>
+        <pin num="25" name="IO48" type="bidirectional"/>
+        <pin num="26" name="IO45" type="bidirectional"/>
+        <pin num="27" name="IO0" type="bidirectional"/>
+        <pin num="28" name="IO35" type="bidirectional"/>
+        <pin num="29" name="IO36" type="bidirectional"/>
+        <pin num="30" name="IO37" type="bidirectional"/>
+        <pin num="31" name="IO38" type="bidirectional"/>
+        <pin num="32" name="IO39" type="bidirectional"/>
+        <pin num="33" name="IO40" type="bidirectional"/>
+        <pin num="34" name="IO41" type="bidirectional"/>
+        <pin num="35" name="IO42" type="bidirectional"/>
+        <pin num="36" name="RXD0" type="bidirectional"/>
+        <pin num="37" name="TXD0" type="bidirectional"/>
+        <pin num="38" name="IO2" type="bidirectional"/>
+        <pin num="39" name="IO1" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_2_Bridged">
+      <description>Solder Jumper, 2-pole, closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Bridged</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LED" part="APA102-2020">
+      <description>RGB LED with integrated controller</description>
+      <docs>http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf</docs>
+      <footprints>
+        <fp>LED*APA102*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">APA102-2020</field>
+        <field name="Footprint">LED_SMD:LED-APA102-2020</field>
+        <field name="Datasheet">http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="CKO" type="output"/>
+        <pin num="3" name="SDO" type="output"/>
+        <pin num="4" name="SDI" type="input"/>
+        <pin num="5" name="CKI" type="input"/>
+        <pin num="6" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="LM3940IMP-3_3_NOPB" part="LM3940IMP-3.3_NOPB">
+      <description>LM3940IMP-3.3/NOPB, Low Dropout Voltage Regulator, 1A, 3.3 V, 4.5  7.5 Vin, 4-Pin SOT-223</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm3940.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LM3940IMP-3.3_NOPB</field>
+        <field name="Footprint">SOT230P700X180-4N</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm3940.pdf</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">LM3940IMP-3.3/NOPB</field>
+        <field name="Mouser Part Number">926-LM3940IMP3.3NOPB</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM3940IMP-3.3-NOPB?qs=QbsRYf82W3EIVCEt3IRFTQ%3D%3D</field>
+        <field name="Arrow Part Number">LM3940IMP-3.3/NOPB</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lm3940imp-3.3nopb/texas-instruments?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="passive"/>
+        <pin num="2" name="GND_1" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+        <pin num="4" name="GND_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Logic_LevelTranslator" part="SN74LV1T34DBV">
+      <description>Single Power Supply, Single Buffer GATE, CMOS Logic, Level Shifter, SOT-23-5</description>
+      <docs>https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LV1T34DBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="SAMTEC-SLW-108-01-X-S" part="SAMTEC-SLW-108-01-X-S">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SAMTEC-SLW-108-01-X-S</field>
+        <field name="Footprint">SAMTEC-SLW-108-01-X-S:SAMTEC-SLW-108-01-X-S</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="bidirectional"/>
+        <pin num="2" name="2" type="bidirectional"/>
+        <pin num="3" name="3" type="bidirectional"/>
+        <pin num="4" name="4" type="bidirectional"/>
+        <pin num="5" name="5" type="bidirectional"/>
+        <pin num="6" name="6" type="bidirectional"/>
+        <pin num="7" name="7" type="bidirectional"/>
+        <pin num="8" name="8" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLW-104-01-G-S" part="SLW-104-01-G-S">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SLW-104-01-G-S</field>
+        <field name="Footprint">SLW-104-01-G-S:SAMTEC_SLW-104-01-G-S</field>
+        <field name="PARTREV">B</field>
+        <field name="SNAPEDA_PN">SLW-104-01-T-S</field>
+        <field name="STANDARD">Manufactuer Recommendations</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">4.57mm</field>
+        <field name="MANUFACTURER">Samtec</field>
+      </fields>
+      <pins>
+        <pin num="01" name="01" type="passive"/>
+        <pin num="02" name="02" type="passive"/>
+        <pin num="03" name="03" type="passive"/>
+        <pin num="04" name="04" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Proximity" part="QRE1113GR">
+      <description>Miniature Reflective Optical Object Sensor, SMD-4</description>
+      <docs>http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF</docs>
+      <footprints>
+        <fp>OnSemi*CASE100CY*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">QRE1113GR</field>
+        <field name="Footprint">OptoDevice:OnSemi_CASE100CY</field>
+        <field name="Datasheet">http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+        <pin num="3" name="" type="open_collector"/>
+        <pin num="4" name="" type="open_emitter"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TXU0304PWR" part="TXU0304PWR">
+      <description>Translation - Voltage Levels Four channel unidirectional level shifter</description>
+      <docs>https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1627717511667&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTXU0304</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">TXU0304PWR</field>
+        <field name="Footprint">SOP65P640X120-14N</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1627717511667&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTXU0304</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TXU0304PWR</field>
+        <field name="Mouser Part Number">595-TXU0304PWR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXU0304PWR?qs=QNEnbhJQKvZVYXIKZoXs0A%3D%3D</field>
+        <field name="Arrow Part Number">TXU0304PWR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/txu0304pwr/texas-instruments?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCA" type="passive"/>
+        <pin num="2" name="A1" type="passive"/>
+        <pin num="3" name="A2" type="passive"/>
+        <pin num="4" name="A3" type="passive"/>
+        <pin num="5" name="A4Y" type="passive"/>
+        <pin num="6" name="NC_1" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="OE" type="passive"/>
+        <pin num="9" name="NC_2" type="passive"/>
+        <pin num="10" name="B4" type="passive"/>
+        <pin num="11" name="B3Y" type="passive"/>
+        <pin num="12" name="B2Y" type="passive"/>
+        <pin num="13" name="B1Y" type="passive"/>
+        <pin num="14" name="VCCB" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Rectangular-Connectors-Headers-Male-Pins" part="0022232041">
+      <description>CONN HEADER VERT 4POS 2.54MM</description>
+      <docs>https://www.molex.com/pdm_docs/sd/022232041_sd.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">0022232041</field>
+        <field name="Footprint">digikey-footprints:PinHeader_1x4_P2.54mm_Drill1.02mm</field>
+        <field name="Datasheet">https://www.molex.com/pdm_docs/sd/022232041_sd.pdf</field>
+        <field name="Digi-Key_PN">WM4202-ND</field>
+        <field name="MPN">0022232041</field>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="Family">Rectangular Connectors - Headers, Male Pins</field>
+        <field name="DK_Datasheet_Link">https://www.molex.com/pdm_docs/sd/022232041_sd.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/molex/0022232041/WM4202-ND/26671</field>
+        <field name="Description">CONN HEADER VERT 4POS 2.54MM</field>
+        <field name="Manufacturer">Molex</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ADG731BSUZ">
+      <uri>/home/lukasl/KiCad/ADG731BSUZ/KiCad/ADG731BSUZ.kicad_sym</uri>
+    </library>
+    <library logical="ConnectorZZ">
+      <uri>/home/lukasl/KiCad/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/app/extensions/Library/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>/app/extensions/Library/symbols//Jumper.kicad_sym</uri>
+    </library>
+    <library logical="LED">
+      <uri>/app/extensions/Library/symbols//LED.kicad_sym</uri>
+    </library>
+    <library logical="LM3940IMP-3_3_NOPB">
+      <uri>/home/lukasl/KiCad/LM3940IMP-3.3_NOPB/KiCad/LM3940IMP-3_3_NOPB.kicad_sym</uri>
+    </library>
+    <library logical="Logic_LevelTranslator">
+      <uri>/app/extensions/Library/symbols//Logic_LevelTranslator.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/app/extensions/Library/symbols//Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="SAMTEC-SLW-108-01-X-S">
+      <uri>/home/lukasl/Masterarbeit/PercussiveInterface-3/Symbols/SAMTEC-SLW-108-01-X-S.kicad_sym</uri>
+    </library>
+    <library logical="SLW-104-01-G-S">
+      <uri>/home/lukasl/Masterarbeit/PercussiveInterface-3/Symbols/SLW-104-01-G-S.kicad_sym</uri>
+    </library>
+    <library logical="Sensor_Proximity">
+      <uri>/app/extensions/Library/symbols//Sensor_Proximity.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/app/extensions/Library/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="TXU0304PWR">
+      <uri>/home/lukasl/KiCad/LIB_TXU0304PWR/TXU0304PWR/KiCad/TXU0304PWR.kicad_sym</uri>
+    </library>
+    <library logical="dk_Rectangular-Connectors-Headers-Male-Pins">
+      <uri>/home/lukasl/KiCad/digikey-kicad-library-master/digikey-symbols/dk_Rectangular-Connectors-Headers-Male-Pins.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3.3V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="C35" pin="1" pintype="passive"/>
+      <node ref="C36" pin="1" pintype="passive"/>
+      <node ref="C37" pin="1" pintype="passive"/>
+      <node ref="H17" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H21" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H25" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H29" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H33" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H37" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H41" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H45" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H49" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H53" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H57" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="13" pinfunction="VDD_1" pintype="passive"/>
+      <node ref="IC1" pin="14" pinfunction="VDD_2" pintype="passive"/>
+      <node ref="IC2" pin="1" pinfunction="VCCA" pintype="passive"/>
+      <node ref="IC2" pin="14" pinfunction="VCCB" pintype="passive"/>
+      <node ref="IC2" pin="8" pinfunction="OE" pintype="passive"/>
+      <node ref="IC3" pin="3" pinfunction="OUT" pintype="passive"/>
+      <node ref="J9" pin="7" pinfunction="7" pintype="bidirectional"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U34" pin="2" pinfunction="3V3" pintype="power_in"/>
+    </net>
+    <net code="2" name="/5V">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="J11" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="04" pinfunction="04" pintype="passive"/>
+      <node ref="J6" pin="01" pinfunction="01" pintype="passive"/>
+      <node ref="J6" pin="04" pinfunction="04" pintype="passive"/>
+      <node ref="J7" pin="02" pinfunction="02" pintype="passive"/>
+      <node ref="J7" pin="04" pinfunction="04" pintype="passive"/>
+      <node ref="J8" pin="02" pinfunction="02" pintype="passive"/>
+      <node ref="J8" pin="04" pinfunction="04" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="3" name="/CLK">
+      <node ref="H13" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="19" pinfunction="SCLK" pintype="passive"/>
+      <node ref="IC2" pin="12" pinfunction="B2Y" pintype="passive"/>
+      <node ref="J9" pin="4" pinfunction="4" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/CLK unbuffered">
+      <node ref="IC2" pin="3" pinfunction="A2" pintype="passive"/>
+      <node ref="U34" pin="21" pinfunction="IO13" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/CS0">
+      <node ref="IC1" pin="17" pinfunction="~{SYNC}" pintype="passive"/>
+      <node ref="U34" pin="39" pinfunction="IO1" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/CS1">
+      <node ref="IC1" pin="43" pinfunction="D" pintype="passive"/>
+      <node ref="IC2" pin="11" pinfunction="B3Y" pintype="passive"/>
+    </net>
+    <net code="7" name="/CS1 unbuffered">
+      <node ref="IC2" pin="4" pinfunction="A3" pintype="passive"/>
+      <node ref="U34" pin="20" pinfunction="IO12" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C34" pin="2" pintype="passive"/>
+      <node ref="C35" pin="2" pintype="passive"/>
+      <node ref="C36" pin="2" pintype="passive"/>
+      <node ref="C37" pin="2" pintype="passive"/>
+      <node ref="C38" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="D1" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="H19" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H23" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H27" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H31" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H35" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H39" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H43" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H47" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H51" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H55" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="23" pinfunction="GND" pintype="passive"/>
+      <node ref="IC1" pin="24" pinfunction="VSS" pintype="passive"/>
+      <node ref="IC2" pin="7" pinfunction="GND" pintype="passive"/>
+      <node ref="IC3" pin="2" pinfunction="GND_1" pintype="passive"/>
+      <node ref="IC3" pin="4" pinfunction="GND_2" pintype="passive"/>
+      <node ref="J1" pin="4" pintype="passive"/>
+      <node ref="J10" pin="1" pinfunction="1" pintype="bidirectional"/>
+      <node ref="J11" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J5" pin="01" pinfunction="01" pintype="passive"/>
+      <node ref="J7" pin="01" pinfunction="01" pintype="passive"/>
+      <node ref="J7" pin="03" pinfunction="03" pintype="passive"/>
+      <node ref="J8" pin="01" pinfunction="01" pintype="passive"/>
+      <node ref="J8" pin="03" pinfunction="03" pintype="passive"/>
+      <node ref="J9" pin="8" pinfunction="8" pintype="bidirectional"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U34" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U35" pin="2" pinfunction="K" pintype="passive"/>
+      <node ref="U35" pin="4" pintype="open_emitter"/>
+    </net>
+    <net code="9" name="/LDC_CLK">
+      <node ref="J10" pin="8" pinfunction="8" pintype="bidirectional"/>
+      <node ref="U34" pin="10" pinfunction="IO17" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/LDC_CS">
+      <node ref="J9" pin="3" pinfunction="3" pintype="bidirectional"/>
+      <node ref="U34" pin="8" pinfunction="IO15" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/LDC_INT">
+      <node ref="J10" pin="7" pinfunction="7" pintype="bidirectional"/>
+      <node ref="U34" pin="9" pinfunction="IO16" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/LED_CLK">
+      <node ref="D1" pin="2" pinfunction="CKO" pintype="output"/>
+      <node ref="D1" pin="5" pinfunction="CKI" pintype="input"/>
+      <node ref="J5" pin="03" pinfunction="03" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="Y" pintype="output"/>
+    </net>
+    <net code="13" name="/LED_CLK_unbuffered">
+      <node ref="U1" pin="2" pinfunction="A" pintype="input"/>
+      <node ref="U34" pin="17" pinfunction="IO9" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/LED_DATA">
+      <node ref="D1" pin="3" pinfunction="SDO" pintype="output"/>
+      <node ref="D1" pin="4" pinfunction="SDI" pintype="input"/>
+      <node ref="J5" pin="02" pinfunction="02" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="Y" pintype="output"/>
+    </net>
+    <net code="15" name="/LED_DATA_unbuffered">
+      <node ref="U2" pin="2" pinfunction="A" pintype="input"/>
+      <node ref="U34" pin="18" pinfunction="IO10" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/MISO">
+      <node ref="H15" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC2" pin="10" pinfunction="B4" pintype="passive"/>
+      <node ref="J9" pin="5" pinfunction="5" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/MISO unbuffered">
+      <node ref="IC2" pin="5" pinfunction="A4Y" pintype="passive"/>
+      <node ref="U34" pin="19" pinfunction="IO11" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/MOSI">
+      <node ref="H59" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="18" pinfunction="DIN" pintype="passive"/>
+      <node ref="IC2" pin="13" pinfunction="B1Y" pintype="passive"/>
+      <node ref="J9" pin="6" pinfunction="6" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/MOSI unbuffered">
+      <node ref="IC2" pin="2" pinfunction="A1" pintype="passive"/>
+      <node ref="U34" pin="22" pinfunction="IO14" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/OE">
+      <node ref="U34" pin="26" pinfunction="IO45" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/QRE_OUT">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U34" pin="15" pinfunction="IO3" pintype="bidirectional"/>
+      <node ref="U35" pin="3" pintype="open_collector"/>
+    </net>
+    <net code="22" name="/SS1">
+      <node ref="H12" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="32" pinfunction="S24" pintype="passive"/>
+    </net>
+    <net code="23" name="/SS2">
+      <node ref="H14" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="31" pinfunction="S23" pintype="passive"/>
+    </net>
+    <net code="24" name="/SS3">
+      <node ref="H16" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="30" pinfunction="S22" pintype="passive"/>
+    </net>
+    <net code="25" name="/SS4">
+      <node ref="H18" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="29" pinfunction="S21" pintype="passive"/>
+    </net>
+    <net code="26" name="/SS5">
+      <node ref="H20" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="28" pinfunction="S20" pintype="passive"/>
+    </net>
+    <net code="27" name="/SS6">
+      <node ref="H22" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="27" pinfunction="S19" pintype="passive"/>
+    </net>
+    <net code="28" name="/SS7">
+      <node ref="H24" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="26" pinfunction="S18" pintype="passive"/>
+    </net>
+    <net code="29" name="/SS8">
+      <node ref="H26" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="25" pinfunction="S17" pintype="passive"/>
+    </net>
+    <net code="30" name="/SS9">
+      <node ref="H28" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="12" pinfunction="S1" pintype="passive"/>
+    </net>
+    <net code="31" name="/SS10">
+      <node ref="H30" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="11" pinfunction="S2" pintype="passive"/>
+    </net>
+    <net code="32" name="/SS11">
+      <node ref="H32" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="10" pinfunction="S3" pintype="passive"/>
+    </net>
+    <net code="33" name="/SS12">
+      <node ref="H34" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="9" pinfunction="S4" pintype="passive"/>
+    </net>
+    <net code="34" name="/SS13">
+      <node ref="H36" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="8" pinfunction="S5" pintype="passive"/>
+    </net>
+    <net code="35" name="/SS14">
+      <node ref="H38" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="7" pinfunction="S6" pintype="passive"/>
+    </net>
+    <net code="36" name="/SS15">
+      <node ref="H40" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="6" pinfunction="S7" pintype="passive"/>
+    </net>
+    <net code="37" name="/SS16">
+      <node ref="H42" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="5" pinfunction="S8" pintype="passive"/>
+    </net>
+    <net code="38" name="/SS17">
+      <node ref="H44" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="4" pinfunction="S9" pintype="passive"/>
+    </net>
+    <net code="39" name="/SS18">
+      <node ref="H46" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="3" pinfunction="S10" pintype="passive"/>
+    </net>
+    <net code="40" name="/SS19">
+      <node ref="H48" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="2" pinfunction="S11" pintype="passive"/>
+    </net>
+    <net code="41" name="/SS20">
+      <node ref="H50" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="1" pinfunction="S12" pintype="passive"/>
+    </net>
+    <net code="42" name="/SS21">
+      <node ref="H52" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="48" pinfunction="S13" pintype="passive"/>
+    </net>
+    <net code="43" name="/SS22">
+      <node ref="H54" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="47" pinfunction="S14" pintype="passive"/>
+    </net>
+    <net code="44" name="/SS23">
+      <node ref="H56" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="46" pinfunction="S15" pintype="passive"/>
+    </net>
+    <net code="45" name="/SS24">
+      <node ref="H58" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="45" pinfunction="S16" pintype="passive"/>
+    </net>
+    <net code="46" name="/SS25">
+      <node ref="IC1" pin="33" pinfunction="S25" pintype="passive"/>
+    </net>
+    <net code="47" name="/SS26">
+      <node ref="IC1" pin="34" pinfunction="S26" pintype="passive"/>
+    </net>
+    <net code="48" name="/SS27">
+      <node ref="IC1" pin="35" pinfunction="S27" pintype="passive"/>
+    </net>
+    <net code="49" name="/SS28">
+      <node ref="IC1" pin="36" pinfunction="S28" pintype="passive"/>
+    </net>
+    <net code="50" name="/SS29">
+      <node ref="IC1" pin="37" pinfunction="S29" pintype="passive"/>
+    </net>
+    <net code="51" name="/SS30">
+      <node ref="IC1" pin="38" pinfunction="S30" pintype="passive"/>
+    </net>
+    <net code="52" name="/SS31">
+      <node ref="IC1" pin="39" pinfunction="S31" pintype="passive"/>
+    </net>
+    <net code="53" name="/SS32">
+      <node ref="IC1" pin="40" pinfunction="S32" pintype="passive"/>
+    </net>
+    <net code="54" name="/USB_D+">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J1" pin="2" pintype="passive"/>
+      <node ref="U34" pin="14" pinfunction="IO20" pintype="bidirectional"/>
+    </net>
+    <net code="55" name="/USB_D-">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="J1" pin="3" pintype="passive"/>
+      <node ref="U34" pin="13" pinfunction="IO19" pintype="bidirectional"/>
+    </net>
+    <net code="56" name="/V_BUS">
+      <node ref="C38" pin="1" pintype="passive"/>
+      <node ref="IC3" pin="1" pinfunction="IN" pintype="passive"/>
+      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="JP1" pin="2" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="57" name="Net-(U34-EN)">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U34" pin="3" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="58" name="Net-(U34-IO0)">
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U34" pin="27" pinfunction="IO0" pintype="bidirectional"/>
+    </net>
+    <net code="59" name="Net-(U35-A)">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U35" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="60" name="unconnected-(IC1-NC_1-Pad15)">
+      <node ref="IC1" pin="15" pinfunction="NC_1" pintype="passive"/>
+    </net>
+    <net code="61" name="unconnected-(IC1-NC_2-Pad16)">
+      <node ref="IC1" pin="16" pinfunction="NC_2" pintype="passive"/>
+    </net>
+    <net code="62" name="unconnected-(IC1-NC_3-Pad20)">
+      <node ref="IC1" pin="20" pinfunction="NC_3" pintype="passive"/>
+    </net>
+    <net code="63" name="unconnected-(IC1-NC_4-Pad21)">
+      <node ref="IC1" pin="21" pinfunction="NC_4" pintype="passive"/>
+    </net>
+    <net code="64" name="unconnected-(IC1-NC_5-Pad22)">
+      <node ref="IC1" pin="22" pinfunction="NC_5" pintype="passive"/>
+    </net>
+    <net code="65" name="unconnected-(IC1-NC_6-Pad41)">
+      <node ref="IC1" pin="41" pinfunction="NC_6" pintype="passive"/>
+    </net>
+    <net code="66" name="unconnected-(IC1-NC_7-Pad42)">
+      <node ref="IC1" pin="42" pinfunction="NC_7" pintype="passive"/>
+    </net>
+    <net code="67" name="unconnected-(IC1-NC_8-Pad44)">
+      <node ref="IC1" pin="44" pinfunction="NC_8" pintype="passive"/>
+    </net>
+    <net code="68" name="unconnected-(IC2-NC_1-Pad6)">
+      <node ref="IC2" pin="6" pinfunction="NC_1" pintype="passive"/>
+    </net>
+    <net code="69" name="unconnected-(IC2-NC_2-Pad9)">
+      <node ref="IC2" pin="9" pinfunction="NC_2" pintype="passive"/>
+    </net>
+    <net code="70" name="unconnected-(J6-Pad02)">
+      <node ref="J6" pin="02" pinfunction="02" pintype="passive"/>
+    </net>
+    <net code="71" name="unconnected-(J6-Pad03)">
+      <node ref="J6" pin="03" pinfunction="03" pintype="passive"/>
+    </net>
+    <net code="72" name="unconnected-(J9-Pad1)">
+      <node ref="J9" pin="1" pinfunction="1" pintype="bidirectional"/>
+    </net>
+    <net code="73" name="unconnected-(J9-Pad2)">
+      <node ref="J9" pin="2" pinfunction="2" pintype="bidirectional"/>
+    </net>
+    <net code="74" name="unconnected-(J10-Pad2)">
+      <node ref="J10" pin="2" pinfunction="2" pintype="bidirectional"/>
+    </net>
+    <net code="75" name="unconnected-(J10-Pad3)">
+      <node ref="J10" pin="3" pinfunction="3" pintype="bidirectional"/>
+    </net>
+    <net code="76" name="unconnected-(J10-Pad4)">
+      <node ref="J10" pin="4" pinfunction="4" pintype="bidirectional"/>
+    </net>
+    <net code="77" name="unconnected-(J10-Pad5)">
+      <node ref="J10" pin="5" pinfunction="5" pintype="bidirectional"/>
+    </net>
+    <net code="78" name="unconnected-(J10-Pad6)">
+      <node ref="J10" pin="6" pinfunction="6" pintype="bidirectional"/>
+    </net>
+    <net code="79" name="unconnected-(U1-NC-Pad1)">
+      <node ref="U1" pin="1" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(U2-NC-Pad1)">
+      <node ref="U2" pin="1" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(U34-IO2-Pad38)">
+      <node ref="U34" pin="38" pinfunction="IO2" pintype="bidirectional"/>
+    </net>
+    <net code="82" name="unconnected-(U34-IO4-Pad4)">
+      <node ref="U34" pin="4" pinfunction="IO4" pintype="bidirectional"/>
+    </net>
+    <net code="83" name="unconnected-(U34-IO5-Pad5)">
+      <node ref="U34" pin="5" pinfunction="IO5" pintype="bidirectional"/>
+    </net>
+    <net code="84" name="unconnected-(U34-IO6-Pad6)">
+      <node ref="U34" pin="6" pinfunction="IO6" pintype="bidirectional"/>
+    </net>
+    <net code="85" name="unconnected-(U34-IO7-Pad7)">
+      <node ref="U34" pin="7" pinfunction="IO7" pintype="bidirectional"/>
+    </net>
+    <net code="86" name="unconnected-(U34-IO8-Pad12)">
+      <node ref="U34" pin="12" pinfunction="IO8" pintype="bidirectional"/>
+    </net>
+    <net code="87" name="unconnected-(U34-IO18-Pad11)">
+      <node ref="U34" pin="11" pinfunction="IO18" pintype="bidirectional"/>
+    </net>
+    <net code="88" name="unconnected-(U34-IO21-Pad23)">
+      <node ref="U34" pin="23" pinfunction="IO21" pintype="bidirectional"/>
+    </net>
+    <net code="89" name="unconnected-(U34-IO35-Pad28)">
+      <node ref="U34" pin="28" pinfunction="IO35" pintype="bidirectional"/>
+    </net>
+    <net code="90" name="unconnected-(U34-IO36-Pad29)">
+      <node ref="U34" pin="29" pinfunction="IO36" pintype="bidirectional"/>
+    </net>
+    <net code="91" name="unconnected-(U34-IO37-Pad30)">
+      <node ref="U34" pin="30" pinfunction="IO37" pintype="bidirectional"/>
+    </net>
+    <net code="92" name="unconnected-(U34-IO38-Pad31)">
+      <node ref="U34" pin="31" pinfunction="IO38" pintype="bidirectional"/>
+    </net>
+    <net code="93" name="unconnected-(U34-IO39-Pad32)">
+      <node ref="U34" pin="32" pinfunction="IO39" pintype="bidirectional"/>
+    </net>
+    <net code="94" name="unconnected-(U34-IO40-Pad33)">
+      <node ref="U34" pin="33" pinfunction="IO40" pintype="bidirectional"/>
+    </net>
+    <net code="95" name="unconnected-(U34-IO41-Pad34)">
+      <node ref="U34" pin="34" pinfunction="IO41" pintype="bidirectional"/>
+    </net>
+    <net code="96" name="unconnected-(U34-IO42-Pad35)">
+      <node ref="U34" pin="35" pinfunction="IO42" pintype="bidirectional"/>
+    </net>
+    <net code="97" name="unconnected-(U34-IO46-Pad16)">
+      <node ref="U34" pin="16" pinfunction="IO46" pintype="bidirectional"/>
+    </net>
+    <net code="98" name="unconnected-(U34-IO47-Pad24)">
+      <node ref="U34" pin="24" pinfunction="IO47" pintype="bidirectional"/>
+    </net>
+    <net code="99" name="unconnected-(U34-IO48-Pad25)">
+      <node ref="U34" pin="25" pinfunction="IO48" pintype="bidirectional"/>
+    </net>
+    <net code="100" name="unconnected-(U34-RXD0-Pad36)">
+      <node ref="U34" pin="36" pinfunction="RXD0" pintype="bidirectional"/>
+    </net>
+    <net code="101" name="unconnected-(U34-TXD0-Pad37)">
+      <node ref="U34" pin="37" pinfunction="TXD0" pintype="bidirectional"/>
+    </net>
+  </nets>
+</export>
