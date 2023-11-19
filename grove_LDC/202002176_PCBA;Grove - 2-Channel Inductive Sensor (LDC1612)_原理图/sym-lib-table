@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "Grove - 2 Channel Inductive Sensor（LDC1612)-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/Grove - 2 Channel Inductive Sensor（LDC1612)-eagle-import.kicad_sym")(options "")(descr ""))
+)
