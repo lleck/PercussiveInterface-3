@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Own_Library")(type "KiCad")(uri "/home/lukas/Masterarbeit/Footprints/Own_Library.pretty")(options "")(descr ""))
+)
