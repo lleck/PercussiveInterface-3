@@ -1,4 +1,4 @@
-796707167645063
+800108324359497
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64918,6 +64918,13 @@ Through hole socket strip THT 1x12 2.54mm single row
 12
 12
 Own_Library
+LED-APA102-2020
+http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf
+LED RGB SPI
+0
+8
+6
+Own_Library
 MountingHole_M2_own
 Mounting Hole 2.2mm, M2, DIN965
 mounting hole 2.2mm m2 din965
@@ -64938,6 +64945,13 @@ TXU0304RUTR
 0
 12
 12
+Own_Library
+RGB_LED-APA102-2020
+http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf
+LED RGB SPI
+0
+8
+6
 Own_Library
 SAMTEC-SLW-105-01-X-S
 translated Allegro footprint
