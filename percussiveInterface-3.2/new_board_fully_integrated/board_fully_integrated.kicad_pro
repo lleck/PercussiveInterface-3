@@ -190,6 +190,10 @@
           "drill": 0.0
         },
         {
+          "diameter": 0.35,
+          "drill": 0.2
+        },
+        {
           "diameter": 0.7,
           "drill": 0.3
         },
@@ -448,6 +452,23 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "netzklasse1",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -455,7 +476,228 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_1"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_2"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_3"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_4"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_5"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_6"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_7"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_8"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_9"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_10"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_11"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_13"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_14"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_15"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_16"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_17"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_18"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_19"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_20"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_21"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_22"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_23"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_24"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_25"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_26"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_27"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS_28"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS1"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS2"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS3"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS4"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS5"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS6"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS7"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS8"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS9"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS10"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS11"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS12"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS13"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS14"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS15"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS16"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS17"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS18"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS19"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS20"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS21"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS22"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS23"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS24"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS25"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS26"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS27"
+      },
+      {
+        "netclass": "netzklasse1",
+        "pattern": "/SS28"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
