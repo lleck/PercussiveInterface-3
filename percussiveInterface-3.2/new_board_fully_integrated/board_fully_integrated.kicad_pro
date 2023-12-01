@@ -705,7 +705,7 @@
       "idf": "",
       "netlist": "./",
       "specctra_dsn": "",
-      "step": "Main_Board_v4.step",
+      "step": "Main_Board_v4_2.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -743,7 +743,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../../../../Dropbox/Thesis_written/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
