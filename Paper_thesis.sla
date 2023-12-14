@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.5.8">
+    <DOCUMENT ANZPAGES="12" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="1" DFONT="DejaVu Sans Book" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" FirstLineOffset="1" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="1" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPPr="ISO Coated v2 300% (basICColor)" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="ISO Coated v2 300% (basICColor)" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="ISO Coated v2 300% (basICColor)" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="de" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="1" SnapToGuides="1" SnapToGrid="0" SnapToElement="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="0" SHOWControl="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWLINK="1" rulerMode="1" showrulers="1" showBleed="0" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.502045814642449" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10.0006299212598" dispY="10.0006299212598" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="2 0 4 1 3" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PDF/X-4" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.6" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-1a" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="1" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
+        <COLOR NAME="Blue" SPACE="RGB" R="0" G="0" B="255"/>
+        <COLOR NAME="Cool Black" SPACE="CMYK" C="60" M="0" Y="0" K="100"/>
+        <COLOR NAME="Cyan" SPACE="CMYK" C="100" M="0" Y="0" K="0"/>
+        <COLOR NAME="Green" SPACE="RGB" R="0" G="255" B="0"/>
+        <COLOR NAME="Magenta" SPACE="CMYK" C="0" M="100" Y="0" K="0"/>
+        <COLOR NAME="Red" SPACE="RGB" R="255" G="0" B="0"/>
+        <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
+        <COLOR NAME="Rich Black" SPACE="CMYK" C="60" M="40" Y="40" K="100"/>
+        <COLOR NAME="Warm Black" SPACE="CMYK" C="0" M="60" Y="29.8039215686275" K="100"/>
+        <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <COLOR NAME="Yellow" SPACE="CMYK" C="0" M="0" Y="100" K="0"/>
+        <HYPHEN/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="DejaVu Sans Book" FONTSIZE="12" FONTFEATURES="" FEATURES="inherit" FCOLOR="Black" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="de"/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100"/>
+        <STYLE NAME="Fließtext" PARENT="Default Paragraph Style" ALIGN="3" DIRECTION="0" LINESPMode="2" OpticalMargins="14" KeepLinesStart="1" KeepLinesEnd="1" KeepTogether="0" FONTSIZE="10"/>
+        <STYLE NAME="Überschrift 2" PARENT="Default Paragraph Style" LINESPMode="2" FONT="DejaVu Sans Bold" FONTFEATURES="-clig" FEATURES="allcaps" FCOLOR="Black" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1"/>
+        <STYLE NAME="Überschrift 3" PARENT="Überschrift 2" FEATURES="" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1"/>
+        <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </TableStyle>
+        <CellStyle NAME="Default Cell Style" DefaultStyle="1" FillColor="None" FillShade="100" LeftPadding="1" RightPadding="1" TopPadding="1" BottomPadding="1">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </CellStyle>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Hintergrund" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="0" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="0" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="3" markLength="20.0012598425197" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="MP190-series" filename="" separationName="All" printerCommand="">
+            <Separation Name="Cyan"/>
+            <Separation Name="Magenta"/>
+            <Separation Name="Gelb"/>
+            <Separation Name="Schwarz"/>
+        </Printer>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 300% (basICColor)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20.0012598425197" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="1" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="1" fitWindow="0" openAfterExport="1" PageLayout="0" openAction="">
+            <Subset Name="DejaVu Sans Bold"/>
+            <Subset Name="DejaVu Sans Book"/>
+            <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <Marks>
+            <Mark label="NoteMark_Endnotes_1" type="4"/>
+            <Mark label="NoteMark_Default_1" type="4"/>
+            <Mark label="NoteMark_Default_2" type="4"/>
+            <Mark label="NoteMark_Endnotes_3" type="4"/>
+            <Mark label="NoteMark_Endnotes_2" type="4"/>
+            <Mark label="NoteMark_Default_3" type="4"/>
+            <Mark label="NoteMark_Default_6" type="4"/>
+            <Mark label="NoteMark_Default_7" type="4"/>
+            <Mark label="NoteMark_Endnotes_5" type="4"/>
+            <Mark label="NoteMark_Endnotes_4" type="4"/>
+            <Mark label="NoteMark_Default_8" type="4"/>
+            <Mark label="NoteMark_Endnotes_4" type="4"/>
+            <Mark label="NoteMark_Default_4" type="4"/>
+            <Mark label="NoteMark_Default_5" type="4"/>
+        </Marks>
+        <NotesStyles>
+            <notesStyle Name="Default" Start="1" Endnotes="0" Type="Type_1_2_3" Range="0" Prefix="" Suffix=")" AutoHeight="1" AutoWidth="1" AutoRemove="1" AutoWeld="1" SuperNote="1" SuperMaster="1" MarksStyle="" NotesStyle=""/>
+            <notesStyle Name="Endnotes" Start="1" Endnotes="1" Type="Type_1_2_3" Range="0" Prefix="[" Suffix="]" AutoHeight="1" AutoWidth="0" AutoRemove="1" AutoWeld="0" SuperNote="1" SuperMaster="1" MarksStyle="" NotesStyle=""/>
+        </NotesStyles>
+        <NotesFrames>
+            <FOOTNOTEFRAME NSname="Default" myID="2006335305" MasterID="2006326393"/>
+            <FOOTNOTEFRAME NSname="Default" myID="2010320313" MasterID="2010338121"/>
+            <FOOTNOTEFRAME NSname="Default" myID="2010435561" MasterID="2010393753"/>
+            <FOOTNOTEFRAME NSname="Default" myID="2020811993" MasterID="2020805001"/>
+            <ENDNOTEFRAME NSname="Endnotes" range="0" myID="2010429433"/>
+        </NotesFrames>
+        <Notes>
+            <Note Master="NoteMark_Endnotes_1" NStyle="Endnotes" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; /&gt;&lt;p &gt;&lt;style FirstIndent=&quot;-15.58974359&quot; LeftMargin=&quot;15.58974359&quot; LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;100&quot; ScaleH=&quot;1011&quot; /&gt; A. R. Tindale, A. Kapur, G. Tzanetakis, P. F. Driessen, and W. A. Schloss. A comparison of sensor strategies for capturing percussive gestures. In NIME, 2005&lt;/span&gt;&lt;/p&gt;&lt;p &gt;&lt;style /&gt;&lt;span /&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Default_1" NStyle="Default" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle parent=&quot;Fließtext&quot; /&gt;&lt;p &gt;&lt;style LineSpacingMode=&quot;1&quot; /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;80&quot; /&gt;https://www.keithmcmillen.com/products/boppad/&lt;/span&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Default_2" NStyle="Default" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle parent=&quot;Fließtext&quot; /&gt;&lt;p &gt;&lt;style LineSpacingMode=&quot;1&quot; /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;80&quot; /&gt;https://korg.com/de/products/en/drums/wavedrum/&lt;/span&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Endnotes_3" NStyle="Endnotes" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; /&gt;&lt;p &gt;&lt;style FirstIndent=&quot;-13.84615385&quot; LeftMargin=&quot;13.84615385&quot; LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; &gt;&lt;tabstop fillChar=&quot;0&quot; pos=&quot;10.69066263&quot; type=&quot;0&quot; /&gt;&lt;/style&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;100&quot; /&gt; A. Tindale, A. Kapur, G. Tzanetakis, and I. Fujinaga. Retrieval of percussion gestures using timbre classification techniques. International Symposium on Music Information Retrieval, 2004&lt;/span&gt;&lt;/p&gt;&lt;p &gt;&lt;style /&gt;&lt;span /&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Endnotes_2" NStyle="Endnotes" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; /&gt;&lt;p &gt;&lt;style FirstIndent=&quot;-14.76923077&quot; LeftMargin=&quot;14.76923077&quot; LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; &gt;&lt;tabstop fillChar=&quot;0&quot; pos=&quot;15.61373955&quot; type=&quot;0&quot; /&gt;&lt;/style&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;100&quot; /&gt; M. Mathews. The radio baton and conductor program, or, pitch, the most important and least expressive part of music. Computer Music Journal 1991&lt;/span&gt;&lt;/p&gt;&lt;p &gt;&lt;style /&gt;&lt;span /&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Default_3" NStyle="Default" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle parent=&quot;Fließtext&quot; /&gt;&lt;p &gt;&lt;style LineSpacingMode=&quot;1&quot; /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;80&quot; /&gt;https://sunhou.se/sensorypercussion&lt;/span&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Default_6" NStyle="Default" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle parent=&quot;Fließtext&quot; /&gt;&lt;p &gt;&lt;style LineSpacingMode=&quot;1&quot; /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;80&quot; /&gt;linnstrument  link&lt;/span&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Default_7" NStyle="Default" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle parent=&quot;Fließtext&quot; /&gt;&lt;p &gt;&lt;style LineSpacingMode=&quot;1&quot; /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;80&quot; /&gt;32r5563embodme link &lt;/span&gt;&lt;/p&gt;&lt;p &gt;&lt;style /&gt;&lt;span /&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Endnotes_5" NStyle="Endnotes" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; /&gt;&lt;p &gt;&lt;style FirstIndent=&quot;-15.69230769&quot; LeftMargin=&quot;15.69230769&quot; LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;100&quot; /&gt; Victor Zappi, Mike Frengel, Andrew   Stewart Allen, Sidney Fels. The Hyper Drumhead: A Musical Instrument For The Audio/Visual Manipulation Of Sound Waves. SIGGRAPH Conference, 2022&lt;/span&gt;&lt;/p&gt;&lt;p &gt;&lt;style Direction=&quot;0&quot; FirstIndent=&quot;-15.69230769&quot; LeftMargin=&quot;15.69230769&quot; LineSpacingMode=&quot;2&quot; MinWordTracking=&quot;0.96&quot; /&gt;&lt;span /&gt;&lt;/p&gt;&lt;p &gt;&lt;style Direction=&quot;0&quot; LineSpacingMode=&quot;2&quot; MinWordTracking=&quot;0.96&quot; /&gt;&lt;span /&gt;&lt;/p&gt;&lt;p &gt;&lt;style LineSpacingMode=&quot;2&quot; /&gt;&lt;span /&gt;&lt;/p&gt;&lt;p &gt;&lt;style LineSpacingMode=&quot;2&quot; /&gt;&lt;span /&gt;&lt;/p&gt;&lt;p &gt;&lt;style LineSpacingMode=&quot;2&quot; /&gt;&lt;span /&gt;&lt;/p&gt;&lt;p &gt;&lt;style /&gt;&lt;span /&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Default_8" NStyle="Default" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle parent=&quot;Fließtext&quot; /&gt;&lt;p &gt;&lt;style LineSpacingMode=&quot;1&quot; parent=&quot;Fließtext&quot; /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;80&quot; /&gt;a comparision of the readings of two adjacent sensors, to determine  a relative position inbetween&lt;/span&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Endnotes_4" NStyle="Endnotes" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; /&gt;&lt;p &gt;&lt;style FirstIndent=&quot;-14.46153846&quot; LeftMargin=&quot;14.46153846&quot; LineSpacingMode=&quot;2&quot; parent=&quot;Default Paragraph Style&quot; &gt;&lt;tabstop fillChar=&quot;0&quot; pos=&quot;13.15220109&quot; type=&quot;0&quot; /&gt;&lt;tabstop fillChar=&quot;0&quot; pos=&quot;13.4598934&quot; type=&quot;0&quot; /&gt;&lt;/style&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; FontSize=&quot;100&quot; /&gt; T. Mäki-Patola, P. Hämäläinen, and A. Kanerva. The augmented djembe drum - sculpting rhythms. In NIME, 2006.&lt;/span&gt;&lt;/p&gt;&lt;p &gt;&lt;style /&gt;&lt;span /&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Default_4" NStyle="Default" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle parent=&quot;Fließtext&quot; /&gt;&lt;p &gt;&lt;style /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; /&gt;monome link&lt;/span&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+            <Note Master="NoteMark_Default_5" NStyle="Default" Text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SCRIBUSTEXT &gt;&lt;defaultstyle parent=&quot;Fließtext&quot; /&gt;&lt;p &gt;&lt;style /&gt;&lt;span &gt;&lt;charstyle Features=&quot;inherit &quot; /&gt;maxmsp link&lt;/span&gt;&lt;/p&gt;&lt;/SCRIBUSTEXT&gt;&#10;"/>
+        </Notes>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Facing Pages" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="0" From="0" To="11" Type="Type_1_2_3" Start="1" Reversed="0" Active="1" FillChar="0" FieldWidth="0"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="0" NAM="Normal links" MNAM="" Size="A4" Orientation="0" LEFT="1" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="1" NAM="Normal rechts" MNAM="" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="2" NAM="Titel" MNAM="" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="70.8661 297.638 524.409 " HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="0" NAM="" MNAM="Titel" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 70.8661 297.638 524.409 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="901.890708661418" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="1" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="1783.78015748032" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="2" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="2665.66960629921" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="3" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="3547.55905511811" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="4" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="4429.44850393701" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="5" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="5311.33795275591" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="6" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="6193.22740157481" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="7" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="7075.1168503937" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="8" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="7957.0062992126" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="9" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="8838.8957480315" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="10" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="9720.7851968504" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="70.8661417322835" BORDERBOTTOM="56.6929133858268" NUM="11" NAM="" MNAM="Normal links" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="283.465 311.811 538.583 " HorizontalGuides="93.5433 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <FRAMEOBJECT InID="2058161506" XPOS="0" YPOS="0" OwnPage="-1" ItemID="1954659705" PTYPE="4" WIDTH="17.1794871794871" HEIGHT="22.8461538461543" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" copath="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" isInline="1" gXpos="0" gYpos="0" gWidth="17.1794871794871" gHeight="22.8461538461543" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FCOLOR="White" CH="1"/>
+                <trail/>
+            </StoryText>
+        </FRAMEOBJECT>
+        <MASTEROBJECT XPOS="156.693543307087" YPOS="90.8674015748032" OwnPage="0" ItemID="2001246793" PTYPE="6" WIDTH="481.889763779528" HEIGHT="22.6771653543307" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" SHADE="83" PLINEART="1" path="M0 0 L481.89 0 L481.89 22.6772 L0 22.6772 L0 0 Z" copath="M0 0 L481.89 0 L481.89 22.6772 L0 22.6772 L0 0 Z" OnMasterPage="Normal links" gXpos="156.693543307087" gYpos="5632580378.41999" gWidth="0" gHeight="0" LAYER="0"/>
+        <MASTEROBJECT XPOS="170.866771653543" YPOS="95.1193700787402" OwnPage="0" ItemID="2001320297" PTYPE="4" WIDTH="453.543307086614" HEIGHT="18.4251968503937" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Titel" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L453.543 0 L453.543 18.4252 L0 18.4252 L0 0 Z" copath="M0 0 L453.543 0 L453.543 18.4252 L0 18.4252 L0 0 Z" OnMasterPage="Normal links" gXpos="170.866771653543" gYpos="5632580382.67196" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESP="14"/>
+                <ITEXT FONTSIZE="10" CH="Membrane Surgery - written submission of the master thesis - Lukas Leck 2023"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </MASTEROBJECT>
+        <MASTEROBJECT XPOS="156.693543307087" YPOS="90.8674015748032" OwnPage="1" ItemID="2001381081" PTYPE="6" WIDTH="481.889763779528" HEIGHT="22.6771653543307" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" SHADE="83" PLINEART="1" path="M0 0 L481.89 0 L481.89 22.6772 L0 22.6772 L0 0 Z" copath="M0 0 L481.89 0 L481.89 22.6772 L0 22.6772 L0 0 Z" OnMasterPage="Normal rechts" gXpos="156.693543307087" gYpos="7820686.49952734" gWidth="0" gHeight="0" LAYER="0"/>
+        <MASTEROBJECT XPOS="170.866771653543" YPOS="95.1193700787402" OwnPage="1" ItemID="2001384297" PTYPE="4" WIDTH="453.543307086614" HEIGHT="18.4251968503937" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Kopie von Titel" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L453.543 0 L453.543 18.4252 L0 18.4252 L0 0 Z" copath="M0 0 L453.543 0 L453.543 18.4252 L0 18.4252 L0 0 Z" OnMasterPage="Normal rechts" gXpos="170.866771653543" gYpos="7820690.75149585" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESP="14"/>
+                <ITEXT FONTSIZE="10" CH="Membrane Surgery - written submission of the master thesis - Lukas Leck 2023"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </MASTEROBJECT>
+        <MASTEROBJECT XPOS="383.465196850394" YPOS="805.198110236221" OwnPage="1" ItemID="2001333785" PTYPE="4" WIDTH="28.3464330708661" HEIGHT="34.021978021978" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L28.3464 0 L28.3464 34.022 L0 34.022 L0 0 Z" copath="M0 0 L28.3464 0 L28.3464 34.022 L0 34.022 L0 0 Z" OnMasterPage="Normal rechts" gXpos="383.465196850394" gYpos="247734.243779527" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1"/>
+                <para/>
+                <var name="pgno"/>
+                <trail/>
+            </StoryText>
+        </MASTEROBJECT>
+        <MASTEROBJECT XPOS="383.465196850394" YPOS="805.198110236221" OwnPage="0" ItemID="2001326025" PTYPE="4" WIDTH="28.3464330708661" HEIGHT="34.021978021978" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L28.3464 0 L28.3464 34.022 L0 34.022 L0 0 Z" copath="M0 0 L28.3464 0 L28.3464 34.022 L0 34.022 L0 0 Z" OnMasterPage="Normal links" gXpos="383.465196850394" gYpos="5632547580.95164" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1"/>
+                <para/>
+                <var name="pgno"/>
+                <trail/>
+            </StoryText>
+        </MASTEROBJECT>
+        <MASTEROBJECT XPOS="156.693543307086" YPOS="307.78021978022" OwnPage="2" ItemID="2001281897" PTYPE="6" WIDTH="481.889763779528" HEIGHT="83.0769230769231" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" SHADE="83" PLINEART="1" path="M0 0 L481.89 0 L481.89 83.0769 L0 83.0769 L0 0 Z" copath="M0 0 L481.89 0 L481.89 83.077 L0 83.077 L0 0 Z" OnMasterPage="Titel" gXpos="156.693543307086" gYpos="7062478.48636135" gWidth="0" gHeight="0" LAYER="0"/>
+        <MASTEROBJECT XPOS="170.866771653543" YPOS="457.846153846154" OwnPage="2" ItemID="2001274761" PTYPE="4" WIDTH="453.543307086614" HEIGHT="80.1758241758242" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L453.543 0 L453.543 80.1758 L0 80.1758 L0 0 Z" copath="M0 0 L453.543 0 L453.543 80.1758 L0 80.1758 L0 0 Z" OnMasterPage="Titel" gXpos="170.866771653543" gYpos="457.846153846154" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </MASTEROBJECT>
+        <PAGEOBJECT XPOS="383.46562992126" YPOS="4576.70047244095" OwnPage="5" ItemID="2010512617" PTYPE="2" WIDTH="336.464590551181" HEIGHT="291.607219866743" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.42" LOCALSCY="0.42" LOCALX="-22.9741282339708" LOCALY="-31.3768278965129" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="explosion_sketch.png" IRENDER="0" EMBEDDED="0" path="M0 0 L336.465 0 L336.465 291.607 L0 291.607 L0 0 Z" copath="M0 0 L336.465 0 L336.465 291.607 L0 291.607 L0 0 Z" gXpos="383.46562992126" gYpos="4576.70047244095" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="100.00062992126" YPOS="20.0012598425197" OwnPage="0" ItemID="2001416169" PTYPE="2" WIDTH="595.275590551181" HEIGHT="841.889763779528" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="-7.81353052022758" LOCALY="-16.3877784507713" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="HFK_Logo2010__Standard.eps.png" IRENDER="0" EMBEDDED="0" path="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" copath="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" gXpos="100.00062992126" gYpos="20.0012598425197" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="176.86672992126" YPOS="386.051282051282" OwnPage="0" ItemID="2001597833" PTYPE="4" WIDTH="447.5429" HEIGHT="419.146828184939" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L447.543 0 L447.543 419.147 L0 419.147 L0 0 Z" copath="M0 0 L447.543 0 L447.543 419.147 L0 419.147 L0 0 Z" gXpos="176.86672992126" gYpos="386.051282051282" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <ITEXT FONTSIZE="10" CH="Author: Lukas Leck"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <ITEXT CH="A Paper submitted to the Department of Digital Media"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <ITEXT CH="as Part of the Master Thesis"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <ITEXT CH="at the University of the Arts Bremen "/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <ITEXT CH="December 2023"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <ITEXT CH="Supervised by Prof. Dennis P. Paul and Prof. Ralf Becker"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <ITEXT CH="Submitted by Lukas Leck  (Student ID: 31335)"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+                <ITEXT CH="04.12.2023"/>
+                <para PARENT="Fließtext" ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="205.538461538462" OwnPage="0" ItemID="2001858761" PTYPE="6" WIDTH="651.647721727092" HEIGHT="150.472844740562" FRTYPE="0" CLIPEDIT="1" GRTYP="14" PWIDTH="1" PCOLOR="Green" PLINEART="1" path="M0 0 L651.648 0 L651.648 150.473 L0 150.473 L0 0 Z" copath="M0 0 L651.648 0 L651.648 150.473 L0 150.473 L0 0 Z" gXpos="156.693543307087" gYpos="205.538461538462" gWidth="0" gHeight="0" HatchMode="0" HatchDist="2.00125984251969" HatchAngle="331" HatchSolidB="0" HatchBackG="None" HatchForeC="Black" LAYER="0"/>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="8063.07692307692" OwnPage="9" ItemID="2001487801" PTYPE="4" WIDTH="226.771677165354" HEIGHT="593.538461538462" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 593.538 L0 593.538 L0 0 Z" copath="M0 0 L226.772 0 L226.772 593.538 L0 593.538 L0 0 Z" gXpos="411.81162992126" gYpos="8063.07692307692" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="-1" BACKITEM="2001827177"/>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="4936.85007874016" OwnPage="5" ItemID="2001579193" PTYPE="4" WIDTH="226.771677165354" HEIGHT="277.795275590547" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 277.795 L0 277.795 L0 0 Z" copath="M0 0 L226.772 0 L226.772 277.795 L0 277.795 L0 0 Z" gXpos="411.81162992126" gYpos="4936.85007874016" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="2020477577" BACKITEM="2010406825"/>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="8548.30769230769" OwnPage="9" ItemID="2001827177" PTYPE="4" WIDTH="226.772086614173" HEIGHT="193.895457298613" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 193.895 L0 193.895 L0 0 Z" copath="M0 0 L226.772 0 L226.772 193.895 L0 193.895 L0 0 Z" gXpos="156.693543307087" gYpos="8548.30769230769" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="2001487801" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Fließtext"/>
+                <ITEXT CH="The design of the PCB justifies a few separate lines in order to explain its unusual appearance (Figure 4). The spinning disk mentioned repeatedly consists of this very PCB. This decision was made to reduce the overall mass of the moving parts to eliminate vibrations due to unbalance. The same reason explains the beams of 2mm plated holes spreading out from the center."/>
+                <tab/>
+                <ITEXT CH="These holes can be populated with small copper rivets in the necessary process of balancing the disk. The other components on the board were placed with balance in mind and preferably close to the center,   yet it is impossible to evenly distribute all weight, while designing a PCB like this. The long array of components cutting the circle in half, are the 52 hall effect sensors, with a small  interruption in the middle by the optical sensor. The vertical array in Figure 4 are the 53 RGB LEDs above the ESP32 microcontroller, which is framed by the "/>
+                <tab/>
+                <ITEXT CH="two multiplexers. The circuit board is  designed with industrial top layer assembly  in mind, in order to save cost and time. As a result only three components need to be soldered by hand on the bottom side. The stackup of the board is four layers, with two signal layers enclosing a ground- and a powerplane. The full schematic of this board is attached to this document.  "/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="3641.10235511811" OwnPage="4" ItemID="2001531881" PTYPE="4" WIDTH="226.771677165354" HEIGHT="601.774278215221" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 601.774 L0 601.774 L0 0 Z" copath="M0 0 L226.772 0 L226.772 601.774 L0 601.774 L0 0 Z" gXpos="411.81162992126" gYpos="3458.28396955957" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="-1" BACKITEM="2010393753"/>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="5486.76923076923" OwnPage="6" ItemID="2001522937" PTYPE="4" WIDTH="226.771677165354" HEIGHT="609.765572380379" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 609.766 L0 609.766 L0 0 Z" copath="M0 0 L226.772 0 L226.772 609.766 L0 609.766 L0 0 Z" gXpos="411.81162992126" gYpos="5486.76923076923" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="2010461673" BACKITEM="2020477577"/>
+        <PAGEOBJECT XPOS="157.693543307087" YPOS="246.268976377954" OwnPage="0" ItemID="2001814121" PTYPE="6" WIDTH="466.716086614173" HEIGHT="30.2438441348669" FRTYPE="0" CLIPEDIT="0" GRTYP="14" PWIDTH="1" PCOLOR="Green" PLINEART="1" path="M0 0 L466.716 0 L466.716 30.2438 L0 30.2438 L0 0 Z" copath="M0 0 L466.716 0 L466.716 30.2438 L0 30.2438 L0 0 Z" gXpos="157.693543307087" gYpos="246.268976377954" gWidth="0" gHeight="0" HatchMode="0" HatchDist="2.00125984251969" HatchAngle="330" HatchSolidB="0" HatchBackG="None" HatchForeC="Black" LAYER="0"/>
+        <PAGEOBJECT XPOS="84.50062992126" YPOS="192.268976377953" OwnPage="0" ItemID="2001907449" PTYPE="6" WIDTH="612.775590551181" HEIGHT="83.6284018343862" FRTYPE="0" CLIPEDIT="1" GRTYP="14" PWIDTH="1" PCOLOR="Green" PLINEART="1" path="M0 0 L612.776 0 L612.776 83.6284 L0 83.6284 L0 0 Z" copath="M0 0 L612.776 0 L612.776 83.6284 L0 83.6284 L0 0 Z" gXpos="84.50062992126" gYpos="192.268976377953" gWidth="0" gHeight="0" HatchMode="0" HatchDist="2.00125984251969" HatchAngle="296" HatchSolidB="0" HatchBackG="None" HatchForeC="Black" LAYER="0"/>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="7168.6601503937" OwnPage="8" ItemID="2001908505" PTYPE="4" WIDTH="226.771677165354" HEIGHT="691.653550393701" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 691.654 L0 691.654 L0 0 Z" copath="M0 0 L226.772 0 L226.772 691.654 L0 691.654 L0 0 Z" gXpos="411.81162992126" gYpos="7148.38820784806" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="2020805001"/>
+        <PAGEOBJECT XPOS="220.189606299213" YPOS="1145.41951717574" OwnPage="1" ItemID="2001912617" PTYPE="4" WIDTH="226.771653543307" HEIGHT="27.4835164835165" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 27.4835 L0 27.4835 L0 0 Z" copath="M0 0 L226.772 0 L226.772 27.4835 L0 27.4835 L0 0 Z" gXpos="220.189606299213" gYpos="263.53006835684" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="Abstract"/>
+                <trail PARENT="Überschrift 2"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="219.693543307087" YPOS="1175.3883499178" OwnPage="1" ItemID="2004155273" PTYPE="4" WIDTH="360.780815667272" HEIGHT="511.69920913732" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Text1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L360.781 0 L360.781 511.699 L0 511.699 L0 0 Z" copath="M0 0 L360.781 0 L360.781 511.699 L0 511.699 L0 0 Z" gXpos="219.693543307087" gYpos="293.4989010989" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Fließtext"/>
+                <ITEXT CH="This paper describes a musical interface built to control percussive synthesis algorithms in real time. This interface records data about the position and intensity of a strike on a mesh fiber drum head,  while projecting a full color display onto that very head. The display is created by the means of a persistence of vision (POV) setup, whereas the data for synthesis is captured by an array of magnetic field sensors and a single near field optical sensor. This interface could be used as a controller to perform with many different synthesis algorithms or  dedicated synthesizers. The integrated display allows for the interface to take all kinds of shapes in order to assist the performer in controlling  the targeted medium. It could provide visual feedback representing certain synthesis parameters, split up the drum head into smaller zones, plot text or even draw animations. The target is, to offer a platform for the development of dedicated applications focused on the percussive performance."/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693976377953" YPOS="2064.03296703297" OwnPage="2" ItemID="2004140169" PTYPE="4" WIDTH="226.771653543307" HEIGHT="504.944040841047" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Kopie von Text1 (2)" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 504.944 L0 504.944 L0 0 Z" copath="M0 0 L226.772 0 L226.772 504.944 L0 504.944 L0 0 Z" gXpos="156.693976377953" gYpos="1182.14351821407" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="2004218649" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Fließtext"/>
+                <ITEXT FONTSIZE="10" CH="The relentless advance of display based interfaces into every aspect of our life, has not stopped at the musical domain. In the recent century a plethora of music software for touch-screen devices has been released. The simultaneous increase in computing power allows for complex sound synthesis, sophisticated enough to render the iPad a legit musical instrument to perform on stage. Hence the popularity of those platforms, the average consumer touch-screen device lacks a lot of features of a dedicated musical instrument or interface built for live performance and stage environment. This is particularly true when it comes to percussive interfaces, as the  nature of the physical interaction of the drummer with the drum limits the design possibilities of those interfaces compared to those of e.g. a keyboard player. A glass covered touch screen just can't take the beating."/>
+                <para PARENT="Fließtext"/>
+                <ITEXT FONTSIZE="10" CH="This paper describes the design of a digital percussive instrument that is capable of drawing a graphical interface onto a circular drum skin, while concurrently collecting and processing various data points representing position and force of impacts measured by various sensors below the skin. "/>
+                <tab FONTSIZE="10"/>
+                <tab FONTSIZE="10"/>
+                <ITEXT FONTSIZE="10" CH="The resulting prototype represents a percussive interface for sophisticated drum synthesis with the flexibility of a touchscreen device while providing the morphology of a drum as expected by the percussionist."/>
+                <para PARENT="Fließtext"/>
+                <ITEXT FONTSIZE="10" CH="To achieve this, a mesh fiber drum head as used in electronic drum kits is augmented by a rotating disk beneath, which holds an array of multi color RGB LEDs as well as an array of magnetic hall effect sensors. On the display side the led array provides for the technical prerequisites of a persistence of vision (POV) display known to many by gadgets like led desk-fans which employ the technique to draw patterns or messages with their spinning rotors (Figure 1). "/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <ITEXT FONTSIZE="10" CH="On the sensor side the same principle is somewhat turned around by adding an array of hall effect sensors, which are used to record data about magnetic fields above the drum head. All incoming and outgoing data is  processed by an ESP32 micro controller (µC) sitting on the same PCB as the LEDs and sensors. The disk is rotated by a dc motor and the power is transmitted to the rotating body through a conductive coil setup as known to many by wireless charging modules for smartphones. To complete the design the tips of the drumming sticks need to be equipped with small permanent magnets."/>
+                <para PARENT="Fließtext"/>
+                <ITEXT FONTSIZE="10" CH="The current design offers a rugged drum with natural physical response that can take a beating and is capable of drawing a full color interface onto the skin while representing many relevant interactions with high resolution data points."/>
+                <para/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="1877.32345748032" OwnPage="2" ItemID="2004218649" PTYPE="4" WIDTH="226.771677165354" HEIGHT="691.653550393701" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 691.654 L0 691.654 L0 0 Z" copath="M0 0 L226.772 0 L226.772 691.654 L0 691.654 L0 0 Z" gXpos="411.81162992126" gYpos="1877.32345748032" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="-1" BACKITEM="2004140169"/>
+        <PAGEOBJECT XPOS="156.693976377953" YPOS="2024.14361166393" OwnPage="2" ItemID="2004211737" PTYPE="4" WIDTH="226.771653543307" HEIGHT="27.4835164835165" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 27.4835 L0 27.4835 L0 0 Z" copath="M0 0 L226.772 0 L226.772 27.4835 L0 27.4835 L0 0 Z" gXpos="156.693976377953" gYpos="260.364714026131" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="1. Introduction"/>
+                <trail PARENT="Überschrift 2"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="3415.86645669292" OwnPage="3" ItemID="2006335305" PTYPE="4" WIDTH="226.772086614173" HEIGHT="23" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="1" SHADE2="1" PLINEART="1" isWeldItem="1" WeldSource="2006335305" ANNAME="Footnote frame Default (3)" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCKR="1" path="M0 0 L226.772 0 L226.772 23 L0 23 L0 0 Z" copath="M0 0 L226.772 0 L226.772 23 L0 23 L0 0 Z" gXpos="156.693543307087" gYpos="2966.9050228795" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="-1" BACKITEM="-1" isNoteFrame="1">
+            <WeldEntry Target="2006326393" WX="0" WY="0"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="2897.9050228795" OwnPage="3" ItemID="2006326393" PTYPE="4" WIDTH="226.772086614173" HEIGHT="514.578493604017" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Kopie von Text1 (3)" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 514.578 L0 514.578 L0 0 Z" copath="M0 0 L226.772 0 L226.772 514.578 L0 514.578 L0 0 Z" gXpos="180.646509907415" gYpos="1907.34132041187" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="2010338121" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Fließtext"/>
+                <ITEXT FONTSIZE="10" CH="A broad overview of the strategies used to sample useful data in percussive interfaces is provided by Tindale et al."/>
+                <ITEXT CH=" "/>
+                <MARK label="NoteMark_Endnotes_1" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=". The large majority of electronic percussive instru-ments and controllers on the market make use of piezo transducers which translate impacts into voltage and can even be used to determine the position of strokes when  put in relation to another. This can be seen today in many electronic drum pads and kits of various manufacturers. Another common method is the use of force sensing resistors (FSR) made of a material that varies in electrical resistance relative to the force applied. The cross-talk between adjacent  sensors is decreased massively compared to piezo elements. These can also be found in various percussive interfaces on the market, with a prominent example being the Bop Pad"/>
+                <MARK label="NoteMark_Default_1" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=". Yet another technique to obtain useful data for percussive synthesis is the use of microphones. The  Wavedrum"/>
+                <MARK label="NoteMark_Default_2" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=" is a very successful implementation combining original sound with synthesis and sound-processing based on the input of three contact mics. "/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <ITEXT CH="One can already see different attempts to make use of position data in the percussive interfaces described, but there are methods  focusing more on that topic. An early example being the radio baton"/>
+                <MARK label="NoteMark_Endnotes_2" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=" developed by Max Mathews at the infamous Bell Labs in the 1970s. It makes use of two radio emitting batons that are used on a rectangular drumming-surface with radio antennas. A concept birthed as a three dimensional computer mouse further developed by Matthews to easily perform sheet music with an individual touch. Here one can already see a potential percussive interface generating high resolution position data in three dimensions. From that point on the increase in computing power has opened up a lot of possibilities. Sophisticated realtime input data analysis is performed by machine learning algorithms in an approach by Tindale et al. "/>
+                <MARK label="NoteMark_Endnotes_3" type="4" FEATURES="inherit superscript"/>
+                <ITEXT FEATURES="inherit superscript" CH=" "/>
+                <ITEXT CH="paving the way for products like the Evans Hybrid Sensory Percussion"/>
+                <MARK label="NoteMark_Default_3" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=". Another method worth mentioning is the use of computer vision."/>
+                <tab/>
+                <tab/>
+                <ITEXT CH="T. Mäki-Patola et al. "/>
+                <MARK label="NoteMark_Endnotes_4" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=" used a webcam mounted underneath the skin of a djembe drum to obtain a 3d image of the hands above the skin by analyzing the shadow displacement. Proper lighting is an important aspect in this setup, as one can guess."/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <ITEXT CH="The touchscreen is the number one interface for human machine interactions    since the manufacturers of smartphones have conquered the markets of all developing economies. People quickly adopted their behavior to the new and fascinating coplanarity of input and output. Interface designers put great effort into nurturing the users memory for the new and competing gestures. While many young folks will intuitively develop the skills to interact with screens on their very surface, other folks are having a hard time keeping up with speed. A feeling of nostalgia is surrounding dedicated single purpose interfaces, equipped with knobs, buttons and tiny segmented displays. A feeling that has paid in its contribution for a boom of electronic music devices. The market is flooded with tiny little synth boxes, compact  drum machines, samplers and effect units often times emphasizing the  analog nature of their sound synthesis. In other examples they are based on building a dedicated interface around a microcomputer executing a single piece of musical software. If there is something to learn from these observations then it's potentially that there are certain shortcomings of the ubiquitous touch-screens especially when it comes to the creative musical process. At the same time  nostalgia will pass with each gene-ration and the benefits of on-screen interactions are simultaneously developed by musicians and researchers in the field. Thus there are a few examples of (potentially) percussive on-screen interfaces to discuss here. "/>
+                <para/>
+                <ITEXT CH="A certain range of midi controllers can be summarized under the term 'grid-controllers' and one of the first appearances is the monome"/>
+                <MARK label="NoteMark_Default_4" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=". The smallest version, the monome-64 is little more than an eight by eight momentary button matrix with"/>
+                <tab/>
+                <ITEXT CH="  a back-light under each of its translucent silicone pads. It was originally developed to control the visual programming environment MaxMSP"/>
+                <MARK label="NoteMark_Default_5" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=". The possibility of adjusting the interface with different illuminations makes it a versatile and effective tool,  yet far from offering any percussive qualities. The field  of inventions and products building on the same concept reach into a area that is slightly more relevant for percussive use, by replacing the buttons with sensors such as FSRs. The Linnstrument 128"/>
+                <MARK label="NoteMark_Default_6" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=" by Roger Linn might be an example worth mentioning here. A concept transcending further from the limitations of a grid is the Erae Touch"/>
+                <MARK label="NoteMark_Default_7" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=" by the french company embodme. "/>
+                <tab/>
+                <tab/>
+                <ITEXT CH="By scaling up the grid resolution of both FSRs and multi color LEDs, their method gets much closer to an actual color display, capable of drawing many different interfaces. Finally a project based on"/>
+                <tab/>
+                <ITEXT CH=" a traditional glass covered touchscreen is worth mentioning here, as the sound synthesis performed in this device is very closely attached to the interactions on that screen. Victor Zappi et al."/>
+                <MARK label="NoteMark_Endnotes_5" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=" made a giant touchscreen interface for their physical modeling synthesis algorithm when developing &quot;The Hyper Drum Head&quot;. The performer draws free-form shapes onto the screen, thereby creating a virtual physical space in which the sound-waves, excited by strokes on the screen, resonate. This way a magnitude of possible sounds can be created very creatively. While this example lacks the possibility to beat the interface with a stick, it clearly showcases the potential that flexible display interfaces can offer the developer and the performer."/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693976377953" YPOS="2820.14361166393" OwnPage="3" ItemID="2004120329" PTYPE="4" WIDTH="226.771653543307" HEIGHT="27.4835164835165" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 27.4835 L0 27.4835 L0 0 Z" copath="M0 0 L226.772 0 L226.772 27.4835 L0 27.4835 L0 0 Z" gXpos="156.693976377953" gYpos="1056.36471402613" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="2. Related Work"/>
+                <trail PARENT="Überschrift 2"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693976377953" YPOS="2868.58299212599" OwnPage="3" ItemID="2008059465" PTYPE="4" WIDTH="226.771653543307" HEIGHT="33.1884364454381" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" copath="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" gXpos="156.693976377953" gYpos="1104.80409448819" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="2.1 percussive interfaces "/>
+                <trail PARENT="Überschrift 3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693976377953" YPOS="3297.58299212599" OwnPage="3" ItemID="2006459241" PTYPE="4" WIDTH="226.771653543307" HEIGHT="33.1884364454381" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" copath="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" gXpos="156.693976377953" gYpos="1533.80409448819" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="2.2 position data"/>
+                <trail PARENT="Überschrift 3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="3416.65494505495" OwnPage="3" ItemID="2010320313" PTYPE="4" WIDTH="226.771677165354" HEIGHT="11" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" isWeldItem="1" WeldSource="2010320313" ANNAME="Footnote frame Default (5)" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCKR="1" path="M0 0 L226.772 0 L226.772 11 L0 11 L0 0 Z" copath="M0 0 L226.772 0 L226.772 11 L0 11 L0 0 Z" gXpos="411.81162992126" gYpos="2737.21290629921" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="-1" BACKITEM="-1" isNoteFrame="1">
+            <WeldEntry Target="2010338121" WX="0" WY="0"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="2765.7168503937" OwnPage="3" ItemID="2010338121" PTYPE="4" WIDTH="226.771677165354" HEIGHT="642.39303971619" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 642.393 L0 642.393 L0 0 Z" copath="M0 0 L226.772 0 L226.772 642.393 L0 642.393 L0 0 Z" gXpos="411.81162992126" gYpos="2787.7168503937" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="2010393753" BACKITEM="2006326393"/>
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="3171.58299212599" OwnPage="3" ItemID="2010323801" PTYPE="4" WIDTH="226.771653543307" HEIGHT="33.1884364454381" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" copath="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" gXpos="411.811653543307" gYpos="1407.80409448819" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="2.3 display interfaces"/>
+                <trail PARENT="Überschrift 3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.811220472441" YPOS="4295.75590551181" OwnPage="-1" ItemID="2010435561" PTYPE="4" WIDTH="226.772086614173" HEIGHT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" isWeldItem="1" WeldSource="2010435561" ANNAME="Footnote frame Default" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="2" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCKR="1" path="M0 0 L226.772 0 L226.772 0 L0 0 L0 0 Z" copath="M0 0 L226.772 0 L226.772 0 L0 0 L0 0 Z" gXpos="411.811220472441" gYpos="3720.65041100631" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="2020888617" BACKITEM="-1" isNoteFrame="1">
+            <WeldEntry Target="2010393753" WX="0" WY="0"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="3653.03774780941" OwnPage="4" ItemID="2010393753" PTYPE="4" WIDTH="226.772086614173" HEIGHT="679.718157702401" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 679.718 L0 679.718 L0 0 Z" copath="M0 0 L226.772 0 L226.772 679.718 L0 679.718 L0 0 Z" gXpos="-98.4241338582673" gYpos="3579.96316097892" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="2001531881" BACKITEM="2010338121"/>
+        <PAGEOBJECT XPOS="156.693952755906" YPOS="9937.54078740158" OwnPage="11" ItemID="2010429433" PTYPE="4" WIDTH="226.771677165354" HEIGHT="504" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="1" SHADE2="1" PLINEART="1" ANNAME="Endnote frame Endnotes (2)" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 504 L0 504 L0 0 Z" copath="M0 0 L226.772 0 L226.772 504 L0 504 L0 0 Z" gXpos="666.932582677167" gYpos="2113.10929133857" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="-1" BACKITEM="-1" isNoteFrame="1"/>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="4522.99180393701" OwnPage="5" ItemID="2010420393" PTYPE="4" WIDTH="226.772086614173" HEIGHT="55.0983334775544" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 55.0983 L0 55.0983 L0 0 Z" copath="M0 0 L226.772 0 L226.772 55.0983 L0 55.0983 L0 0 Z" gXpos="156.693543307087" gYpos="995.43400866141" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="3. METHOD"/>
+                <ITEXT Unicode="25" COBJ="2058161506"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="4643.69230769231" OwnPage="5" ItemID="2010406825" PTYPE="4" WIDTH="226.772086614173" HEIGHT="570.953046638407" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 570.953 L0 570.953 L0 0 Z" copath="M0 0 L226.772 0 L226.772 570.953 L0 570.953 L0 0 Z" gXpos="156.693543307087" gYpos="4643.69230769231" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="2001579193" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="An array of 52 TMAG5170 magnetic smart sensors is rotated on a spinning disk (Figure 2, Part 1) below a mesh fiber drum head, to track the position of magnetic fields above. On the same rotating disk sits an array of 53 apa102-2020 RGB LEDs, to perform the task of projecting an interface onto the translucent drum head. The very middle of the PCB disk holds a QRE1113 analog reflective proximity sensor, used to sample the vibration of the membrane. This sensor is doubled on the back of the PCB with a radial offset. It passes a small reflective area every revolution and keeps track of the rotational speed. Data analysis and calculation of output image frames is performed by an ESP32 micro-controller (µC) sitting on that same disk. The disk is mounted on top of a 12mm hollow shaft (Figure 2, Part 3) with a 3d printed adapter (Figure 2, Part 2). The shaft is supported by two ufl203 bearings (Figure 2, Part 6) and driven by a 12V dc motor (Figure 2, Part 7) connected by the means of a GT2 timing belt. In order to drive the disk at high speeds, a transmission ratio of 1:3 is realized through the use of a 30 teeth pulley on the 12mm shaft (Figure 2, Part 5) and a 90 teeth pulley on the motor shaft (Figure 2, Part 4). Power is transmitted wireless to the rotating parts by the means of a conductive coil setup as used to charge smartphones without a cable. The power cables are passing the core of the hollow shaft. The receiving coil with its circuitry  is attached at the lower end of the 12mm shaft through a 3d printed part (Figure 2, Part 8). It is facing the static transmitting coil placed below with a little air gap in between. "/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <ITEXT CH="Diving into the technical details of this method can partly be achieved by describing the path of design decisions and preceding experiments during the development. Searching for a way to display an interface onto a drum head there are several options coming to mind. A limitation being the possibility of the membrane to  vibrate, in order to achieve a natural behavior and respond as expected by the drummer. Thus the displaying devices needs to shine the interface onto that membrane without touching it. This is where projection comes to mind as the image can be mapped to the shape of a drum easily, although this comes with the cost of a projector that either fits into the drum or a setup that requires several parts to be setup and calibrated each time. Either way one shall not get into the way of the light beams with your hands, sticks or sensoric electronics. A different approach would be a form of circular LCD screen that fits under the drum head leaving a gap between the membrane and the display. The lack of available circular displays bigger the size of a smart watch made for an easy decision. Which leads us to the concept of POV displays. This concept further illuminated in the next chapter, gets along with a single array of rotating LEDs to produce a circular image leaving enough space on the rotational body for further electronics such as sensors to accumulate data of the overlaying surface and space above. While growing fond of the idea of a spinning display, this imposed new problems on the overall design. "/>
+                <para PARENT="Fließtext"/>
+                <ITEXT CH="First of all, a decision had to be made, which components of the design should be spinning around and which parts can remain static. Most of all the question, how to interconnect these parts. In order to stop the pondering about, a decision has been made to find a way of fitting all electronic parts onto the spinning body. This is leaving only two connections (power and ground) to find their way onto the spindle. A problem of a very different kind comes with the indifference of humans visual and auditory perception. Where an array of LEDs can make for a perfect illusion of a fluid image when switched and spinned at rather modest frequencies, the human ear is capable of perceiving  latencies of a few milliseconds, with musicians ears being unsettlingly faster than the average. This means the sensoric electronics need to perform their task much faster than the LEDs in order to provide data for sound synthesis at an acceptable rate. This has obviously influenced the last major part of the design decisions in this project being the choice of electronic components."/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <ITEXT CH="As discomforting it may be and has been to the author, one is not getting away without some numbers and cold blooded math at this point. In order to get an idea, if the design meets the real world needs, there are several numbers one should gather to perform some calculations. These can be justified assumptions, as for example the playing speed of the percussionist performing  the  instrument. Or they can be standards that have established over the course of history, like the upper limit of 10ms latency in realtime sound synthesis. Ignoring such a limit would plainly render any musical controller useless, even for the amateur performer with non-skilled ears. "/>
+                <para PARENT="Fließtext"/>
+                <ITEXT CH="Taking the latency limit as a starting point, it is now important to walk along our signal path's and determine, which components pay into the time account. First we have our LEDs as the output path. There are many different RGB LEDs on the market. A large group of analog ones, requiring digital logic to switch them, which takes a lot of controlling outputs from the µC or output multiplexing which in return asks for more components and available space on the printed circuit board (PCB) . A second group formed by digital ones controlled through a protocol like I²C or SPI. This allows a large number of them to be connected to the µC by a few wires. To cut the story short the RGB LED aimed for in this project is the apa102-2020, mainly because it comes in a 2x2 mm package, allowing for denser pixels compared to the ubiquitous 5x5 mm package. It features a standard SPI interface and a refresh rate of 20kHz translating to 0.05ms per refresh. That is plenty "/>
+                <tab/>
+                <tab/>
+                <ITEXT CH="enough to perform some visual magick. "/>
+                <tab/>
+                <tab/>
+                <ITEXT CH="Those numbers are kept in mind nonethe-less. Facing the input side of the project, one is confronted with the sheer infinity of different sensors available. Before settling on a certain type of sensor it seemed wise to decide on some of its specifications first. That way one hopefully ends up with a greater choice of components. To gather these specs we are again assuming a target latency below 10ms. But before diving into the datasheets one has to realize that the very first limiting factor here, is the speed of rotation. While many digital sensors offer update rates of several thousand Hertz , it is the  rotational frequency that determines how often a certain sensor is passing point x on the surface. Soon one comes to the realization, that for &quot;musical&quot; update rates, velocities of hundreds of thousands rotations per minute are necessary (e.g. 5ms(p) ≙ 5kHz ≙ 300.000 rpm). Time to look further into the data one actually needs to perform the synthesis of a percussive sound and how they relate to our timing problems. "/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <ITEXT CH="A percussive sound (Figure 3) consists of the onset marking the very beginning of the sound, a  tone or timbre consisting of certain frequencies, their relative level to another and their change over time until no more sound is present. Sounds described as percussive share a feature that is called a short attack. The overall level of the sound takes very short time to reach perceptible loudness. They are often times decaying towards silence at slower speeds from that point on, with slower decaying sounds offering more perceptible differences in tone and timbre. Looking at the data to control these parameters one can now divide them into those relevant for the timing, namely the impact on the drum head, its exact time, intensity and the duration of decay and those relevant to the timbre of the sound, namely the exact position of the impact and maybe a suggestion about the mass or size of the impacting  object."/>
+                <para PARENT="Fließtext"/>
+                <ITEXT CH="When the exact onset time of the impact is much more critical to latency, while less so is the data influencing tone and timbre, one can potentially devide these tasks in the design of a percussive interface. The critical impact detection shall however be solved before any other design decisions are made. In this method this was achieved by placing a QRE1113 infrared reflective sensor in the very middle of the PCB so that it is targeted towards the center of the drum head. The   sampled data is representing the intensity of reflection, which itself is relative to the distance of the drum head. Sampling this data is achieved by the ESP32 µC and is performed with absolute priority at high enough samplerates to satisfy our latency demands. Impact-onset and duration of decay as well as the frequency of vibration are now represented. With this out of the way, one can now think about the other data relevant to this project. What kind of sensor is able to detect the presence of an object (and ideally its distance) at high enough rates, to offer useful data. Bearing in mind it is being spinned around performing the task. An optical sensor has fitted the needs earlier, though now the membrane is in its way rendering all light beam reliant methods useless. Opting for Texas Instruments TMAG5170 3d Hall effect sensor instead was done out of various reasons. Firstly, great amounts are available in stock at the time building this project. Secondly, it is priced reasonably enough to double the amount on the PCB, resulting in two opposite arrays, subsequently doubling the samplerate at point x on the surface. Finally because it is a smart sensor package that offers complete signal conditioning, integrated analog to digital conversion (ADC) and the fast and stable SPI interface mentioned earlier. This interface relies on a clock signal, a data input path and a data output path shared among all devices, leaving only one individual connection - the chip select signal (CS) - which selects the slave device (TMAG5170) talking with the master (ESP32 µC). The necessary infrastructure is fulfilled with only two more components (ADG731 32-channel multi-plexers) distributing these CS signals from two output pins of the µC to the 52 slave devices. The TMAG5170 sensors being sensitive to magnetic fields on the z-axis perpendicular to their surface mount package, offer the convenience of detecting the distance of a permanent magnet above at a rate of 20.000 samples per second. One can calculate the resulting circular resolution of the spinning sensor array with the following formula:"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <ITEXT CH="if one inserts the samplerate f(s) of 20kSps and  assumes an exemplary rotation of 3300rpm, one can possibly perform 727 readings per revolution, theoretically allowing for an  angular resolution of 1° with ~110Sps @ point x on the surface (alternatively an angular resolution of 0,5° with ~55Sps at point x). Combined with the possibility of interpolation"/>
+                <MARK label="NoteMark_Default_8" type="4" FEATURES="inherit superscript"/>
+                <ITEXT CH=" there is plenty of room to experiment with the algorithm gathering the position data from the hall effect sensor array. The measured magnetic field strength can easily be mapped to a polar coordinate system by the means of assigning them to an angular, radial and  axial distance. The radial distance is represented by the index of the sensor in the physical array. Its distance from the center is a constant and can be further divided by the means of interpolation. The axial distance is relative to the strength of the field, which leaves us with the angular position. As described earlier, a second optical reflective sensor is attached to the bottom of the PCB at a known radial offset, passing a small reflective point once per revolution. This point is declared the reference point of 0°. By sampling the time it takes for our disk to perform a full revolution (T) one can keep track of the rotational speed as well as derive an angular displacement of the sensor array with the following formula:"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <para PARENT="Fließtext"/>
+                <ITEXT CH="T for the exemplary 3300rpm equals"/>
+                <tab/>
+                <tab/>
+                <ITEXT CH="1/55 seconds, resulting in ω≈345 with the unit 1/s. Now one can multiply ω with the time (t) that passed since the reference point to obtain an angle expressed in radians. This value can be multiplied  by 180° and divided by π to convert it into degrees. The obtained position data is constantly updated to an array. Whenever an impact is recorded, the latest position data is collected from that array. This way the latency of data arrival at the output, relative to the impact, is kept as short as possible. Changes in position are not expected to be performed at audio rates so these can be sampled at slower rates. As the TMAG5170 sensor can detect a magnetic field a few centimeters away, it allows for the record of position data ahead of an impact, as well as the option to pipe out that data individually for contactless interaction three dimensions."/>
+                <trail PARENT="Fließtext"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="4929.36188976379" OwnPage="5" ItemID="2010388553" PTYPE="4" WIDTH="226.771653543307" HEIGHT="33.1884364454381" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" copath="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" gXpos="411.811653543307" gYpos="1401.80409448819" gWidth="0" gHeight="0" PSTYLE="Überschrift 3" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 3"/>
+                <ITEXT CH="3.2 design decisions"/>
+                <trail PARENT="Überschrift 3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693976377953" YPOS="4610.36188976379" OwnPage="5" ItemID="2017627177" PTYPE="4" WIDTH="226.771653543307" HEIGHT="33.1884364454381" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" copath="M0 0 L226.772 0 L226.772 33.1884 L0 33.1884 L0 0 Z" gXpos="156.693976377953" gYpos="1082.80409448819" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="3.1 brief description"/>
+                <trail PARENT="Überschrift 3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="5429.55842519685" OwnPage="6" ItemID="2020477577" PTYPE="4" WIDTH="226.772086614173" HEIGHT="666.976377952757" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 666.976 L0 666.976 L0 0 Z" copath="M0 0 L226.772 0 L226.772 666.976 L0 666.976 L0 0 Z" gXpos="156.693543307087" gYpos="5429.55842519685" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="2001522937" BACKITEM="2001579193"/>
+        <PAGEOBJECT XPOS="411.811653543307" YPOS="5484.25921259843" OwnPage="6" ItemID="2020480905" PTYPE="4" WIDTH="226.771653543307" HEIGHT="36.4330950938775" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 36.4331 L0 36.4331 L0 0 Z" copath="M0 0 L226.772 0 L226.772 36.4331 L0 36.4331 L0 0 Z" gXpos="411.811653543307" gYpos="1956.70141732283" gWidth="0" gHeight="0" PSTYLE="Überschrift 3" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 3"/>
+                <ITEXT CH="3.3 electronics design"/>
+                <trail PARENT="Überschrift 3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="6295.010989011" OwnPage="7" ItemID="2010461673" PTYPE="4" WIDTH="226.772086614173" HEIGHT="683.413262957508" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 683.413 L0 683.413 L0 0 Z" copath="M0 0 L226.772 0 L226.772 683.413 L0 683.413 L0 0 Z" gXpos="156.693543307087" gYpos="6295.010989011" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="2020821193" BACKITEM="2001522937"/>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="6292.93406593407" OwnPage="7" ItemID="2020821193" PTYPE="4" WIDTH="226.771677165354" HEIGHT="685.490186034438" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 685.49 L0 685.49 L0 0 Z" copath="M0 0 L226.772 0 L226.772 685.49 L0 685.49 L0 0 Z" gXpos="411.81162992126" gYpos="6292.93406593407" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="2020805001" BACKITEM="2010461673"/>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="7830.62865433071" OwnPage="8" ItemID="2020811993" PTYPE="4" WIDTH="226.772086614173" HEIGHT="25" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="1" SHADE2="1" PLINEART="1" isWeldItem="1" WeldSource="2020811993" ANNAME="Footnote frame Default (4)" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="2" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCKR="1" path="M0 0 L226.772 0 L226.772 25 L0 25 L0 0 Z" copath="M0 0 L226.772 0 L226.772 25 L0 25 L0 0 Z" gXpos="156.693543307087" gYpos="7198.3451968504" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="-1" BACKITEM="-1" isNoteFrame="1">
+            <WeldEntry Target="2020805001" WX="0" WY="0"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="7168.6601503937" OwnPage="8" ItemID="2020805001" PTYPE="4" WIDTH="226.772086614173" HEIGHT="661.968503937009" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 661.969 L0 661.969 L0 0 Z" copath="M0 0 L226.772 0 L226.772 661.969 L0 661.969 L0 0 Z" gXpos="156.693543307087" gYpos="7168.6601503937" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="2001908505" BACKITEM="2020821193"/>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="7572.58241758242" OwnPage="8" ItemID="2020920905" PTYPE="2" WIDTH="226.772086614173" HEIGHT="64.8791208791208" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.225" LOCALSCY="0.225" LOCALX="144.012967609817" LOCALY="54.318979358309" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="Samplerate_TMAG.png" IRENDER="0" EMBEDDED="0" path="M0 0 L226.772 0 L226.772 64.8791 L0 64.8791 L0 0 Z" copath="M0 0 L226.772 0 L226.772 64.8791 L0 64.8791 L0 0 Z" gXpos="156.693543307087" gYpos="7572.58241758242" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="718.81162992126" YPOS="7567.58241758242" OwnPage="-1" ItemID="2020904553" PTYPE="2" WIDTH="110.551614173228" HEIGHT="64.8791208791208" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.225" LOCALSCY="0.225" LOCALX="75.7997557997552" LOCALY="33.1428571428397" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="winkelgeschwindigkeit.png" IRENDER="0" EMBEDDED="0" path="M0 0 L110.552 0 L110.552 64.8791 L0 64.8791 L0 0 Z" copath="M0 0 L110.552 0 L110.552 64.8791 L0 64.8791 L0 0 Z" gXpos="718.81162992126" gYpos="7567.58241758242" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="840.701417322835" YPOS="7573.58241758242" OwnPage="-1" ItemID="2020905609" PTYPE="2" WIDTH="104.881889763779" HEIGHT="64.8791208791208" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.225" LOCALSCY="0.225" LOCALX="44.7370982473332" LOCALY="71.5464259274975" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="winkel(t).png" IRENDER="0" EMBEDDED="0" path="M0 0 L104.882 0 L104.882 64.8791 L0 64.8791 L0 0 Z" copath="M0 0 L104.882 0 L104.882 64.8791 L0 64.8791 L0 0 Z" gXpos="840.701417322835" gYpos="7573.58241758242" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="411.811220472441" YPOS="7470.58241758242" OwnPage="8" ItemID="2021480393" PTYPE="2" WIDTH="226.772086614173" HEIGHT="64.8791208791208" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.225" LOCALSCY="0.225" LOCALX="201.294261294261" LOCALY="22.7233595800256" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="derived.png" IRENDER="0" EMBEDDED="0" path="M0 0 L226.772 0 L226.772 64.8791 L0 64.8791 L0 0 Z" copath="M0 0 L226.772 0 L226.772 64.8791 L0 64.8791 L0 0 Z" gXpos="411.811220472442" gYpos="7470.58241758242" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="8224.53846153846" OwnPage="9" ItemID="2021585993" PTYPE="2" WIDTH="481.889763779527" HEIGHT="321.307692307693" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="2" LOCALSCX="0.33" LOCALSCY="0.33" LOCALX="-138.395483781313" LOCALY="2.40747179327763" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="pcb_render.png" IRENDER="0" EMBEDDED="0" path="M0 0 L481.89 0 L481.89 321.308 L0 321.308 L0 0 Z" copath="M0 0 L481.89 0 L481.89 321.308 L0 321.308 L0 0 Z" gXpos="156.693543307087" gYpos="8224.53846153846" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="170.86672992126" YPOS="217.846153846154" OwnPage="0" ItemID="2021571673" PTYPE="4" WIDTH="453.5429" HEIGHT="58.5237518387129" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L453.543 0 L453.543 58.5238 L0 58.5238 L0 0 Z" copath="M0 0 L453.543 0 L453.543 58.5238 L0 58.5238 L0 0 Z" gXpos="170.86672992126" gYpos="217.846153846154" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT FONTSIZE="20" FCOLOR="White" CH="MEMBRANE SURGERY"/>
+                <para ALIGN="0"/>
+                <para ALIGN="1"/>
+                <ITEXT FONTSIZE="11" FCOLOR="White" CH="a morphogenetic interface for realtime percussive Synthesis"/>
+                <trail ALIGN="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="150.693543307087" YPOS="310.057142857143" OwnPage="0" ItemID="2020923113" PTYPE="6" WIDTH="578.865" HEIGHT="58.4043956043955" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="White" PLINEART="1" path="M0 0 L578.865 0 L578.865 58.4044 L0 58.4044 L0 0 Z" copath="M0 0 L578.865 0 L578.865 58.4044 L0 58.4044 L0 0 Z" gXpos="150.693543307087" gYpos="310.057142857143" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="9929.6153846154" OwnPage="11" ItemID="2020881673" PTYPE="4" WIDTH="226.771677165354" HEIGHT="387.256111447612" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 387.256 L0 387.256 L0 0 Z" copath="M0 0 L226.772 0 L226.772 387.256 L0 387.256 L0 0 Z" gXpos="411.81162992126" gYpos="9929.6153846154" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="Figure 1: Image of a rotating led fan "/>
+                <para PARENT="Fließtext" ALIGN="0" INDENT="45.9487179487179" FIRST="-45.9487179487179"/>
+                <ITEXT CH="shot by the user Hans-2"/>
+                <para PARENT="Fließtext" ALIGN="0" INDENT="45.9487179487179" FIRST="0.328205128205177"/>
+                <ITEXT CH="file accessed on 30.11.2023 "/>
+                <para PARENT="Fließtext" ALIGN="0" INDENT="45.9487179487179" FIRST="0.328205128205177"/>
+                <ITEXT CH="link:"/>
+                <para PARENT="Fließtext" ALIGN="0" INDENT="45.9487179487179" FIRST="0.328205128205177"/>
+                <ITEXT CH="https://pixabay.com/photos/fan-"/>
+                <tab/>
+                <ITEXT CH="   rotation-wing-subjects-52107/"/>
+                <para PARENT="Fließtext" ALIGN="0" INDENT="45.9487179487179" FIRST="0.328205128205177"/>
+                <para PARENT="Fließtext" ALIGN="0" INDENT="45.9487179487179" FIRST="0.328205128205177"/>
+                <ITEXT CH="Figure 2: screenshot taken from CAD soft-"/>
+                <tab/>
+                <ITEXT CH="   ware used in the design process "/>
+                <para PARENT="Fließtext" ALIGN="0" INDENT="46.7692307692308" FIRST="-46.7692307692308"/>
+                <para PARENT="Fließtext" ALIGN="0"/>
+                <ITEXT CH="Figure 3: screenshot taken from a waveform of a ppercussive sound, repre-senting loudness relative to time"/>
+                <para PARENT="Fließtext" ALIGN="0" INDENT="46.7692307692307" FIRST="-46.7692307692307"/>
+                <para PARENT="Fließtext" ALIGN="0" INDENT="46.7692307692307" FIRST="-46.7692307692307"/>
+                <ITEXT CH="Figure 4: 3d rendering of the circuit board designed in the free software KiCAD EDA Suite"/>
+                <trail PARENT="Fließtext" ALIGN="0" INDENT="45.1282051282051" FIRST="-45.1282051282051"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="2061.26078740158" OwnPage="2" ItemID="2021578985" PTYPE="2" WIDTH="226.771677165354" HEIGHT="191.046904906117" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.19" LOCALSCY="0.19" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="fan-52107_1280.jpg" IRENDER="0" EMBEDDED="0" path="M0 0 L226.772 0 L226.772 191.047 L0 191.047 L0 0 Z" copath="M0 0 L226.772 0 L226.772 191.047 L0 191.047 L0 0 Z" gXpos="411.81162992126" gYpos="2061.26078740158" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="2244.10256410256" OwnPage="2" ItemID="2021539081" PTYPE="4" WIDTH="226.771677165354" HEIGHT="16.8717948717949" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 16.8718 L0 16.8718 L0 0 Z" copath="M0 0 L226.772 0 L226.772 16.8718 L0 16.8718 L0 0 Z" gXpos="411.81162992126" gYpos="2244.10256410256" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle FONT="DejaVu Sans Bold" FONTSIZE="8"/>
+                <ITEXT CH="Figure 1: USB LED fan utilizing POV "/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="6669.5641025641" OwnPage="7" ItemID="2021206089" PTYPE="2" WIDTH="226.772086614173" HEIGHT="112.584558853224" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="15.9934948516049" LOCALY="-31.0911043811911" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="wave perc.jpg" IRENDER="0" EMBEDDED="0" path="M0 0 L226.772 0 L226.772 112.585 L0 112.585 L0 0 Z" copath="M0 0 L226.772 0 L226.772 112.585 L0 112.585 L0 0 Z" gXpos="156.693543307087" gYpos="6669.5641025641" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="4889.77091055926" OwnPage="5" ItemID="2021199081" PTYPE="4" WIDTH="226.771677165354" HEIGHT="16.8717948717949" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 16.8718 L0 16.8718 L0 0 Z" copath="M0 0 L226.772 0 L226.772 16.8718 L0 16.8718 L0 0 Z" gXpos="411.81162992126" gYpos="2244.10256410256" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle FONT="DejaVu Sans Bold" FONTSIZE="8"/>
+                <ITEXT CH="Figure 2: Schematic view of the mechanical setup"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693952755906" YPOS="6788.54980819705" OwnPage="7" ItemID="2021858073" PTYPE="4" WIDTH="226.771677165354" HEIGHT="27.5271148798683" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 27.5271 L0 27.5271 L0 0 Z" copath="M0 0 L226.772 0 L226.772 27.5271 L0 27.5271 L0 0 Z" gXpos="156.693952755906" gYpos="2379.10256410256" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle FONT="DejaVu Sans Bold" FONTSIZE="8"/>
+                <ITEXT CH="Figure 3: A percussive sound with its maximum level almost coincident with its onset"/>
+                <trail LINESP="10"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="4266.75590551181" OwnPage="4" ItemID="2020888617" PTYPE="4" WIDTH="226.771677165354" HEIGHT="100" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 100 L0 100 L0 0 Z" copath="M0 0 L226.772 0 L226.772 100 L0 100 L0 0 Z" gXpos="411.81162992126" gYpos="4266.75590551181" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="-1" BACKITEM="2010435561"/>
+        <PAGEOBJECT XPOS="156.693976377953" YPOS="8185.5495992126" OwnPage="9" ItemID="2020982057" PTYPE="4" WIDTH="226.771653543307" HEIGHT="36.4330950938775" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 36.4331 L0 36.4331 L0 0 Z" copath="M0 0 L226.772 0 L226.772 36.4331 L0 36.4331 L0 0 Z" gXpos="156.693976377953" gYpos="2012.32345748031" gWidth="0" gHeight="0" PSTYLE="Überschrift 3" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 3"/>
+                <ITEXT CH="3.4 circuit board design"/>
+                <trail PARENT="Überschrift 3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693952755906" YPOS="8517.16335150414" OwnPage="9" ItemID="2022176521" PTYPE="4" WIDTH="226.771677165354" HEIGHT="16.8717948717949" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 16.8718 L0 16.8718 L0 0 Z" copath="M0 0 L226.772 0 L226.772 16.8718 L0 16.8718 L0 0 Z" gXpos="156.693952755906" gYpos="2343.93720977185" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle FONT="DejaVu Sans Bold" FONTSIZE="8"/>
+                <ITEXT CH="Figure 4: 3d rendering of the circuit board"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="8993.36975339622" OwnPage="10" ItemID="2022050857" PTYPE="4" WIDTH="226.772086614173" HEIGHT="41.1165458163814" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 41.1165 L0 41.1165 L0 0 Z" copath="M0 0 L226.772 0 L226.772 41.1165 L0 41.1165 L0 0 Z" gXpos="156.693543307087" gYpos="1056.36471402613" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="4. DISCUSSION AND "/>
+                <para/>
+                <ITEXT CH="    FUTURE WORK"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693952755906" YPOS="9048.65952755906" OwnPage="10" ItemID="2022353961" PTYPE="4" WIDTH="226.771677165354" HEIGHT="575.433070866141" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 575.433 L0 575.433 L0 0 Z" copath="M0 0 L226.772 0 L226.772 575.433 L0 575.433 L0 0 Z" gXpos="156.693952755906" gYpos="8166.77007874016" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="2022307369" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Fließtext"/>
+                <ITEXT CH="At the time this paper is written, the prototype has yet to be assembled and programmed. The preceding text resembles an in depth description of the concept and design of this instrument, and documents the work incorporated to this point. The targeted implementation of this project resembles an early prototype. It has yet to be tested in various use cases to reveal all its potentials and deficits. There are certain considerations for improvements of the overall design, that came up during the process of development, which ask for further investigation. As usual with a project of this scope, one has to decide for a moment to actually release the work into existence, postponing a lot of considerations to a future version. To name a few here, the mechanical design for example, is based on the hope to omit problems of instability by choosing very sturdy heavy parts. Therefore, a future version may become substantially lighter and slimmer by investigating further into the actual mechanical loads on the chassis. Furthermore the choice of the skin and the hoop were first of all based on availability.  The skin shall be evaluated in its qualities as both a membrane and a canvas for the graphical interface. The hoop might be replaced by a flatter type in order to reveal more of the outer perimeter of the skin. The motor driving the disk might as well be exchanged in order to save space and cost, as the one used in this project is quite bulky and offers far more torque than required in this project. Additionally the whole drive train could potentially see improvements in order to silence emerging sounds. Which leads to the question of the final enclosure for the drum, which obviously is a substantial part of its appearance, as well as the amount of noise emitted from the drive train. In that regard a traditional drum format is targeted, where the performer can comfortably place it on the lap as well as the potential to mount it onto a stand, when performed in conjunction with a set of other percussive instruments or a drum set. All future improvements set aside, it already appears, how this interface can serve as a  novel platform for the development of  specific synthetic percussive applications. The characteristics of this interface are calling for programs developed to embrace them. In other words, it may perform well enough as a drum pad, by visually dividing up its surface to control different sounds in existing software. The bigger potential however, lies in the careful mapping of all the different output parameters to certain sonic features. It requires a corresponding responsive user interface projected onto its skin, guiding the performer through the manipulation of that membrane. This interface calls for the possibility to integrate the creation of these interfaces into itself, making the setup an  intuitive creative process. Many such programs could be developed and performed from that single interface. This way it could be turned into an evolving organism, revealing its true morphogenetic features. To approach these daring fantasies a lot of UI work is ahead of the developer."/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="8940.92307692308" OwnPage="10" ItemID="2022307369" PTYPE="4" WIDTH="226.771677165354" HEIGHT="548.307692307693" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 548.308 L0 548.308 L0 0 Z" copath="M0 0 L226.772 0 L226.772 548.308 L0 548.308 L0 0 Z" gXpos="411.81162992126" gYpos="8940.92307692308" gWidth="0" gHeight="0" PSTYLE="Fließtext" LAYER="0" NEXTITEM="-1" BACKITEM="2022353961"/>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="9909.36975339622" OwnPage="11" ItemID="2027537449" PTYPE="4" WIDTH="226.772086614173" HEIGHT="41.1165458163814" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 41.1165 L0 41.1165 L0 0 Z" copath="M0 0 L226.772 0 L226.772 41.1165 L0 41.1165 L0 0 Z" gXpos="156.693543307087" gYpos="1972.36471402613" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="4. REFERENCES"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.811220472441" YPOS="9908.36975339622" OwnPage="11" ItemID="2027498297" PTYPE="4" WIDTH="226.772086614173" HEIGHT="41.1165458163814" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L226.772 0 L226.772 41.1165 L0 41.1165 L0 0 Z" copath="M0 0 L226.772 0 L226.772 41.1165 L0 41.1165 L0 0 Z" gXpos="411.811220472441" gYpos="1971.36471402613" gWidth="0" gHeight="0" PSTYLE="Überschrift 2" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Überschrift 2"/>
+                <ITEXT CH="4.1 Images"/>
+                <trail PARENT="Überschrift 3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="3416.01606299213" OwnPage="3" ItemID="2041125001" PTYPE="5" WIDTH="111.01668088772" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" SHADE="1" PCOLOR2="Black" PLINEART="1" path="" gXpos="156.693543307087" gYpos="3416.01606299213" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="411.346586828815" YPOS="3416.01606299213" OwnPage="3" ItemID="2069503577" PTYPE="5" WIDTH="111.01668088772" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" SHADE="1" PCOLOR2="Black" PLINEART="1" path="" gXpos="411.346586828815" gYpos="3416.01606299213" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="411.346586828815" YPOS="4272.3937007874" OwnPage="4" ItemID="2069583257" PTYPE="5" WIDTH="111.01668088772" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" SHADE="1" PCOLOR2="Black" PLINEART="1" path="" gXpos="411.346586828815" gYpos="3390.50425196851" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="7831.95149606299" OwnPage="8" ItemID="2052961641" PTYPE="5" WIDTH="111.01668088772" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" SHADE="1" PCOLOR2="Black" PLINEART="1" path="" gXpos="156.693543307087" gYpos="3422.50425196851" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="448.662047244095" YPOS="10011.0769230769" OwnPage="11" ItemID="2054081385" PTYPE="4" WIDTH="177.478978396931" HEIGHT="38.5271714112696" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="https://pixabay.com/photos/fan-&#9;   rotation-wing-subjects-52107/&#13;" ANZIEL="11" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANITYP="0" ANOPEN="0" ANNAME="Verknüpfung74" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L177.479 0 L177.479 38.5272 L0 38.5272 L0 0 Z" copath="M0 0 L177.479 0 L177.479 38.5272 L0 38.5272 L0 0 Z" gXpos="448.662047244095" gYpos="10011.0769230769" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="4274.15384615385" OwnPage="4" ItemID="2066024793" PTYPE="4" WIDTH="110.226831617202" HEIGHT="10.4130829800142" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="https://monome.org/" ANZIEL="4" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANITYP="0" ANOPEN="0" ANNAME="Verknüpfung76" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L110.227 0 L110.227 10.4131 L0 10.4131 L0 0 Z" copath="M0 0 L110.227 0 L110.227 10.4131 L0 10.4131 L0 0 Z" gXpos="411.81162992126" gYpos="4274.15384615385" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="4288.61538461538" OwnPage="4" ItemID="2037991801" PTYPE="4" WIDTH="171.765293155663" HEIGHT="10.7692307692305" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="https://cycling74.com/products/max" ANZIEL="4" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANITYP="0" ANOPEN="0" ANNAME="Verknüpfung77" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L171.765 0 L171.765 10.7692 L0 10.7692 L0 0 Z" copath="M0 0 L171.765 0 L171.765 10.7692 L0 10.7692 L0 0 Z" gXpos="411.81162992126" gYpos="4288.61538461538" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="4302.76923076923" OwnPage="4" ItemID="2070299545" PTYPE="4" WIDTH="219.08837007874" HEIGHT="11.3230769230768" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="https://www.rogerlinndesign.com/linnstrument" ANZIEL="4" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANITYP="0" ANOPEN="0" ANNAME="Verknüpfung78" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L219.088 0 L219.088 11.3231 L0 11.3231 L0 0 Z" copath="M0 0 L219.088 0 L219.088 11.3231 L0 11.3231 L0 0 Z" gXpos="411.81162992126" gYpos="4302.76923076923" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="416.746153846154" YPOS="4318.58267716536" OwnPage="4" ItemID="2055674217" PTYPE="4" WIDTH="139.323076923077" HEIGHT="14.1732283464571" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="https://www.embodme.com/" ANZIEL="4" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANITYP="0" ANOPEN="0" ANNAME="Verknüpfung79" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L139.323 0 L139.323 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L139.323 0 L139.323 14.1732 L0 14.1732 L0 0 Z" gXpos="416.746153846154" gYpos="4318.58267716536" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="411.81162992126" YPOS="3417.6" OwnPage="3" ItemID="2069636169" PTYPE="4" WIDTH="156.565293155663" HEIGHT="10.3384615384616" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="https://sunhou.se/sensorypercussion" ANZIEL="3" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANITYP="0" ANOPEN="0" ANNAME="Verknüpfung80" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L156.565 0 L156.565 10.3385 L0 10.3385 L0 0 Z" copath="M0 0 L156.565 0 L156.565 10.3385 L0 10.3385 L0 0 Z" gXpos="411.81162992126" gYpos="3417.6" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="3417.10769230769" OwnPage="3" ItemID="2055802889" PTYPE="4" WIDTH="210.32953361599" HEIGHT="11.0815990308924" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="https://www.keithmcmillen.com/products/boppad/" ANZIEL="3" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANITYP="0" ANOPEN="0" ANNAME="Verknüpfung81" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L210.33 0 L210.33 11.0816 L0 11.0816 L0 0 Z" copath="M0 0 L210.33 0 L210.33 11.0816 L0 11.0816 L0 0 Z" gXpos="156.693543307087" gYpos="3417.10769230769" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="156.693543307087" YPOS="3427.44615384615" OwnPage="3" ItemID="2079408105" PTYPE="4" WIDTH="213.283379769836" HEIGHT="14.2769230769231" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="https://korg.com/de/products/en/drums/wavedrum/" ANZIEL="3" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANITYP="0" ANOPEN="0" ANNAME="Verknüpfung82" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L213.283 0 L213.283 14.2769 L0 14.2769 L0 0 Z" copath="M0 0 L213.283 0 L213.283 14.2769 L0 14.2769 L0 0 Z" gXpos="156.693543307087" gYpos="3427.44615384615" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="514.269230769231" YPOS="4654.15384615385" OwnPage="5" ItemID="2073518905" PTYPE="4" WIDTH="17.1794871794871" HEIGHT="22.8461538461543" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" copath="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" gXpos="514.269230769231" gYpos="4654.15384615385" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FCOLOR="White" CH="1"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="514.269230769231" YPOS="4691.00423985464" OwnPage="5" ItemID="2066285737" PTYPE="4" WIDTH="17.1794871794871" HEIGHT="22.8461538461543" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" copath="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" gXpos="514.269230769231" gYpos="4691.00423985464" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FCOLOR="White" CH="2"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="519.938522107814" YPOS="4719.35069654755" OwnPage="5" ItemID="2061548361" PTYPE="4" WIDTH="17.1794871794871" HEIGHT="22.8461538461543" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" copath="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" gXpos="519.938522107814" gYpos="4719.35069654756" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FCOLOR="White" CH="3"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="520.938522107814" YPOS="4765.54754694126" OwnPage="5" ItemID="2055186329" PTYPE="4" WIDTH="17.1794871794871" HEIGHT="22.8461538461543" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" copath="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" gXpos="520.938522107814" gYpos="4765.54754694126" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FCOLOR="White" CH="5"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="468.91490006057" YPOS="4767.53967292551" OwnPage="5" ItemID="2069237433" PTYPE="4" WIDTH="17.1794871794871" HEIGHT="22.8461538461543" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" copath="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" gXpos="468.91490006057" gYpos="4767.53967292551" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FCOLOR="White" CH="4"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="520.938522107814" YPOS="4785.3900666263" OwnPage="5" ItemID="2048457577" PTYPE="4" WIDTH="17.1794871794871" HEIGHT="22.8461538461543" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" copath="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" gXpos="520.938522107814" gYpos="4785.3900666263" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FCOLOR="White" CH="6"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="469.91490006057" YPOS="4810.90187764993" OwnPage="5" ItemID="2048443769" PTYPE="4" WIDTH="17.1794871794871" HEIGHT="22.8461538461543" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" copath="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" gXpos="469.91490006057" gYpos="4810.90187764993" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FCOLOR="White" CH="7"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="520.938522107814" YPOS="4830.74439733497" OwnPage="5" ItemID="2048448361" PTYPE="4" WIDTH="17.1794871794871" HEIGHT="22.8461538461543" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" copath="M0 0 L17.1795 0 L17.1795 22.8462 L0 22.8462 L0 0 Z" gXpos="520.938522107814" gYpos="4830.74439733497" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FCOLOR="White" CH="8"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>
