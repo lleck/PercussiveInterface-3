@@ -3,17 +3,18 @@
 ////////////////////////////////////////////
 // BUILDING BLOCKS:
 //########################################################
-//*Neopixelbus to drive the APA102 LEDs
+//*Neopixelbus to drive the APA102 LEDs                   x
 //*function to monitor RPM (interrupt routine)            x
 //*functions to convert polar2cartesian and backwards     x
 //*ESPNow protocol to send out the data                   x
-//*library to operate the ADG731 MUXes
+//*library to operate the ADG731 MUXes                    x
 //*functions to read out the TMAG5170 hall effect sensors
 //*function to read out impulse sensor (Interrupt R?)
 //*function to show test image  
 //#######################################################
 
 #include <Arduino.h>
+#include <SPI.h>
 #include <esp_now.h>
 #include <WiFi.h>
 #include <NeoPixelBus.h>
@@ -22,7 +23,7 @@
 // put function definitions here:
 #define IR_SENSOR_PIN 6 //QRE 1113
 #define IR_VIBROMETER_PIN 13
-#define TICKS_PER_REVOLUTION 20  // Anzahl der IR Impulse pro Umdrehung 
+#define TICKS_PER_REVOLUTION 1  // Anzahl der IR Impulse pro Umdrehung 
 #define CLOCK_PIN 47
 #define MOSI_PIN 48
 #define MISO_PIN 14
@@ -37,16 +38,21 @@
 
 //GLOBALS:
 const uint16_t pixelCount = 52;
+const uint16_t sensorCount = 52;
 volatile unsigned long ticksCount = 0;
 unsigned long lastRotationCalcTime = 0;
 // Variablen für die Berechnungsfrequenz und den Multiplikator für RPM
 int rpmCalcFrequency = 20; // in Millisekunden
-float rpmMultiplier = 60000.0 / rpmCalcFrequency;
-
+float rpmMultiplier = 60000.0 / (rpmCalcFrequency * TICKS_PER_REVOLUTION);
+// two arrays for the position sensors (left & right arm) 
+float magneticArray1[26];
+float magneticArray2[26];
 
 // init two instances of the adg731 32ch mux
-ADG731 MUX1(CLOCK_PIN, MOSI_PIN, MUX1_SYNC_PIN);
-ADG731 MUX2(CLOCK_PIN, MOSI_PIN, MUX2_SYNC_PIN);
+ADG731 mux1(CLOCK_PIN, MOSI_PIN, MUX1_SYNC_PIN);
+ADG731 mux2(CLOCK_PIN, MOSI_PIN, MUX2_SYNC_PIN);
+// Define the SPI settings for the sensors
+SPISettings spiSettings(1000000, MSBFIRST, SPI_MODE0);
 // init the NeoPixelBus instance with Spi and alternate Pins
 NeoPixelBus<DotStarBgrFeature, DotStarEsp32DmaSpi3Method> strip(pixelCount);
 
@@ -58,7 +64,7 @@ RgbColor black(0);
 
 // Callback-Funktion für den Interrupt, wenn der IR-Sensor ausgelöst wird
 void RPM_Interrupt() {
-  ticksCount++;  // Inkrementiere die Impulsanzahl bei jedem Impuls
+  ticksCount++;  // Inkrementiere die Impulsanzahl
 }
 
 float* polr2cart (float r, float theta) {
@@ -82,6 +88,8 @@ float* cart2polr (float x, float y){
 void setup() {
 
   Serial.begin(115200);
+  SPI.begin(); // Initialize SPI
+
   // Konfiguriere den IR-Sensor als Eingang und aktiviere den Interrupt
   pinMode(IR_SENSOR_PIN, INPUT);
   attachInterrupt(digitalPinToInterrupt(IR_SENSOR_PIN), RPM_Interrupt, RISING);
@@ -116,15 +124,15 @@ void setup() {
   float x = result[0];
   float y = result[1];
 }
+
 void checkRPM(){
   if (millis() - lastRotationCalcTime >= rpmCalcFrequency) {
-    lastRotationCalcTime
- = millis();
+    lastRotationCalcTime = millis();
 
     // Berechne die Drehgeschwindigkeit in RPM
     unsigned long rpm = ticksCount * rpmMultiplier;
 
-    // Sende die Drehgeschwindigkeit an den ESP8266
+    // Sende die Drehgeschwindigkeit an den ESP mit Motorshield
     esp_now_send(NULL, (uint8_t*)&rpm, sizeof(unsigned long));
 
     Serial.print("Drehgeschwindigkeit (RPM): ");
@@ -134,10 +142,63 @@ void checkRPM(){
     ticksCount = 0;
   }
 }
+float readMagneticSensor(){
+   // For the sake of this example, return a placeholder value
+  float rnd = random(1024);
+  return rnd;
+}
+
+void readPosition(){
+     for (int sensorIndex = 0; sensorIndex < sensorCount; sensorIndex++) {
+    // Select the appropriate channel on the first multiplexer
+    int mux1Channel = sensorIndex % 26;  // 26 channels on the first multiplexer
+    mux1.setChannel(mux1Channel);
+
+    // Activate the first multiplexer as chip select for the sensor
+  
+
+    // Read from the SPI-controlled sensor
+    float sensorValue1 = readMagneticSensor();
+
+    // Store the sensor value in the array
+    magneticArray1[mux1Channel] = sensorValue1;
+
+    // Deactivate the first multiplexer
+  
+
+    // Select the appropriate channel on the second multiplexer
+    int mux2Channel = sensorIndex % 26;  // 26 channels on the second multiplexer
+    mux2.setChannel(mux2Channel);
+
+    // Activate the second multiplexer as chip select for the sensor
+  
+
+    // Read from the SPI-controlled sensor
+    float sensorValue2 = readMagneticSensor();
+
+    // Store the sensor value in the array
+    magneticArray2[mux2Channel] = sensorValue2;
+
+    // Deactivate the second multiplexer
+
+
+    // // Print the sensor index and values
+    // Serial.print("Sensor ");
+    // Serial.print(sensorIndex + 1);  // Sensor index starts from 1
+    // Serial.print(": ");
+    // Serial.print("MUX1 - ");
+    // Serial.print(sensorValue1);
+    // Serial.print(", MUX2 - ");
+    // Serial.println(sensorValue2);
+
+  }
+}
+
 void loop() {
   // put your main code here, to run repeatedly:
   checkRPM();
-    //MUX1.setChannel(ch);
   
+    //MUX1.setChannel(ch);
+  readPosition();
 }
 
