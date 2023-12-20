@@ -140,7 +140,9 @@ float TMAG5170::getXresult( bool *error_detected ){
         {
             read_frame(TMAG5170_REG_X_CH_RESULT, &reg_data, &reg_status, &error );
             if (!error) 
-            {
+            {    
+                // uint16_t data_out is casted to a signed int and then casted to a float after division by the resolution
+                // why does this work with an uint16_t containing only binary representation in 2's complement ?
                 data = ( ( int16_t ) reg_data ) / TMAG5170_XYZ_RESOLUTION;
                 switch ( sensor_config & TMAG5170_X_RANGE_BIT_MASK )
                 {

@@ -34,6 +34,7 @@
 #include <NeoPixelBus.h>
 #include <ADG731.h>
 #include <myTMAG5170.h>
+#include <FastTrig.h>
 
 // put function definitions here:
 #define IR_SENSOR_PIN 6 //QRE 1113
@@ -56,13 +57,13 @@ const uint8_t pixelCount = 52;
 const uint8_t sensorCount = 26;
 volatile unsigned long ticksCount = 0;
 volatile unsigned long timestamp = 0;
-volatile unsigned long rotTime, timeOld, timeNow, divTime;
+volatile unsigned long rotTime, loopTimeNow, loopTimeOld,timeOld, timeNow, divTime;
 unsigned long lastRotationCalcTime = 0;
-const uint8_t angularDivisions = 360;
+const uint16_t angularDivisions = 360;
 // Zähler für die aktuelle angulare Division 
-int numDiv = 0;
+uint16_t numDiv = 0;
 // Variablen für die Berechnungsfrequenz und den Multiplikator für RPM
-int rpmCalcFrequency = 20; // in Millisekunden
+uint8_t rpmCalcFrequency = 20; // in Millisekunden
 float rpmMultiplier = 60000.0 / (rpmCalcFrequency * TICKS_PER_REVOLUTION);
 // two 2D array buffers for the magnetic sensors (left & right arm) 
 float magneticArray1[sensorCount][angularDivisions];
@@ -98,8 +99,8 @@ void IRAM_ATTR Rotation_Interrupt() {
 
 float *polr2cart (float r, float theta) {
   float cartesian[2];
-  float x = r * cos(theta);
-  float y = r * sin(theta);
+  float x = r * icos(theta);
+  float y = r * isin(theta);
   cartesian[0]=x;
   cartesian[1]=y;
   return cartesian;
@@ -107,8 +108,8 @@ float *polr2cart (float r, float theta) {
 
 float *cart2polr (float x, float y){
   float polar[2];
-  float r = sqrt( pow(x, 2) + pow(y, 2) ); // Float oder fixkommazahlen ? 
-  float theta = atan(x/y);
+  float r = hypotFast(x, y); // präzision muss überprüft werden !!!
+  float theta = atan2Fast(x, y); // darf nicht 0/0 sein 
   polar[0]=r;
   polar[1]=theta * 180/PI;
   return polar;
@@ -222,10 +223,7 @@ void readPosition(){
         // Select the appropriate channel on the second multiplexer
         mux2.setChannel(sensorIndex);
         currentSensor = sensorIndex + sensorCount;
-
-        // Read from the SPI-controlled sensor
-        float sensorValue2 = readMagneticSensor();
-
++ pow(y, 2)
         // Store the sensor value in the array
         magneticArray2[sensorIndex][numDiv] = sensorValue2;
         mux2.allOff();
@@ -244,14 +242,14 @@ void readPosition(){
 
 void loop() {
 
-  unsigned long currentMillis = micros();
+  loopTimeNow = micros();
 
    // How much time has passed, accounting for rollover with subtraction!
-   if ((unsigned long)(currentMillis - previousMillis) >= divTime) {
+   if ((unsigned long)(loopTimeNow - loopTimeOld) >= divTime) {
       // It's time to do something!
           readPosition();
       // Use the snapshot to set track time until next event
-      previousMillis = currentMillis;
+      loopTimeOld = loopTimeNow;
    }
  
   checkRPM();
