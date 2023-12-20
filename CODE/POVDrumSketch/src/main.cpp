@@ -13,6 +13,20 @@
 //*function to show test image  
 //#######################################################
 
+#define DEBUG 1    // 0 to disable serial prints
+
+#if DEBUG
+#define D_SerialBegin(...) Serial.begin(__VA_ARGS__);
+#define D_print(...)    Serial.print(__VA_ARGS__)
+#define D_write(...)    Serial.write(__VA_ARGS__)
+#define D_println(...)  Serial.println(__VA_ARGS__)
+#else
+#define D_SerialBegin(...)
+#define D_print(...)
+#define D_write(...)
+#define D_println(...)
+#endif
+
 #include <Arduino.h>
 #include <SPI.h>
 #include <esp_now.h>
@@ -41,7 +55,8 @@
 const uint8_t pixelCount = 52;
 const uint8_t sensorCount = 26;
 volatile unsigned long ticksCount = 0;
-volatile unsigned long rotTime, timeOld, timeNow;
+volatile unsigned long timestamp = 0;
+volatile unsigned long rotTime, timeOld, timeNow, divTime;
 unsigned long lastRotationCalcTime = 0;
 const uint8_t angularDivisions = 360;
 // Zähler für die aktuelle angulare Division 
@@ -74,8 +89,9 @@ RgbColor black(0);
 
 // Callback-Funktion für den Interrupt, wenn der IR-Sensor ausgelöst wird
 void IRAM_ATTR Rotation_Interrupt() {
-  timeNow = micros(); //besser ESP.getCycleCount?
-  rotTime = timeNow - timeOld;
+  timeNow = micros(); 
+  rotTime = timeNow - timeOld;   // substraktion mit unsigned long, daher kein problem mit overflow ?
+  divTime = rotTime/angularDivisions; // 
   timeOld = timeNow;
   ticksCount++;  // Inkrementiere die Impulsanzahl
 }
@@ -91,7 +107,7 @@ float *polr2cart (float r, float theta) {
 
 float *cart2polr (float x, float y){
   float polar[2];
-  float r = sqrt( pow(x, 2) + pow(y, 2) );
+  float r = sqrt( pow(x, 2) + pow(y, 2) ); // Float oder fixkommazahlen ? 
   float theta = atan(x/y);
   polar[0]=r;
   polar[1]=theta * 180/PI;
@@ -99,11 +115,8 @@ float *cart2polr (float x, float y){
 }
 
 void setup() {
-
-  bool error = false;
   
-  
-  Serial.begin(115200);
+  D_SerialBegin(115200);
   //SPI.begin(); // Initialize SPI
 
   // Konfiguriere den IR-Sensor als Eingang und aktiviere den Interrupt
@@ -116,27 +129,28 @@ void setup() {
   strip.Show();
   //initialisieren des TAG5170 arrays / set to each 
   magneticSensor.begin(TMAG_CS_PIN);
-  for(int i=0; i < sizeof(magneticArray1) && !error; i++){
+  for(int i=0; i < sensorCount && !error; i++){
+
     mux1.setChannel(i);
     currentSensor = i;
     magneticSensor.default_cfg(&error);
   }
   mux1.allOff();
-  for(int j=0; j < sizeof(magneticArray2) && !error; j++){
+  for(int j=0; j < sensorCount && !error; j++){
     mux2.setChannel(j);
-    currentSensor = j+sizeof(magneticArray2);
+    currentSensor = j+sensorCount;
     magneticSensor.default_cfg(&error);
   }
   if (error){
-    Serial.print("error conf. sensor nr. ");
-    Serial.println(currentSensor);
+    D_print("error conf. sensor nr. ");   //Error check in den n4 loop
+    D_println(currentSensor);
   }
   mux2.allOff();
 
 //###################ESPNow Stuff#############################
  // Initialisiere ESPNow
   if (esp_now_init() != ESP_OK) {
-    Serial.println("ESPNow Initialisierung fehlgeschlagen");
+    D_println("ESPNow Initialisierung fehlgeschlagen");
     ESP.restart();
   }
  // Konfiguriere Peer-Adresse (MAC-Adresse des ESP)
@@ -148,7 +162,7 @@ void setup() {
 
   // Füge den Peer hinzu
   if (esp_now_add_peer(&peerInfo) != ESP_OK) {
-    Serial.println("Fehler beim Hinzufügen des Peers");
+    D_println("Fehler beim Hinzufügen des Peers");
     ESP.restart();
   }
 //###########################################################
@@ -173,8 +187,8 @@ void checkRPM(){
     // Sende die Drehgeschwindigkeit an den ESP mit Motorshield
     esp_now_send(NULL, (uint8_t*)&rpm, sizeof(unsigned long));
 
-    Serial.print("Drehgeschwindigkeit (RPM): ");
-    Serial.println(rpm);
+    D_print("Drehgeschwindigkeit (RPM): ");
+    D_println(rpm);
 
     // Setze die Impulsanzahl zurück
     ticksCount = 0;
@@ -185,16 +199,13 @@ float readMagneticSensor(){
   float value = magneticSensor.getZresult( &error);
   return value;
   if (error){
-    Serial.print("error reading sensor nr. ");
-    Serial.println(currentSensor);
+    D_print("error reading sensor nr. ");
+    D_println(currentSensor);
   }
   
 }
 
 void readPosition(){
-  // when the given fraction of our rotation time has passed update all magnetic readings 
-  if (micros() >= rotTime/angularDivisions)
-  {
      for (int sensorIndex = 0; sensorIndex < sensorCount; sensorIndex++) 
      {
         // Select the appropriate channel on the first multiplexer
@@ -210,7 +221,7 @@ void readPosition(){
 
         // Select the appropriate channel on the second multiplexer
         mux2.setChannel(sensorIndex);
-        currentSensor = sensorIndex + sizeof(magneticArray1);
+        currentSensor = sensorIndex + sensorCount;
 
         // Read from the SPI-controlled sensor
         float sensorValue2 = readMagneticSensor();
@@ -219,23 +230,30 @@ void readPosition(){
         magneticArray2[sensorIndex][numDiv] = sensorValue2;
         mux2.allOff();
         // // Print the sensor index and values
-        // Serial.print("Sensor ");
-        // Serial.print(sensorIndex + 1);  // Sensor index starts from 1
-        // Serial.print(": ");
-        // Serial.print("MUX1 - ");
-        // Serial.print(sensorValue1);
-        // Serial.print(", MUX2 - ");
-        // Serial.println(sensorValue2);
+        // D_print("Sensor ");
+        // D_print(sensorIndex + 1);  // Sensor index starts from 1
+        // D_print(": ");
+        // D_print("MUX1 - ");
+        // D_print(sensorValue1);
+        // D_print(", MUX2 - ");
+        // D_println(sensorValue2);
       }
-
   numDiv++;
   if (numDiv >= angularDivisions) numDiv = 0;
-  }
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  readPosition();
+
+  unsigned long currentMillis = micros();
+
+   // How much time has passed, accounting for rollover with subtraction!
+   if ((unsigned long)(currentMillis - previousMillis) >= divTime) {
+      // It's time to do something!
+          readPosition();
+      // Use the snapshot to set track time until next event
+      previousMillis = currentMillis;
+   }
+ 
   checkRPM();
 }
 
