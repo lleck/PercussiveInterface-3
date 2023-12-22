@@ -31,6 +31,7 @@
 #include <SPI.h>
 #include <esp_now.h>
 #include <WiFi.h>
+#include <Preferences.h> // to store some initial settings/ tresholds / calibration data
 #include <NeoPixelBus.h>
 #include <ADG731.h>
 #include <myTMAG5170.h>
@@ -50,20 +51,37 @@
 #define LED_DATA_PIN 11
 #define LED_CS_PIN -1
 #define colorSaturation 128
+#define RO_MODE true
+#define RW_MODE false
+#define triggerThreshold 3 // If this is set too low, hits on other pads will trigger a "hit" on this pad
+#define initialHitReadDuration 500 // In microseconds. Shorter times will mean less latency, but less velocity-accuracy
+#define midiVelocityScaleDownAmount 2 // Number of halvings that will be applied to MIDI velocity
+# define calibrating = false; 
 
+Preferences calibration;                        
+
+uint16_t highestYet;
+uint32_t startReadingTime;
+uint32_t highestValueTime;
+boolean hitOccurredRecently = false;
+boolean newRecordSet;
+// array to 
+uint16_t tresholds [256];
 
 //GLOBALS:
 const uint8_t pixelCount = 52;
 const uint8_t sensorCount = 26;
+const uint16_t angularDivisions = 360;
+
 volatile unsigned long ticksCount = 0;
 volatile unsigned long timestamp = 0;
 volatile unsigned long rotTime, loopTimeNow, loopTimeOld,timeOld, timeNow, divTime;
 unsigned long lastRotationCalcTime = 0;
-const uint16_t angularDivisions = 360;
 // Zähler für die aktuelle angulare Division 
 uint16_t numDiv = 0;
 // Variablen für die Berechnungsfrequenz und den Multiplikator für RPM
-uint8_t rpmCalcFrequency = 20; // in Millisekunden
+unsigned long rpm;
+uint8_t rpmCalcFrequency = 100; // in Millisekunden
 float rpmMultiplier = 60000.0 / (rpmCalcFrequency * TICKS_PER_REVOLUTION);
 // two 2D array buffers for the magnetic sensors (left & right arm) 
 float magneticArray1[sensorCount][angularDivisions];
@@ -88,17 +106,10 @@ RgbColor blue(0, 0, colorSaturation);
 RgbColor white(colorSaturation);
 RgbColor black(0);
 
-// Callback-Funktion für den Interrupt, wenn der IR-Sensor ausgelöst wird
-void IRAM_ATTR Rotation_Interrupt() {
-  timeNow = micros(); 
-  rotTime = timeNow - timeOld;   // substraktion mit unsigned long, daher kein problem mit overflow ?
-  divTime = rotTime/angularDivisions; // 
-  timeOld = timeNow;
-  ticksCount++;  // Inkrementiere die Impulsanzahl
-}
 
 float *polr2cart (float r, float theta) {
   float cartesian[2];
+  // verwendung von FastTrig überprüfen !!!!
   float x = r * icos(theta);
   float y = r * isin(theta);
   cartesian[0]=x;
@@ -122,14 +133,16 @@ void setup() {
 
   // Konfiguriere den IR-Sensor als Eingang und aktiviere den Interrupt
   pinMode(IR_SENSOR_PIN, INPUT);
-  attachInterrupt(digitalPinToInterrupt(IR_SENSOR_PIN), Rotation_Interrupt, RISING);
+  attachInterrupt(digitalPinToInterrupt(IR_SENSOR_PIN), Rotation_Interrupt, FALLING);
   pinMode(IR_VIBROMETER_PIN, INPUT);
+  
   // start the strip on the defined SPI bus and init to böack = all pixels off
   strip.Begin(LED_CLOCK_PIN, LED_DATA_PIN, LED_DATA_PIN, LED_CS_PIN);
   strip.ClearTo(black);   // this resets all the DotStars to an off state
   strip.Show();
   //initialisieren des TAG5170 arrays / set to each 
   magneticSensor.begin(TMAG_CS_PIN);
+  bool error = false;
   for(int i=0; i < sensorCount && !error; i++){
 
     mux1.setChannel(i);
@@ -155,6 +168,7 @@ void setup() {
     ESP.restart();
   }
  // Konfiguriere Peer-Adresse (MAC-Adresse des ESP)
+ // weitere peers können hier angelegt werden
   uint8_t peerAddress[] = {0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC};
   esp_now_peer_info_t peerInfo;
   memcpy(peerInfo.peer_addr, peerAddress, 6);
@@ -178,6 +192,16 @@ void setup() {
  
 }
 
+// Callback-Funktion für den Interrupt, wenn der IR-Sensor ausgelöst wird
+// kann nur als Interrupt angelegt werden, wenn Noise klein genug, sonst Task ? // mutex rotTime divTime 
+void IRAM_ATTR Rotation_Interrupt() {
+  timeNow = micros(); 
+  rotTime = timeNow - timeOld;   // substraktion mit unsigned long, daher kein problem mit overflow 
+  divTime = rotTime/angularDivisions; // 
+  timeOld = timeNow;
+  ticksCount++;  // Inkrementiere die Impulsanzahl
+}
+
 void checkRPM(){
   if (millis() - lastRotationCalcTime >= rpmCalcFrequency) {
     lastRotationCalcTime = millis();
@@ -185,8 +209,6 @@ void checkRPM(){
     // Berechne die Drehgeschwindigkeit in RPM
     unsigned long rpm = ticksCount * rpmMultiplier;
 
-    // Sende die Drehgeschwindigkeit an den ESP mit Motorshield
-    esp_now_send(NULL, (uint8_t*)&rpm, sizeof(unsigned long));
 
     D_print("Drehgeschwindigkeit (RPM): ");
     D_println(rpm);
@@ -223,7 +245,7 @@ void readPosition(){
         // Select the appropriate channel on the second multiplexer
         mux2.setChannel(sensorIndex);
         currentSensor = sensorIndex + sensorCount;
-+ pow(y, 2)
+
         // Store the sensor value in the array
         magneticArray2[sensorIndex][numDiv] = sensorValue2;
         mux2.allOff();
@@ -243,14 +265,14 @@ void readPosition(){
 void loop() {
 
   loopTimeNow = micros();
-
-   // How much time has passed, accounting for rollover with subtraction!
+   // kann das in einen extra Task ?
+   // Zeitintervall für die winkelgenaue Positionsabfrage ohne Überlauf dank Subtraktion
    if ((unsigned long)(loopTimeNow - loopTimeOld) >= divTime) {
       // It's time to do something!
           readPosition();
       // Use the snapshot to set track time until next event
       loopTimeOld = loopTimeNow;
-   }
+   } // else handle smth that can be cued 
  
   checkRPM();
 }
