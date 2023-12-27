@@ -20,7 +20,7 @@
 #define midiVelocityScaleDownAmount 2 // Number of halvings that will be applied to MIDI velocity
 #define inputPin A0
 
-bool calibrating = false; 
+const bool calibrating = false; 
 Preferences calibration;                        
 
 uint16_t highestYet;
@@ -130,7 +130,7 @@ void loop() {
     } while (timeGreaterOrEqual(startReadingTime + initialHitReadDuration, micros()));
  
     // Send the data with corresponding position data
-    
+
     //usbMIDI.sendNoteOn(0, (highestYet >> midiVelocityScaleDownAmount) + 1, 1); // We add 1 onto the velocity so that the result is never 0, which would mean the same as a note-off
     D_println(highestYet); // Send the unscaled velocity value to the serial monitor too, for debugging / fine-tuning
     hitOccurredRecently = true;
