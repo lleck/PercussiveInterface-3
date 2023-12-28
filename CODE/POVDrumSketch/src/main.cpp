@@ -8,9 +8,9 @@
 //*functions to convert polar2cartesian and backwards     x
 //*ESPNow protocol to send out the data                   x
 //*library to operate the ADG731 MUXes                    x
-//*functions to read out the TMAG5170 hall effect sensors
-//*function to read out impulse sensor (Interrupt R?)
-//*function to show test image
+//*functions to read out the TMAG5170 hall effect sensors x
+//*function to read out impulse sensor (task_TriggerLoop) x
+//*function to show test image                            
 // #######################################################
 
 #define DEBUG 1 // 0 to disable serial prints
@@ -432,3 +432,4 @@ void loop()
 
   checkRPM();
 }
+
