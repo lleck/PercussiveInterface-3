@@ -168,7 +168,6 @@ void TMAG5170::read_frame (uint8_t reg_addr, uint16_t *data_out, uint16_t *statu
     //     //error_flag |= spi_master_read( &ctx->spi, &data_buf[ cnt ], 1 );
     }
     digitalWrite(spiChipSelectPin, HIGH);
-    Serial.println("SPI.transfen ready");
     // uint8_t crc = data_buf[ 3 ] & 0x0F;
     // if ( crc == TMAG5170_calculate_crc ( data_buf ) )
     // {   
@@ -275,17 +274,15 @@ float TMAG5170::getZresult( bool *error_detected ){
     float data;
     bool error = false;
     *error_detected = error;
-    Serial.println("getting result...");
     read_frame( TMAG5170_REG_CONV_STATUS, &conv_status, &reg_status, &error );
     if (!error && (conv_status & TMAG5170_CONV_STATUS_RDY))
     {   
         read_frame( TMAG5170_REG_SENSOR_CONFIG, &sensor_config, &reg_status, &error );
         if (!error && ( conv_status & TMAG5170_CONV_STATUS_Z ))
         {   
-            Serial.println("result ready");
             read_frame(TMAG5170_REG_Z_CH_RESULT, &reg_data, &reg_status, &error );
             if (!error) 
-            {   Serial.println(reg_data);
+            {   
                 data = ( ( int16_t ) reg_data ) / TMAG5170_XYZ_RESOLUTION;
                 switch ( sensor_config & TMAG5170_Z_RANGE_BIT_MASK )
                 {

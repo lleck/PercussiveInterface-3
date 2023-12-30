@@ -36,7 +36,7 @@ NeoPixelBus<DotStarBgrFeature, DotStarEsp32DmaSpi3Method> strip(pixelCount);
 
 RgbColor red(colorSaturation, 0, 0);
 RgbColor green(0, colorSaturation, 0);
-RgbColor blue(0, 0, colorSaturation);
+RgbColor blue(0, 0, colorSaturation);       
 RgbColor white(colorSaturation);
 RgbColor black(0);
 
@@ -114,12 +114,14 @@ void loop(){
     digitalWrite(MUX1_SYNC_PIN, HIGH);
 
 
-    magneticSensor.simple_read(TMAG5170_REG_CONV_STATUS);
-    //Read from the SPI-controlled sensor
-    //float sensorValue1 = readMagneticSensor();
 
-    delay(1000);
+    //magneticSensor.simple_read(TMAG5170_REG_CONV_STATUS);
+    //Read from the SPI-controlled sensor
+    float sensorValue = readMagneticSensor();
+    Serial.println(sensorValue);
+    delay(10);
 
 
 
 }
+
