@@ -135,7 +135,7 @@ void setup()
   attachInterrupt(digitalPinToInterrupt(IR_SENSOR_PIN), Rotation_Interrupt, FALLING);
   pinMode(IR_VIBROMETER_PIN, INPUT);
 
-  // start the strip on the defined SPI bus and init to böack = all pixels off
+  // start the strip on the defined SPI bus and init to black = all pixels off
   strip.Begin(LED_CLOCK_PIN, LED_DATA_PIN, LED_DATA_PIN, LED_CS_PIN);
   strip.ClearTo(black); // this resets all the DotStars to an off state
   strip.Show();
@@ -250,6 +250,9 @@ void checkRPM()
 
     // Berechne die Drehgeschwindigkeit in RPM
     unsigned long rpm = ticksCount * rpmMultiplier;
+
+    // Sende die Drehgeschwindigkeit an den ESP mit Motorshield
+    //esp_now_send(NULL, (uint8_t*)&rpm, sizeof(unsigned long));
 
     D_print("Drehgeschwindigkeit (RPM): ");
     D_println(rpm);
