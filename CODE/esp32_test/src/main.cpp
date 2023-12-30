@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <ADG731.h>
 #include <myTMAG5170.h>
 #include <NeoPixelBus.h>
 
@@ -27,9 +26,8 @@ uint16_t numDiv = 0;
 float magneticArray1[sensorCount][angularDivisions];
 float magneticArray2[sensorCount][angularDivisions];
 
-// init two instances of the adg731 32ch mux
-ADG731 mux1(CLOCK_PIN, MOSI_PIN, MUX1_SYNC_PIN);
-ADG731 mux2(CLOCK_PIN, MOSI_PIN, MUX2_SYNC_PIN);
+// Channel select commands for ADG731 Mux
+uint8_t ch_select_cmd[34] = {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F,0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17,0x18,0x19,0x1A,0x1B,0x1C,0x1D,0x1E,0x1F,0x40,0x80};
 
 // init the TMAG5170 Class
 TMAG5170 magneticSensor;
@@ -44,48 +42,55 @@ RgbColor black(0);
 
 void setup(){
   Serial.begin(9600);
-  delay(1000);
-  pinMode(TMAG_CS_PIN,OUTPUT);
-  magneticSensor.begin(TMAG_CS_PIN);
+  SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN);
+  pinMode(MUX1_SYNC_PIN, OUTPUT); // set the SS pin as an output
+  pinMode(MUX2_SYNC_PIN, OUTPUT); // set the SS pin as an output
+  pinMode(TMAG_CS_PIN, OUTPUT);
+  digitalWrite(MUX1_SYNC_PIN, HIGH);
+  digitalWrite(MUX2_SYNC_PIN, HIGH);
+  digitalWrite(TMAG_CS_PIN, HIGH);        
+
   bool error = false;
    // start the strip on the defined SPI bus and init to black = all pixels off
   strip.Begin(LED_CLOCK_PIN, LED_DATA_PIN, LED_DATA_PIN, LED_CS_PIN);
   strip.ClearTo(black); // this resets all the DotStars to an off state
   strip.Show();
-  
+
+  magneticSensor.begin(TMAG_CS_PIN);
+  magneticSensor.disable_crc();
+
   for (int i = 0; i < sensorCount && !error; i++)
   {
-    mux1.setChannel(i);
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    SPI.transfer(ch_select_cmd[i]);      // send a command to select channel 
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
     currentSensor = i;
-    digitalWrite(TMAG_CS_PIN, LOW);
     magneticSensor.default_cfg(&error);
-      if (error)
-      {
-        Serial.print("error conf. sensor nr. "); // Error check 
-        Serial.println(currentSensor);
-        return;
-      }
-    digitalWrite(TMAG_CS_PIN, HIGH);
   }
   
   for (int j = 0; j < sensorCount && !error; j++)
   {
-    mux2.setChannel(j);
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    SPI.transfer(ch_select_cmd[j]);      // send a command to select channel 31
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
     currentSensor = j + sensorCount;
-    digitalWrite(TMAG_CS_PIN, LOW);
-    magneticSensor.default_cfg(&error);
-    if (error)
+    magneticSensor.default_cfg(&error);   
+  }
+  if (error)
       {
         Serial.print("error conf. sensor nr. "); // Error check
         Serial.println(currentSensor);
-        return;
       }
-    digitalWrite(TMAG_CS_PIN, HIGH);
-  }
-  mux1.allOff();
-  mux2.allOff();
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    SPI.transfer(ch_select_cmd[34]);      // send a command to set all Off
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    SPI.transfer(ch_select_cmd[34]);      // send a command to set all Off
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
+
   Serial.println("TMAG_config_complete");
 }
+
 
 float readMagneticSensor()
 {
@@ -102,15 +107,19 @@ float readMagneticSensor()
 
 void loop(){
     // Select the appropriate channel on the first multiplexer
-    digitalWrite(TMAG_CS_PIN, LOW);
-    mux1.setChannel(30);
-    currentSensor = 30;
+   
+    
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    SPI.transfer(ch_select_cmd[30]);      // send a command to select channel 31
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+
+
+    magneticSensor.simple_read(TMAG5170_REG_CONV_STATUS);
+    //Read from the SPI-controlled sensor
+    //float sensorValue1 = readMagneticSensor();
+
     delay(1000);
-    // Read from the SPI-controlled sensor
-    float sensorValue1 = readMagneticSensor();
-    Serial.println(sensorValue1);
-    delay(1000);
-    digitalWrite(TMAG_CS_PIN, HIGH);
-    //mux1.allOff();
-  
+
+
+
 }

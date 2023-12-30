@@ -4,8 +4,8 @@
             "path": ".."
         },
         {
-            "name": "esp32 test",
-            "path": "../../../../../Dokumente/PlatformIO/Projects/esp32 test"
+            "name": "esp32_test",
+            "path": "../../esp32_test"
         }
     ]
 }
