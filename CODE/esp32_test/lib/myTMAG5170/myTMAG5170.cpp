@@ -13,6 +13,8 @@
 #define MISO_PIN 14
 #define DUMMY  0x00
 
+SPISettings TMAG5170_SPI(10000000, MSBFIRST, SPI_MODE0); // spi configuration for the TMAG5170
+
 TMAG5170::TMAG5170(){
 
 }
@@ -26,10 +28,7 @@ static uint8_t TMAG5170_calculate_crc ( uint8_t crc_source[ 4 ] );
 
 void TMAG5170::begin(uint8_t chipSelectPin){
   setChipSelectPin(chipSelectPin);
-  spiMaximumSpeed = 1000000;
-  spiDataMode = SPI_MODE0;
   SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN, chipSelectPin);
-  SPI.beginTransaction(SPISettings(spiMaximumSpeed, MSBFIRST, spiDataMode));
 }
 
 void TMAG5170::end() {
@@ -38,10 +37,12 @@ void TMAG5170::end() {
 
 void TMAG5170::disable_crc() {
     uint8_t data_buf[4] = {0x0F,0x00,0x04,0x07};
+    SPI.beginTransaction(TMAG5170_SPI); 
     digitalWrite(spiChipSelectPin, LOW);
     // buffer array and size
     SPI.transfer(data_buf, 4);
     digitalWrite(spiChipSelectPin, HIGH);
+    SPI.endTransaction();
 }
 
 
@@ -101,12 +102,12 @@ void TMAG5170::write_frame (uint8_t reg_addr, uint16_t data_in, bool *error_dete
     data_buf[ 1 ] = ( uint8_t ) ( ( data_in >> 8 ) & 0xFF );
     data_buf[ 2 ] = ( uint8_t ) ( data_in & 0xFF );
     data_buf[ 3 ] = TMAG5170_calculate_crc ( data_buf );
+    SPI.beginTransaction(TMAG5170_SPI); 
     digitalWrite(spiChipSelectPin, LOW);
-    delay(1);
     // buffer array and size
     SPI.transfer(data_buf, 4);
-
     digitalWrite(spiChipSelectPin, HIGH);
+    SPI.endTransaction(); 
 }
 
 void TMAG5170::simple_read(uint8_t reg_addr) {
@@ -119,6 +120,7 @@ void TMAG5170::simple_read(uint8_t reg_addr) {
     data_buf[ 2 ] = DUMMY;
     data_buf[ 3 ] = DUMMY;
 
+    SPI.beginTransaction(TMAG5170_SPI); 
     digitalWrite(spiChipSelectPin, LOW);
     
         SPI.transfer(data_buf[0]);
@@ -127,6 +129,7 @@ void TMAG5170::simple_read(uint8_t reg_addr) {
         crc  = SPI.transfer(DUMMY);
    
     digitalWrite(spiChipSelectPin, HIGH);
+    SPI.endTransaction(); 
     uint16_t data = ( ( uint16_t )val1 << 8 ) | val2;
          Serial.print("val1 ");
          Serial.println(val1, BIN);
@@ -158,6 +161,8 @@ void TMAG5170::read_frame (uint8_t reg_addr, uint16_t *data_out, uint16_t *statu
     data_buf[ 1 ] = DUMMY;
     data_buf[ 2 ] = DUMMY;
     data_buf[ 3 ] = TMAG5170_calculate_crc ( data_buf );
+    
+    SPI.beginTransaction(TMAG5170_SPI); 
     digitalWrite(spiChipSelectPin, LOW);
     
     //SPI.transfer(data_buf, 4);
@@ -168,6 +173,7 @@ void TMAG5170::read_frame (uint8_t reg_addr, uint16_t *data_out, uint16_t *statu
     //     //error_flag |= spi_master_read( &ctx->spi, &data_buf[ cnt ], 1 );
     }
     digitalWrite(spiChipSelectPin, HIGH);
+    SPI.endTransaction(); 
     // uint8_t crc = data_buf[ 3 ] & 0x0F;
     // if ( crc == TMAG5170_calculate_crc ( data_buf ) )
     // {   
