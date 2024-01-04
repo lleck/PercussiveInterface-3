@@ -116,23 +116,23 @@ void sensorChannel (uint8_t muxNr, uint8_t channelNr)
   switch (muxNr)
   {
     case 1:
-    {
       SPI.beginTransaction(muxSPI);
       digitalWrite(MUX1_SYNC_PIN, LOW);
       SPI.transfer(ch_select_cmd[channelNr]);      // send a command to select channel 
       currentSensor = channelNr;                   // keep track of current sensor for debugging
       digitalWrite(MUX1_SYNC_PIN, HIGH);
       SPI.endTransaction();
-    }
+    break;
     case 2:
-    {
       SPI.beginTransaction(muxSPI);
       digitalWrite(MUX2_SYNC_PIN, LOW);
       SPI.transfer(ch_select_cmd[channelNr]);      // send a command to select channel 
       currentSensor = channelNr + sensorCount;     // keep track of current sensor for debugging
       digitalWrite(MUX2_SYNC_PIN, HIGH);
       SPI.endTransaction();
-    }
+    break;
+    default: break;
+    
   }
 }
 
