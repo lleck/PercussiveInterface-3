@@ -60,7 +60,7 @@ void sensorChannel (uint8_t muxNr, uint8_t channelNr);
 void readPosition();
 float readMagneticSensor();
 
-SPISettings muxSPI(1000000, MSBFIRST, SPI_MODE1); // spi configuration for the ADG731
+SPISettings muxSPI(1000000, MSBFIRST, SPI_MODE2); // spi configuration for the ADG731
 
 
 
