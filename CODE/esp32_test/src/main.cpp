@@ -122,7 +122,7 @@ void sensorChannel (uint8_t muxNr, uint8_t channelNr)
       currentSensor = channelNr;                   // keep track of current sensor for debugging
       digitalWrite(MUX1_SYNC_PIN, HIGH);
       SPI.endTransaction();
-    break;
+    
     case 2:
       SPI.beginTransaction(muxSPI);
       digitalWrite(MUX2_SYNC_PIN, LOW);
@@ -188,22 +188,22 @@ void loop(){
      //magneticSensor.simple_read(TMAG5170_REG_CONV_STATUS);
     // // Select the channel on the first multiplexer
 
-    //  sensorChannel(2, 4);
-    //  D_println("mux2 ch 4");
-    //  float sensorValue2 = readMagneticSensor();
-    //  D_println(sensorValue2);
-    //  delay(1000);
-    //  sensorChannel(2, 0);
-    //  D_println("mux2 off");
-    //  delay(200);
-     sensorChannel(1, 4);
-     D_println("mux1 ch 4");
-     float sensorValue1 = readMagneticSensor();
-     D_println(sensorValue1);
+     sensorChannel(2, 4);
+     D_println("mux2 ch 4");
+     float sensorValue2 = readMagneticSensor();
+     D_println(sensorValue2);
      delay(1000);
-     sensorChannel(1, 0 );
-     D_println("mux1 off");
-     delay(20);
+     sensorChannel(2, 0);
+     D_println("mux2 off");
+     delay(200);
+    //  sensorChannel(1, 4);
+    //  D_println("mux1 ch 4");
+    //  float sensorValue1 = readMagneticSensor();
+    //  D_println(sensorValue1);
+    //  delay(1000);
+    //  sensorChannel(1, 0 );
+    //  D_println("mux1 off");
+    //  delay(20);
 
 }
 
