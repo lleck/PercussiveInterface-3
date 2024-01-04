@@ -85,13 +85,13 @@ void setup(){
   magneticSensor.begin(TMAG_CS_PIN);
   magneticSensor.disable_crc();
 
-  for (int i = 1; i <= sensorCount && !error; i++)
+  for (int i = 1; i <= 32 && !error; i++)
   {
     sensorChannel(1, i);
     magneticSensor.default_cfg(&error);
   }
   
-  for (int j = 1; j <= sensorCount && !error; j++)
+  for (int j = 1; j <= 32 && !error; j++)
   {
     sensorChannel(2, j);
     magneticSensor.default_cfg(&error);  
@@ -188,14 +188,14 @@ void loop(){
      //magneticSensor.simple_read(TMAG5170_REG_CONV_STATUS);
     // // Select the channel on the first multiplexer
 
-     sensorChannel(2, 4);
-     D_println("mux2 ch 4");
-     float sensorValue2 = readMagneticSensor();
-     D_println(sensorValue2);
-     delay(1000);
-     sensorChannel(2, 0);
-     D_println("mux2 off");
-     delay(200);
+    //  sensorChannel(2, 4);
+    //  D_println("mux2 ch 4");
+    //  float sensorValue2 = readMagneticSensor();
+    //  D_println(sensorValue2);
+    //  delay(1000);
+    //  sensorChannel(2, 0);
+    //  D_println("mux2 off");
+    //  delay(200);
      sensorChannel(1, 4);
      D_println("mux1 ch 4");
      float sensorValue1 = readMagneticSensor();
@@ -203,7 +203,7 @@ void loop(){
      delay(1000);
      sensorChannel(1, 0 );
      D_println("mux1 off");
-     delay(200);
+     delay(20);
 
 }
 
