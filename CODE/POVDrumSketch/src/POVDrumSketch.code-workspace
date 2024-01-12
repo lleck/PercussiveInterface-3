@@ -6,6 +6,9 @@
         {
             "name": "esp32_test",
             "path": "../../esp32_test"
+        },
+        {
+            "path": "../../Test ESP MUX"
         }
     ]
 }

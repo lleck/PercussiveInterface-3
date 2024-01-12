@@ -41,8 +41,9 @@ uint16_t numDiv = 0;
 float magneticArray1[sensorCount][angularDivisions];
 float magneticArray2[sensorCount][angularDivisions];
 
-// Channel select commands for ADG731 Mux
-uint8_t ch_select_cmd[34] = {0x80,0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F,0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17,0x18,0x19,0x1A,0x1B,0x1C,0x1D,0x1E,0x1F,0x40};
+// Channel select commands for ADG731 Mux (center first)
+uint8_t mux1_ch[26] = {30, 31, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 16, 17, 18, 19, 20, 21, 22, 23};
+uint8_t mux2_ch[26] = {23, 22, 21, 20, 19, 18, 17, 16, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 12, 13, 14, 15, 31, 30};
 
 // init the TMAG5170 Class
 TMAG5170 magneticSensor;
@@ -57,6 +58,7 @@ RgbColor black(0);
 
 //forward declaring functions as this is not written in Arduino IDE
 void sensorChannel (uint8_t muxNr, uint8_t channelNr);
+void mux_off(int muxNr);
 void readPosition();
 float readMagneticSensor();
 
@@ -64,8 +66,10 @@ SPISettings muxSPI(1000000, MSBFIRST, SPI_MODE2); // spi configuration for the A
 
 
 
+
 void setup(){
   D_SerialBegin(9600);
+  delay(2000);
   SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN);
   pinMode(MUX1_SYNC_PIN, OUTPUT); // set the SS pin as an output
   pinMode(MUX2_SYNC_PIN, OUTPUT); // set the SS pin as an output
@@ -80,23 +84,21 @@ void setup(){
   // strip.ClearTo(black); // this resets all the DotStars to an off state
   // strip.Show();
 
-
-
   magneticSensor.begin(TMAG_CS_PIN);
   magneticSensor.disable_crc();
 
-  for (int i = 1; i <= 32 && !error; i++)
+  for (int i = 0; i < 26 && !error; i++)
   {
     sensorChannel(1, i);
     magneticSensor.default_cfg(&error);
   }
-  
-  for (int j = 1; j <= 32 && !error; j++)
+  mux_off(1);
+  for (int j = 0; j < 26 && !error; j++)
   {
     sensorChannel(2, j);
     magneticSensor.default_cfg(&error);  
   }
-
+  mux_off(2);
   if (error)
   {
     D_print("error conf. sensor nr. "); // Error check
@@ -111,29 +113,46 @@ void setup(){
 
 }
 
-void sensorChannel (uint8_t muxNr, uint8_t channelNr) 
-{   
+
+void sensorChannel(uint8_t muxNr, uint8_t channelNr)
+{
   switch (muxNr)
   {
-    case 1:
-      SPI.beginTransaction(muxSPI);
-      digitalWrite(MUX1_SYNC_PIN, LOW);
-      SPI.transfer(ch_select_cmd[channelNr]);      // send a command to select channel 
-      currentSensor = channelNr;                   // keep track of current sensor for debugging
-      digitalWrite(MUX1_SYNC_PIN, HIGH);
-      SPI.endTransaction();
+  case 1:
+    SPI.beginTransaction(muxSPI);
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    SPI.transfer(mux1_ch[channelNr]); // send a command to select channel
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    SPI.endTransaction();
     break;
-    case 2:
-      SPI.beginTransaction(muxSPI);
-      digitalWrite(MUX2_SYNC_PIN, LOW);
-      SPI.transfer(ch_select_cmd[channelNr]);      // send a command to select channel 
-      currentSensor = channelNr + sensorCount;     // keep track of current sensor for debugging
-      digitalWrite(MUX2_SYNC_PIN, HIGH);
-      SPI.endTransaction();
+  case 2:
+    SPI.beginTransaction(muxSPI);
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    SPI.transfer(mux2_ch[channelNr]); // send a command to select channel
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
+    SPI.endTransaction();
     break;
-    default: break;
-    
+  default:
+    break;
   }
+}
+
+void mux_off(int muxNr)
+{
+  SPI.beginTransaction(muxSPI);
+  if (muxNr == 1)
+  {
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    SPI.transfer(0x80);
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+  }
+  else if(muxNr == 2 )
+  {
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    SPI.transfer(0x80);
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
+  }
+  SPI.endTransaction();
 }
 
 void readPosition()
@@ -183,29 +202,62 @@ float readMagneticSensor()
 }
 
 void loop(){
-    
-    // readPosition();
-     //magneticSensor.simple_read(TMAG5170_REG_CONV_STATUS);
-    // // Select the channel on the first multiplexer
 
-     sensorChannel(2, 4);
-     D_println("mux2 ch 4");
-     float sensorValue2 = readMagneticSensor();
-     D_println(sensorValue2);
+     sensorChannel(1, 0);
+     D_print("val1   ");
+     float val1 = readMagneticSensor();
+     D_print(val1);
+     delay(1);
+     mux_off(1);
+     delay(1);
+     D_print("\t ");
+     sensorChannel(1, 1);
+     D_print("val2   ");
+     float val2 = readMagneticSensor();
+     D_print(val2);
+     delay(1);
+     mux_off(1);
+     delay(1);
+     D_print("\t ");
+     sensorChannel(1, 2);
+     D_print("val3   ");
+     float val3 = readMagneticSensor();
+     D_println(val3);
+     delay(1);
+     mux_off(1);
+     delay(1);
+
+     sensorChannel(2, 0);
+     D_print("2val1   ");
+     float val4 = readMagneticSensor();
+     D_print(val4);
+     delay(1);
+     mux_off(2);
+     delay(1);
+     D_print("\t ");
+     sensorChannel(2, 1);
+     D_print("2val2   ");
+     float val5 = readMagneticSensor();
+     D_print(val5);
+     delay(1);
+     mux_off(2);
+     delay(1);
+     D_print("\t ");
+     sensorChannel(2, 2);
+     D_print("2val3   ");
+     float val6 = readMagneticSensor();
+     D_println(val6);
+     delay(1);
+     mux_off(2);
      delay(1000);
-    //sensorChannel(2, 0);
-    // sensorChannel(1, 0);
-     D_println("mux2 off");
-     delay(200);
-     sensorChannel(1, 4);
-     D_println("mux1 ch 4");
-     float sensorValue1 = readMagneticSensor();
-     D_println(sensorValue1);
-     delay(1000);
-    //  sensorChannel(1, 0 );
+
     //  sensorChannel(2, 0);
-     D_println("mux1 off");
-     delay(200);
+    //  D_print("val2   ");
+    //  float val2 = readMagneticSensor();
+    //  D_println(val2);
+    //  delay(1000);
+    //  mux_off(2);
+    //  delay(10);
 
 }
 

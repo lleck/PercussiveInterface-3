@@ -81,7 +81,7 @@ void setup()
   D_SerialBegin(115200);
   bool error = 0;
   delay(2000);
-  pinMode(CLOCK_PIN,OUTPUT);
+  
   SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN);
   pinMode(MUX1_SYNC_PIN, OUTPUT); // set the SS pin as an output
   pinMode(MUX2_SYNC_PIN, OUTPUT); // set the SS pin as an output
@@ -90,19 +90,15 @@ void setup()
   digitalWrite(MUX1_SYNC_PIN, HIGH);
   digitalWrite(MUX2_SYNC_PIN, HIGH);
   digitalWrite(TMAG_CS_PIN, HIGH);
+  
   //magneticSensor.begin(TMAG_CS_PIN);
     //mux_off(1);
-
-  
     sensorChannel(2, 0);
     delay(50);
-    digitalWrite(CLOCK_PIN,LOW);
-  delay(50);
-  //disable CRC
     SPI.beginTransaction(tmagSPI);
     delay(5);
     // trash transfer um die clock polarity zu switchen
-   SPI.transfer(0x0);
+    SPI.transfer(0x0);
     digitalWrite(TMAG_CS_PIN,LOW);
     SPI.transfer(0x0F);
     SPI.transfer(0x00);
@@ -110,7 +106,7 @@ void setup()
     SPI.transfer(0x07);
     digitalWrite(TMAG_CS_PIN,HIGH);
     SPI.endTransaction();
-  delay(10);
+    delay(10);
 //read test config
     SPI.beginTransaction(tmagSPI);
     digitalWrite(TMAG_CS_PIN,LOW);
