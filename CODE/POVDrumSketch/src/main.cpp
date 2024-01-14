@@ -10,7 +10,7 @@
 //*library to operate the ADG731 MUXes                    x
 //*functions to read out the TMAG5170 hall effect sensors x
 //*function to read out impulse sensor (task_TriggerLoop) x
-//*function to show test image                            
+//*function to show test image
 // #######################################################
 
 #define DEBUG 1 // 0 to disable serial prints
@@ -29,12 +29,10 @@
 
 #include <Arduino.h>
 #include <math.h>
-#include <SPI.h>
 #include <esp_now.h>
 #include <WiFi.h>
 #include <Preferences.h> // to store some initial settings/ tresholds / calibration data
 #include <NeoPixelBus.h>
-#include <ADG731.h>
 #include <myTMAG5170.h>
 #include <FastTrig.h>
 
@@ -59,7 +57,7 @@
 #define midiVelocityScaleDownAmount 2 // Number of halvings that will be applied to MIDI velocity
 
 Preferences calibration;
-const bool calibrating = false; 
+const bool calibrating = false;
 
 uint16_t highestYet;
 uint32_t startReadingTime;
@@ -85,16 +83,19 @@ unsigned long rpm;
 uint8_t rpmCalcFrequency = 100; // in Millisekunden
 float rpmMultiplier = 60000.0 / (rpmCalcFrequency * TICKS_PER_REVOLUTION);
 // two 2D array buffers for the magnetic sensors (left & right arm)
-float magneticArray1[sensorCount][angularDivisions];
-float magneticArray2[sensorCount][angularDivisions];
+int magneticArray1[sensorCount][angularDivisions];
+int magneticArray2[sensorCount][angularDivisions];
 // currently active sensor (used for debugging)
 uint8_t currentSensor = 0;
 
-// init two instances of the adg731 32ch mux
-ADG731 mux1(CLOCK_PIN, MOSI_PIN, MUX1_SYNC_PIN);
-ADG731 mux2(CLOCK_PIN, MOSI_PIN, MUX2_SYNC_PIN);
-// Define the SPI settings for the sensors
-SPISettings spiSettings(1000000, MSBFIRST, SPI_MODE0);
+// Channel select commands for ADG731 Mux (center first)
+uint8_t mux1_ch[26] = {30, 31, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 16, 17, 18, 19, 20, 21, 22, 23};
+uint8_t mux2_ch[26] = {23, 22, 21, 20, 19, 18, 17, 16, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 12, 13, 14, 15, 31, 30};
+uint8_t led_ch[52] = {51, 0, 50, 1, 49, 2, 48, 3, 47, 4, 46, 5, 45, 6, 44, 7, 43, 8, 42, 9, 41, 10, 40, 11, 39, 12, 38, 13, 37, 14, 36, 15, 35, 16, 34,
+                      17, 33, 18, 32, 19, 31, 20, 30, 21, 29, 22, 28, 23, 27, 24, 26, 25};
+
+SPISettings muxSPI(10000000, MSBFIRST, SPI_MODE2); // spi configuration for the ADG731
+
 // init the TMAG5170 Class
 TMAG5170 magneticSensor;
 // init the NeoPixelBus instance with Spi and alternate Pins
@@ -106,16 +107,31 @@ RgbColor blue(0, 0, colorSaturation);
 RgbColor white(colorSaturation);
 RgbColor black(0);
 
-//forward declaring functions as this is not written in Arduino IDE
-float *polr2cart (float r, float theta);
+// forward declaring functions as this is not written in Arduino IDE
+float *polr2cart(float r, float theta);
 float *cart2polr(float x, float y);
 void IRAM_ATTR Rotation_Interrupt();
 void triggerLoop(void *pvParameters);
+void sensorChannel(uint8_t muxNr, uint8_t channelNr);
+void mux_off(int muxNr);
+void readPosition();
+int readMagneticSensor();
 
 void setup()
 {
   D_SerialBegin(115200);
-  // SPI.begin(); // Initialize SPI
+  SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN);
+  pinMode(MUX1_SYNC_PIN, OUTPUT); // set the CS pin as an output
+  pinMode(MUX2_SYNC_PIN, OUTPUT); // set the CS pin as an output
+  pinMode(TMAG_CS_PIN, OUTPUT);   // set the CS pin as an output
+  digitalWrite(MUX1_SYNC_PIN, HIGH);
+  digitalWrite(MUX2_SYNC_PIN, HIGH);
+  digitalWrite(TMAG_CS_PIN, HIGH);
+
+  bool error = false;
+
+  magneticSensor.begin(TMAG_CS_PIN);
+  magneticSensor.disable_crc();
 
   // erstelle einen realtime task für die Triggerabfrage (Core 1 wie der Rest?)
   // Welche Variablen werden außerhalb genutzt ? semaphor benötigt ?
@@ -139,30 +155,30 @@ void setup()
   strip.Begin(LED_CLOCK_PIN, LED_DATA_PIN, LED_DATA_PIN, LED_CS_PIN);
   strip.ClearTo(black); // this resets all the DotStars to an off state
   strip.Show();
+
   // initialisieren des TAG5170 arrays / set to each
-  magneticSensor.begin(TMAG_CS_PIN);
-  bool error = false;
+
   for (int i = 0; i < sensorCount && !error; i++)
   {
-    mux1.setChannel(i);
-    currentSensor = i;
+    sensorChannel(1, i);
     magneticSensor.default_cfg(&error);
   }
-  mux1.allOff();
+  mux_off(1);
   for (int j = 0; j < sensorCount && !error; j++)
   {
-    mux2.setChannel(j);
-    currentSensor = j + sensorCount;
+    sensorChannel(2, j);
     magneticSensor.default_cfg(&error);
   }
+  mux_off(2);
   if (error)
   {
-    D_print("error conf. sensor nr. "); // Error check in den n4 loop
+    D_print("error conf. sensor nr. "); // Error check
     D_println(currentSensor);
   }
-  mux2.allOff();
+
   // ###############check for calibration_Mode##################
-  if (calibrating){
+  if (calibrating)
+  {
     calibration.begin("th", RW_MODE); // namespace th verwenden (anlegen) + schreibrechte
     calibration.clear();              // clear previous keys in the namespace
     for (int i = 0; i < 256; i++)
@@ -252,7 +268,7 @@ void checkRPM()
     unsigned long rpm = ticksCount * rpmMultiplier;
 
     // Sende die Drehgeschwindigkeit an den ESP mit Motorshield
-    //esp_now_send(NULL, (uint8_t*)&rpm, sizeof(unsigned long));
+    // esp_now_send(NULL, (uint8_t*)&rpm, sizeof(unsigned long));
 
     D_print("Drehgeschwindigkeit (RPM): ");
     D_println(rpm);
@@ -262,42 +278,89 @@ void checkRPM()
   }
 }
 
-float readMagneticSensor()
+void sensorChannel(uint8_t muxNr, uint8_t channelNr)
+{
+  switch (muxNr)
+  {
+  case 1:
+    SPI.beginTransaction(muxSPI);
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    SPI.transfer(mux1_ch[channelNr]); // send a command to select channel
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    SPI.endTransaction();
+    break;
+  case 2:
+    SPI.beginTransaction(muxSPI);
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    SPI.transfer(mux2_ch[channelNr]); // send a command to select channel
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
+    SPI.endTransaction();
+    break;
+  default:
+    break;
+  }
+}
+
+void mux_off(int muxNr)
+{
+  SPI.beginTransaction(muxSPI);
+  if (muxNr == 1)
+  {
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    SPI.transfer(0x80);
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+  }
+  else if (muxNr == 2)
+  {
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    SPI.transfer(0x80);
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
+  }
+  SPI.endTransaction();
+}
+
+int readMagneticSensor()
 {
   bool error = false;
-  float value = magneticSensor.getZresult(&error);
-  return value;
+  int value = magneticSensor.getZresult(&error);
   if (error)
   {
     D_print("error reading sensor nr. ");
     D_println(currentSensor);
+    delay(10);
   }
+  return value;
 }
 
 void readPosition()
 {
-  for (int sensorIndex = 0; sensorIndex < sensorCount; sensorIndex++)
+  for (int sensorIndex = 0; sensorIndex < sensorCount * 2; sensorIndex++)
   {
-    // Select the appropriate channel on the first multiplexer
-    mux1.setChannel(sensorIndex);
-    currentSensor = sensorIndex;
+    // bei geraden Indexzahlen
+    if (sensorIndex % 2 == 0)
+    {
+      sensorChannel(1, sensorIndex / 2);
+      // Read from the SPI-controlled sensor
+      int sensorValue1 = readMagneticSensor();
+      // Store the sensor value in the array
+      magneticArray1[sensorIndex][numDiv] = sensorValue1;
+      mux_off(1);
 
-    // Read from the SPI-controlled sensor
-    float sensorValue1 = readMagneticSensor();
+      // Select the appropriate channel on the second multiplexer
+      sensorChannel(2, sensorIndex / 2);
+      // Read from the SPI-controlled sensor
+      int sensorValue2 = readMagneticSensor();
+      // Store the sensor value in the array
+      magneticArray2[sensorIndex][numDiv] = sensorValue2;
+      mux_off(2);
+    }
+    // bei ungeraden Indexzahlen
+    else
+    {
+      magneticArray1[sensorIndex][numDiv] = (magneticArray1[sensorIndex + 1][numDiv] + magneticArray1[sensorIndex - 1][numDiv]) / 2;
+      magneticArray2[sensorIndex][numDiv] = (magneticArray2[sensorIndex + 1][numDiv] + magneticArray2[sensorIndex - 1][numDiv]) / 2;
+    }
 
-    // Store the sensor value in the array
-    magneticArray1[sensorIndex][numDiv] = sensorValue1;
-    mux1.allOff();
-
-    // Select the appropriate channel on the second multiplexer
-    mux2.setChannel(sensorIndex);
-    currentSensor = sensorIndex + sensorCount;
-
-    // Read from the SPI-controlled sensor
-    float sensorValue2 = readMagneticSensor();
-    // Store the sensor value in the array
-    magneticArray2[sensorIndex][numDiv] = sensorValue2;
-    mux2.allOff();
     // // Print the sensor index and values
     // D_print("Sensor ");
     // D_print(sensorIndex + 1);  // Sensor index starts from 1
@@ -309,7 +372,7 @@ void readPosition()
   }
   numDiv++;
   if (numDiv >= angularDivisions)
-    numDiv = 0;
+  numDiv = 0;
 }
 
 // Compares times without being prone to problems when the micros() counter overflows, every ~70 mins
@@ -411,7 +474,7 @@ void triggerLoop(void *pvParameters)
         value = analogRead(IR_VIBROMETER_PIN);
       } while (timeGreaterOrEqual(startReadingTime + initialHitReadDuration, micros()));
       // Send the data with corresponding position data
-      
+
       // usbMIDI.sendNoteOn(0, (highestYet >> midiVelocityScaleDownAmount) + 1, 1); // We add 1 onto the velocity so that the result is never 0, which would mean the same as a note-off
       D_println(highestYet); // Send the unscaled velocity value to the serial monitor too, for debugging / fine-tuning
       hitOccurredRecently = true;
@@ -419,7 +482,6 @@ void triggerLoop(void *pvParameters)
     }
   }
 }
-
 
 void loop()
 {
@@ -435,4 +497,3 @@ void loop()
 
   checkRPM();
 }
-

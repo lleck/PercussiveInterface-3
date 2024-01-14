@@ -13,7 +13,7 @@
 #define MISO_PIN 14
 #define DUMMY  0x00
 
-SPISettings TMAG5170_SPI(1000000, MSBFIRST, SPI_MODE0); // spi configuration for the TMAG5170
+SPISettings TMAG5170_SPI(1000, MSBFIRST, SPI_MODE0); // spi configuration for the TMAG5170
 
 TMAG5170::TMAG5170(){
 
@@ -30,6 +30,7 @@ void TMAG5170::begin(uint8_t chipSelectPin){
   setChipSelectPin(chipSelectPin);
   // print system time to check update status
   Serial.println(__TIME__);
+  Serial.println("dhhgdn");
   //SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN, chipSelectPin);
 }
 
@@ -74,7 +75,7 @@ void TMAG5170::default_cfg ( bool *error_detected )
                                      TMAG5170_Z_RANGE_100mT , &error);            // set range for axis channels
 
     write_frame(TMAG5170_REG_SYSTEM_CONFIG, TMAG5170_DIAG_SEL_ALL_DP_DIAG_ALL |  // diagnostic mode on all data paths (default)
-                                     TMAG5170_TRIGGER_MODE_CS_PULSE |            // conversion trigger condition 
+                                     TMAG5170_TRIGGER_MODE_CS_PULSE|             // conversion trigger condition 
                                      TMAG5170_DATA_TYPE_32BIT_REG |              // data type accessed from results registers (32bit default)
                                      TMAG5170_DIAG_EN_DISABLE |                  // user controlled AFE diagnostics
                                      TMAG5170_Z_HLT_EN_DISABLE |                 // magnetic field limit check for axis channels
@@ -285,9 +286,9 @@ float TMAG5170::getYresult( bool *error_detected ){
     return data;
 }
 
-float TMAG5170::getZresult( bool *error_detected ){
+int TMAG5170::getZresult( bool *error_detected ){
     uint16_t reg_status, reg_data, conv_status, sensor_config;
-    float data;
+    int data;
     bool error = false;
     *error_detected = error;
     read_frame( TMAG5170_REG_CONV_STATUS, &conv_status, &reg_status, &error );
@@ -299,25 +300,26 @@ float TMAG5170::getZresult( bool *error_detected ){
             read_frame(TMAG5170_REG_Z_CH_RESULT, &reg_data, &reg_status, &error );
             if (!error) 
             {   
-                data = ( ( int16_t ) reg_data ) / TMAG5170_XYZ_RESOLUTION;
-                switch ( sensor_config & TMAG5170_Z_RANGE_BIT_MASK )
-                {
-                    case TMAG5170_Z_RANGE_25mT:
-                    {
-                        data *= 25.0;
-                        return data;
-                    }
-                    case TMAG5170_Z_RANGE_50mT:
-                    {
-                        data *= 50.0;
-                        return data;
-                    }
-                    case TMAG5170_Z_RANGE_100mT:
-                    {
-                        data *= 100.0;
-                        return data;
-                    }
-                }
+                data = ( ( int16_t ) reg_data ) ;//TMAG5170_XYZ_RESOLUTION;
+                return data;
+                // switch ( sensor_config & TMAG5170_Z_RANGE_BIT_MASK )
+                // {
+                //     case TMAG5170_Z_RANGE_25mT:
+                //     {
+                //         data *= 25;
+                //         return data;
+                //     }
+                //     case TMAG5170_Z_RANGE_50mT:
+                //     {
+                //         data *= 50.0;
+                //         return data;
+                //     }
+                //     case TMAG5170_Z_RANGE_100mT:
+                //     {
+                //         //data *= 100.0;
+                //         return data;
+                //     }
+                // }    
             }
                     
         }

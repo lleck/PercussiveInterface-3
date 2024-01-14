@@ -197,7 +197,7 @@
 #define TMAG5170_TEMP_SENS_T0                  25.0
 #define TMAG5170_TEMP_ADC_T0                   17522
 #define TMAG5170_TEMP_ADC_RESOLUTION           60.0
-#define TMAG5170_XYZ_RESOLUTION                32768.0
+#define TMAG5170_XYZ_RESOLUTION                32768
 
 
 #define TMAG5170_SPI_READ_MASK                 0x80
@@ -211,13 +211,15 @@ public:
     TMAG5170();
     void begin(uint8_t chipSelectPin);
     void end();
+    void disable_crc();
     void setChipSelectPin(uint8_t chipSelectPin);
     void default_cfg(bool *error_detected);
     void write_frame (uint8_t reg_addr, uint16_t data_in, bool *error_detected );
     void read_frame  (uint8_t reg_addr, uint16_t *data_out, uint16_t *status, bool *error_detected );
+    void simple_read (uint8_t reg_addr);
     float getXresult(bool *error_detected);
     float getYresult(bool *error_detected);
-    float getZresult(bool *error_detected);
+    int getZresult(bool *error_detected);
     float getTEMPresult(bool *error_detected);
     // float getANGLEresult();
     // float getMAGresult();
