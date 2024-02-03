@@ -292,16 +292,18 @@ int TMAG5170::getZresult( bool *error_detected ){
     *error_detected = error;
     read_frame( TMAG5170_REG_CONV_STATUS, &conv_status, &reg_status, &error );
     if (!error && (conv_status & TMAG5170_CONV_STATUS_RDY))
-    {   Serial.println("rdy status");
+    {   
+        //Serial.println("rdy status");
         read_frame( TMAG5170_REG_SENSOR_CONFIG, &sensor_config, &reg_status, &error );
         if (!error && ( conv_status & TMAG5170_CONV_STATUS_Z ))
-        {   Serial.println("rdy z status");
+        {   
+            //Serial.println("rdy z status");
             read_frame(TMAG5170_REG_Z_CH_RESULT, &reg_data, &reg_status, &error );
             if (!error) 
             {   
-                Serial.println("read frame");
+                // Serial.println("read frame");
                 data = ( ( int16_t ) reg_data ) ;//TMAG5170_XYZ_RESOLUTION;
-                //return data;
+                return data;
                 // switch ( sensor_config & TMAG5170_Z_RANGE_BIT_MASK )
                 // {
                 //     case TMAG5170_Z_RANGE_25mT:
@@ -326,7 +328,7 @@ int TMAG5170::getZresult( bool *error_detected ){
        
     }
     *error_detected = error;
-    return data;
+     return data;
 }
 
 float TMAG5170::getTEMPresult( bool *error_detected ){
