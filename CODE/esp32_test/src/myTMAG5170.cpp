@@ -63,7 +63,7 @@ void TMAG5170::default_cfg ( bool *error_detected )
    
     write_frame(TMAG5170_REG_DEVICE_CONFIG, TMAG5170_CONV_AVG_1X |               // additional sampling to reduce noise
                                      TMAG5170_MAG_TEMPCO_0p12 |                  // temp. coefficient of target magnet in %/C°
-                                     TMAG5170_OPERATING_MODE_TRIGGER |           // active trigger mode enabled 
+                                     TMAG5170_OPERATING_MODE_MEASURE |           // measure mode must be enabled !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                                      TMAG5170_T_CH_EN_DISABLE |                  // temp. channel disabled
                                      TMAG5170_T_RATE_PER_CONV_AVG |              // temp conversion rate same as other sensors
                                      TMAG5170_T_HLT_EN_DISABLE, &error);         // temperature limit check for high temp env
@@ -287,7 +287,7 @@ float TMAG5170::getYresult( bool *error_detected ){
 
 int TMAG5170::getZresult( bool *error_detected ){
     uint16_t reg_status, reg_data, conv_status, sensor_config;
-    int data = 0;
+    int data ;
     bool error = false;
     *error_detected = error;
     read_frame( TMAG5170_REG_CONV_STATUS, &conv_status, &reg_status, &error );

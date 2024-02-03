@@ -86,8 +86,6 @@ void setup()
   // strip.ClearTo(black); // this resets all the DotStars to an off state
   // strip.Show();
 
- 
-
   for (int i = 1; i <= sensorCount && !error; i++)
   {
     sensorChannel(1, i);
@@ -108,7 +106,7 @@ void setup()
     magneticSensor.default_cfg(&error);
     delay(1);
   }
-
+  sensorChannel(2, 0);
 
   if (error)
   {
@@ -126,18 +124,16 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
   case 1:
     SPI.beginTransaction(muxSPI);
     digitalWrite(MUX1_SYNC_PIN, LOW);
-    delayMicroseconds(1);
-    digitalWrite(MUX1_SYNC_PIN, HIGH);
     SPI.transfer(mux1_ch[channelNr]); // send a command to select channel
-    currentSensor = channelNr;        // keep track of current sensor for debugging
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    currentSensor = channelNr; // keep track of current sensor for debugging
     SPI.endTransaction();
-   break;
+    break;
   case 2:
     SPI.beginTransaction(muxSPI);
     digitalWrite(MUX2_SYNC_PIN, LOW);
-    delayMicroseconds(1);
+    SPI.transfer(mux2_ch[channelNr]); // send a command to select channel
     digitalWrite(MUX2_SYNC_PIN, HIGH);
-    SPI.transfer(mux2_ch[channelNr]);        // send a command to select channel
     currentSensor = channelNr + sensorCount; // keep track of current sensor for debugging
     SPI.endTransaction();
     break;
@@ -146,6 +142,23 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
   }
 }
 
+void mux_off(int muxNr)
+{
+  SPI.beginTransaction(muxSPI);
+  if (muxNr == 1)
+  {
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    SPI.transfer(0x80);
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+  }
+  else if (muxNr == 2)
+  {
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    SPI.transfer(0x80);
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
+  }
+  SPI.endTransaction();
+}
 void readPosition()
 {
   for (int sensorIndex = 0; sensorIndex < sensorCount; sensorIndex++)
