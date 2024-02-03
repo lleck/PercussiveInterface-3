@@ -42,8 +42,9 @@ float magneticArray1[sensorCount][angularDivisions];
 float magneticArray2[sensorCount][angularDivisions];
 
 // Channel select commands for ADG731 Mux
-uint8_t ch_select_cmd[34] = {0x80, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F, 0x40};
-
+// uint8_t ch_select_cmd[34] = {0x80, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F, 0x40};
+uint8_t mux1_ch[26] = {30, 31, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 16, 17, 18, 19, 20, 21, 22, 23};
+uint8_t mux2_ch[26] = {23, 22, 21, 20, 19, 18, 17, 16, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 12, 13, 14, 15, 31, 30};
 // init the TMAG5170 Class
 TMAG5170 magneticSensor;
 // init the NeoPixelBus instance with Spi and alternate Pins
@@ -57,6 +58,7 @@ RgbColor black(0);
 
 // forward declaring functions as this is not written in Arduino IDE
 void sensorChannel(uint8_t muxNr, uint8_t channelNr);
+void mux_off(int muxNr);
 void readPosition();
 int readMagneticSensor();
 
@@ -73,8 +75,10 @@ void setup()
   digitalWrite(MUX2_SYNC_PIN, HIGH);
   digitalWrite(TMAG_CS_PIN, HIGH);
 
-  sensorChannel(1, 0);
-  sensorChannel(2, 0);
+  // sensorChannel(1, 0);
+  // sensorChannel(2, 0);
+  mux_off(1);
+  mux_off(2);
 
   bool error = false;
   //  // start the strip on the defined SPI bus and init to black = all pixels off
@@ -85,19 +89,17 @@ void setup()
   magneticSensor.begin(TMAG_CS_PIN);
   magneticSensor.disable_crc();
 
-  for (int i = 1; i <= sensorCount && !error; i++)
+  for (int i = 0; i < sensorCount && !error; i++)
   {
     sensorChannel(1, i);
     magneticSensor.default_cfg(&error);
   }
-  sensorChannel(1, 0);
 
-  for (int j = 1; j <= sensorCount && !error; j++)
+  for (int j = 0; j < sensorCount && !error; j++)
   {
     sensorChannel(2, j);
     magneticSensor.default_cfg(&error);
   }
-  sensorChannel(2, 0);
 
   if (error)
   {
@@ -115,20 +117,21 @@ void setup()
 void sensorChannel(uint8_t muxNr, uint8_t channelNr)
 {
   SPI.end();
-  uint8_t data = ch_select_cmd[channelNr];
+
   pinMode(CLOCK_PIN, OUTPUT);
   pinMode(MOSI_PIN, OUTPUT);
 
   if (muxNr == 1)
   {
+    uint8_t data = mux1_ch[channelNr];
     digitalWrite(MUX1_SYNC_PIN, LOW);
     delayMicroseconds(1);
     digitalWrite(MUX1_SYNC_PIN, HIGH);
     for (int i = 0; i < 8; i++)
     {
       digitalWrite(CLOCK_PIN, HIGH);
-      uint8_t bit = (data<<i) & 0x80;
-      digitalWrite(MOSI_PIN, bit);
+      uint8_t bit = (data << i) & 0x80;
+      digitalWrite(MOSI_PIN, !(bit > 0));
       delayMicroseconds(1);
       digitalWrite(CLOCK_PIN, LOW);
       delayMicroseconds(5);
@@ -136,14 +139,15 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
   }
   else if (muxNr == 2)
   {
+    uint8_t data = mux2_ch[channelNr];
     digitalWrite(MUX2_SYNC_PIN, LOW);
     delayMicroseconds(1);
     digitalWrite(MUX2_SYNC_PIN, HIGH);
     for (int i = 0; i < 8; i++)
     {
       digitalWrite(CLOCK_PIN, HIGH);
-      uint8_t bit = (data<<i) & 0x80;
-      digitalWrite(MOSI_PIN, bit);
+      uint8_t bit = (data << i) & 0x80;
+      digitalWrite(MOSI_PIN, !(bit > 0));
       delayMicroseconds(1);
       digitalWrite(CLOCK_PIN, LOW);
       delayMicroseconds(5);
@@ -181,6 +185,44 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
   //   default: break;
 
   // }
+}
+
+void mux_off(int muxNr)
+{
+  SPI.end();
+  if (muxNr == 1)
+  {
+    uint8_t data = 0x80;
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    delayMicroseconds(1);
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    for (int i = 0; i < 8; i++)
+    {
+      digitalWrite(CLOCK_PIN, HIGH);
+      uint8_t bit = (data << i) & 0x80;
+      digitalWrite(MOSI_PIN, !(bit > 0));
+      delayMicroseconds(1);
+      digitalWrite(CLOCK_PIN, LOW);
+      delayMicroseconds(5);
+    }
+  }
+  else if (muxNr == 2)
+  {
+    uint8_t data = 0x80;
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    delayMicroseconds(1);
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
+    for (int i = 0; i < 8; i++)
+    {
+      digitalWrite(CLOCK_PIN, HIGH);
+      uint8_t bit = (data << i) & 0x80;
+      digitalWrite(MOSI_PIN, !(bit > 0));
+      delayMicroseconds(1);
+      digitalWrite(CLOCK_PIN, LOW);
+      delayMicroseconds(5);
+    }
+  }
+  SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN);
 }
 
 void readPosition()
