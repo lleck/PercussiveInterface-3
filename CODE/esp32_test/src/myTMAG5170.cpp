@@ -13,7 +13,7 @@
 #define MISO_PIN 14
 #define DUMMY  0x00
 
-SPISettings TMAG5170_SPI(10000000, MSBFIRST, SPI_MODE0); // spi configuration for the TMAG5170
+SPISettings TMAG5170_SPI(1000000, MSBFIRST, SPI_MODE0); // spi configuration for the TMAG5170
 
 TMAG5170::TMAG5170(){
 
@@ -31,7 +31,6 @@ void TMAG5170::begin(uint8_t chipSelectPin){
   // print system time to check update status
   Serial.println(__TIME__);
   Serial.println("dhhgdn");
-  //SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN, chipSelectPin);
 }
 
 void TMAG5170::end() {
@@ -64,7 +63,7 @@ void TMAG5170::default_cfg ( bool *error_detected )
    
     write_frame(TMAG5170_REG_DEVICE_CONFIG, TMAG5170_CONV_AVG_1X |               // additional sampling to reduce noise
                                      TMAG5170_MAG_TEMPCO_0p12 |                  // temp. coefficient of target magnet in %/C°
-                                     TMAG5170_OPERATING_MODE_MEASURE |           // active trigger mode enabled 
+                                     TMAG5170_OPERATING_MODE_TRIGGER |           // active trigger mode enabled 
                                      TMAG5170_T_CH_EN_DISABLE |                  // temp. channel disabled
                                      TMAG5170_T_RATE_PER_CONV_AVG |              // temp conversion rate same as other sensors
                                      TMAG5170_T_HLT_EN_DISABLE, &error);         // temperature limit check for high temp env
@@ -75,7 +74,7 @@ void TMAG5170::default_cfg ( bool *error_detected )
                                      TMAG5170_Z_RANGE_100mT , &error);            // set range for axis channels
 
     write_frame(TMAG5170_REG_SYSTEM_CONFIG, TMAG5170_DIAG_SEL_ALL_DP_DIAG_ALL |  // diagnostic mode on all data paths (default)
-                                     TMAG5170_TRIGGER_MODE_SPI_CMD|             // conversion trigger condition 
+                                     TMAG5170_TRIGGER_MODE_CS_PULSE|             // conversion trigger condition 
                                      TMAG5170_DATA_TYPE_32BIT_REG |              // data type accessed from results registers (32bit default)
                                      TMAG5170_DIAG_EN_DISABLE |                  // user controlled AFE diagnostics
                                      TMAG5170_Z_HLT_EN_DISABLE |                 // magnetic field limit check for axis channels
