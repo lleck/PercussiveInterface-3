@@ -127,7 +127,7 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
     for (int i = 0; i < 8; i++)
     {
       digitalWrite(CLOCK_PIN, HIGH);
-      uint8_t bit = (data >> i) & 0x01;
+      uint8_t bit = (data<<i) & 0x80;
       digitalWrite(MOSI_PIN, bit);
       delayMicroseconds(1);
       digitalWrite(CLOCK_PIN, LOW);
@@ -136,20 +136,22 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
   }
   else if (muxNr == 2)
   {
-    digitalWrite(MUX1_SYNC_PIN, LOW);
+    digitalWrite(MUX2_SYNC_PIN, LOW);
     delayMicroseconds(1);
-    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
     for (int i = 0; i < 8; i++)
     {
       digitalWrite(CLOCK_PIN, HIGH);
-      uint8_t bit = (data >> i) & 0x01;
+      uint8_t bit = (data<<i) & 0x80;
       digitalWrite(MOSI_PIN, bit);
       delayMicroseconds(1);
       digitalWrite(CLOCK_PIN, LOW);
       delayMicroseconds(5);
     }
   }
+
   SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN);
+
   // switch (muxNr)
   // {
   //   case 1:
