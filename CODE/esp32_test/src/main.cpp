@@ -118,17 +118,36 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
   uint8_t data = ch_select_cmd[channelNr];
   pinMode(CLOCK_PIN, OUTPUT);
   pinMode(MOSI_PIN, OUTPUT);
-  digitalWrite(MUX1_SYNC_PIN, LOW);
-  delayMicroseconds(1);
-  digitalWrite(MUX1_SYNC_PIN, HIGH);
-  for (int i = 0; i < 8; i++)
+
+  if (muxNr == 1)
   {
-    digitalWrite(CLOCK_PIN, HIGH);
-    uint8_t bit = (data >> i) & 0x01;
-    digitalWrite(MOSI_PIN, bit);
+    digitalWrite(MUX1_SYNC_PIN, LOW);
     delayMicroseconds(1);
-    digitalWrite(CLOCK_PIN, LOW);
-    delayMicroseconds(5);
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    for (int i = 0; i < 8; i++)
+    {
+      digitalWrite(CLOCK_PIN, HIGH);
+      uint8_t bit = (data >> i) & 0x01;
+      digitalWrite(MOSI_PIN, bit);
+      delayMicroseconds(1);
+      digitalWrite(CLOCK_PIN, LOW);
+      delayMicroseconds(5);
+    }
+  }
+  else if (muxNr == 2)
+  {
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    delayMicroseconds(1);
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    for (int i = 0; i < 8; i++)
+    {
+      digitalWrite(CLOCK_PIN, HIGH);
+      uint8_t bit = (data >> i) & 0x01;
+      digitalWrite(MOSI_PIN, bit);
+      delayMicroseconds(1);
+      digitalWrite(CLOCK_PIN, LOW);
+      delayMicroseconds(5);
+    }
   }
   SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN);
   // switch (muxNr)
