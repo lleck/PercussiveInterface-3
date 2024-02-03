@@ -73,6 +73,9 @@ void setup(){
   digitalWrite(MUX1_SYNC_PIN, HIGH);
   digitalWrite(MUX2_SYNC_PIN, HIGH);
   digitalWrite(TMAG_CS_PIN, HIGH);        
+  
+  sensorChannel(1, 0);
+  sensorChannel(2, 0);
 
   bool error = false;
   //  // start the strip on the defined SPI bus and init to black = all pixels off
@@ -90,12 +93,14 @@ void setup(){
     sensorChannel(1, i);
     magneticSensor.default_cfg(&error);
   }
-  
+  sensorChannel(1, 0);
+
   for (int j = 1; j <= sensorCount && !error; j++)
   {
     sensorChannel(2, j);
     magneticSensor.default_cfg(&error);  
   }
+  sensorChannel(2, 0);
 
   if (error)
   {
@@ -117,14 +122,14 @@ void sensorChannel (uint8_t muxNr, uint8_t channelNr)
   {
     case 1:
       SPI.beginTransaction(muxSPI);
-      // SPI.transfer(0x0);
+      //SPI.transfer(0x0);
       digitalWrite(MUX1_SYNC_PIN, LOW);
       delayMicroseconds(1);
       digitalWrite(MUX1_SYNC_PIN, HIGH);
       SPI.transfer(ch_select_cmd[channelNr]);      // send a command to select channel 
       currentSensor = channelNr;                   // keep track of current sensor for debugging
       SPI.endTransaction();
-      break;
+      //break;
     case 2:
       SPI.beginTransaction(muxSPI);
       // SPI.transfer(0x0);
