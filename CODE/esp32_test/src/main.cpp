@@ -58,7 +58,7 @@ RgbColor black(0);
 //forward declaring functions as this is not written in Arduino IDE
 void sensorChannel (uint8_t muxNr, uint8_t channelNr);
 void readPosition();
-float readMagneticSensor();
+int readMagneticSensor();
 
 SPISettings muxSPI(10000000, MSBFIRST, SPI_MODE2); // spi configuration for the ADG731
 
@@ -117,20 +117,24 @@ void sensorChannel (uint8_t muxNr, uint8_t channelNr)
   {
     case 1:
       SPI.beginTransaction(muxSPI);
+      // SPI.transfer(0x0);
       digitalWrite(MUX1_SYNC_PIN, LOW);
+      delayMicroseconds(1);
+      digitalWrite(MUX1_SYNC_PIN, HIGH);
       SPI.transfer(ch_select_cmd[channelNr]);      // send a command to select channel 
       currentSensor = channelNr;                   // keep track of current sensor for debugging
-      digitalWrite(MUX1_SYNC_PIN, HIGH);
       SPI.endTransaction();
-    //break;
+      break;
     case 2:
       SPI.beginTransaction(muxSPI);
+      // SPI.transfer(0x0);
       digitalWrite(MUX2_SYNC_PIN, LOW);
+      delayMicroseconds(1);
+      digitalWrite(MUX2_SYNC_PIN, HIGH);
       SPI.transfer(ch_select_cmd[channelNr]);      // send a command to select channel 
       currentSensor = channelNr + sensorCount;     // keep track of current sensor for debugging
-      digitalWrite(MUX2_SYNC_PIN, HIGH);
       SPI.endTransaction();
-    //break;
+      break;
     default: break;
     
   }
@@ -143,7 +147,7 @@ void readPosition()
     // Select the appropriate channel on the first multiplexer
     sensorChannel(1, sensorIndex);
     // Read from the SPI-controlled sensor
-    float sensorValue1 = readMagneticSensor();
+    int sensorValue1 = readMagneticSensor();
     // Store the sensor value in the array
     magneticArray1[sensorIndex][numDiv] = sensorValue1;
     sensorChannel(1, 0);
@@ -151,7 +155,7 @@ void readPosition()
     // Select the appropriate channel on the second multiplexer
     sensorChannel(2, sensorIndex);
     // Read from the SPI-controlled sensor
-    float sensorValue2 = readMagneticSensor();
+    int sensorValue2 = readMagneticSensor();
     // Store the sensor value in the array
     magneticArray2[sensorIndex][numDiv] = sensorValue2;
     sensorChannel(2, 0);
@@ -169,10 +173,10 @@ void readPosition()
   //   numDiv = 0;
 }
 
-float readMagneticSensor()
+int readMagneticSensor()
 {
   bool error = false;
-  float value = magneticSensor.getZresult(&error);
+  int value = magneticSensor.getZresult(&error);
   if (error)
   {
    D_print("error reading sensor nr. ");
@@ -188,24 +192,18 @@ void loop(){
      //magneticSensor.simple_read(TMAG5170_REG_CONV_STATUS);
     // // Select the channel on the first multiplexer
 
-     sensorChannel(2, 4);
-     D_println("mux2 ch 4");
-     float sensorValue2 = readMagneticSensor();
-     D_println(sensorValue2);
-     delay(1000);
-    sensorChannel(2, 0);
-    // sensorChannel(1, 0);
-     D_println("mux2 off");
-     delay(200);
      sensorChannel(1, 4);
-     D_println("mux1 ch 4");
-     float sensorValue1 = readMagneticSensor();
-     D_println(sensorValue1);
-     delay(1000);
-    sensorChannel(1, 0 );
-      //sensorChannel(2, 0);
-     D_println("mux1 off");
+     int Value1 = readMagneticSensor();
+     D_println(Value1);
      delay(200);
-
+     sensorChannel(1, 5);
+     int Value2 = readMagneticSensor();
+     D_println(Value2);
+     delay(200);
+     sensorChannel(1, 2);
+     int Value3 = readMagneticSensor();
+     D_println(Value3);
+     delay(200);
+    
 }
 
