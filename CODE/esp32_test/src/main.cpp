@@ -66,7 +66,7 @@ void mux_off(int muxNr);
 void readPosition();
 int readMagneticSensor();
 
-SPISettings muxSPI(1000, MSBFIRST, SPI_MODE2); // spi configuration for the ADG731
+SPISettings muxSPI(1000000, MSBFIRST, SPI_MODE2); // spi configuration for the ADG731
 
 void setup()
 {
@@ -134,43 +134,61 @@ void setup()
 
 void sensorChannel(uint8_t muxNr, uint8_t channelNr)
 {
-  switch (muxNr)
-  {
-  case 1:
+  if (muxNr == 1){
     SPI.beginTransaction(muxSPI);
     digitalWrite(MUX1_SYNC_PIN, LOW);
     SPI.transfer(mux1_ch[channelNr]); // send a command to select channel
     digitalWrite(MUX1_SYNC_PIN, HIGH);
     SPI.endTransaction();
-    break;
-  case 2:
+  }
+  else if (muxNr == 2){
     SPI.beginTransaction(muxSPI);
     digitalWrite(MUX2_SYNC_PIN, LOW);
     SPI.transfer(mux2_ch[channelNr]); // send a command to select channel
     digitalWrite(MUX2_SYNC_PIN, HIGH);
     SPI.endTransaction();
-    break;
-  default:
-    break;
   }
+  // switch (muxNr)
+  // {
+  // case 1:
+  //   SPI.beginTransaction(muxSPI);
+  //   digitalWrite(MUX1_SYNC_PIN, LOW);
+  //   SPI.transfer(mux1_ch[channelNr]); // send a command to select channel
+  //   digitalWrite(MUX1_SYNC_PIN, HIGH);
+  //   SPI.endTransaction();
+  //   //break;
+  // case 2:
+  //   SPI.beginTransaction(muxSPI);
+  //   digitalWrite(MUX2_SYNC_PIN, LOW);
+  //   SPI.transfer(mux2_ch[channelNr]); // send a command to select channel
+  //   digitalWrite(MUX2_SYNC_PIN, HIGH);
+  //   SPI.endTransaction();
+  //   //break;
+  // default:
+  //   break;
+  // }
 }
 
 void mux_off(int muxNr)
 {
-  SPI.beginTransaction(muxSPI);
+  
   if (muxNr == 1)
-  {
+  { 
+    SPI.beginTransaction(muxSPI);
     digitalWrite(MUX1_SYNC_PIN, LOW);
     SPI.transfer(0x80);
     digitalWrite(MUX1_SYNC_PIN, HIGH);
+    SPI.endTransaction();
   }
   else if (muxNr == 2)
   {
+    SPI.beginTransaction(muxSPI);
     digitalWrite(MUX2_SYNC_PIN, LOW);
     SPI.transfer(0x80);
     digitalWrite(MUX2_SYNC_PIN, HIGH);
+    SPI.endTransaction();
   }
-  SPI.endTransaction();
+  
 }
 
 void readPosition()
@@ -238,16 +256,22 @@ int readMagneticSensor()
 
 void loop()
 {
-   int sensorValue1 = analogRead(IR_SENSOR_PIN);
-   D_println(sensorValue1);
-   delay(200);
-  // // u_long start_time = micros();
-   readPosition();
-  // // u_long end_time = micros();
-  // // u_long duration = end_time - start_time;
-  // // D_println(duration);
-  //  delay(50);
-
+  sensorChannel(1, 1);
+  int sensorValue1 = readMagneticSensor();
+  D_println(sensorValue1);
+  delay(200);
+  sensorChannel(1, 2);
+  int sensorValue2 = readMagneticSensor();
+  D_println(sensorValue2);
+  delay(200);
+  mux_off(1);
+  delay(200);
+  sensorChannel(2, 1);
+  int sensorValue3 = readMagneticSensor();
+  D_println(sensorValue3);
+  delay(200);
+  mux_off(2);
+  delay(200);
   // for (int j = 0; j < sensorCount*2; j++)
   // {
   //   if (magneticArray1[j][0] > 200)
@@ -263,4 +287,13 @@ void loop()
   // }
   // // int rotVal = analogRead(IR_SENSOR_PIN);
   // // D_println(rotVal);
+
+
+    // // u_long start_time = micros();
+   //readPosition();
+  // // u_long end_time = micros();
+  // // u_long duration = end_time - start_time;
+  // // D_println(duration);
+  //  delay(50);
+
 }
