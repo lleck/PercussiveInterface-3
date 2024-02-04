@@ -485,6 +485,7 @@ void triggerLoop(void *pvParameters)
 
 void loop()
 {
+  xSemaphoreTake(rotSem,portMAX_DELAY);
   loopTimeNow = micros();
   // was kann vielleicht in einen extra Task ?
   // Zeitintervall für die winkelgenaue Positionsabfrage ohne Überlauf dank Subtraktion
@@ -494,6 +495,7 @@ void loop()
     // Use the snapshot to set track time until next event
     loopTimeOld = loopTimeNow;
   }
-
+  xSemaphoreGive(rotSem);
+  vTaskDelay(1);
   checkRPM();
 }
