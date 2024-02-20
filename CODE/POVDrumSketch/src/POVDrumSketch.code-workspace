@@ -9,6 +9,18 @@
         },
         {
             "path": "../../Test ESP MUX"
+        },
+        {
+            "name": "ESP01_pl2303",
+            "path": "../../../../../Dokumente/PlatformIO/Projects/ESP01_pl2303"
+        },
+        {
+            "name": "D1MINI_Motordriver",
+            "path": "../../../../../Dokumente/PlatformIO/Projects/D1MINI_Motordriver"
+        },
+        {
+            "name": "unomotor",
+            "path": "../../../../../Dokumente/PlatformIO/Projects/unomotor"
         }
     ]
 }

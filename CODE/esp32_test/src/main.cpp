@@ -2,12 +2,14 @@
 #define DEBUG 1 // 0 to disable serial prints
 
 #if DEBUG
-#define D_SerialBegin(...) Serial.begin(__VA_ARGS__);
-#define D_print(...) Serial.print(__VA_ARGS__)
-#define D_write(...) Serial.write(__VA_ARGS__)
-#define D_println(...) Serial.println(__VA_ARGS__)
+#define D_SerialBegin(...) WebSerial.begin(__VA_ARGS__);
+#define D_msgCallback(...) WebSerial.msgCallback(__VA_ARGS__);
+#define D_print(...) WebSerial.print(__VA_ARGS__)
+#define D_write(...) WebSerial.write(__VA_ARGS__)
+#define D_println(...) WebSerial.println(__VA_ARGS__)
 #else
 #define D_SerialBegin(...)
+#define D_msgCallback(...) 
 #define D_print(...)
 #define D_write(...)
 #define D_println(...)
@@ -16,6 +18,12 @@
 #include <Arduino.h>
 #include <myTMAG5170.h>
 #include <FastLED.h>
+#include <WiFi.h>
+#include <AsyncTCP.h>
+#include <ESPAsyncWebServer.h>
+#include <esp_now.h>
+#include <WebSerial.h>
+
 
 #define LED_CLOCK_PIN 12
 #define LED_DATA_PIN 11
@@ -29,7 +37,7 @@
 #define TMAG_CS_PIN 21
 #define IR_VIBROMETER_PIN 13
 #define IR_SENSOR_PIN 6 // Rotation Interrupt
-#define ROT_TRESH 2000
+#define ROT_TRESH 500
 
 // Globals
 const uint8_t pixelCount = 52;
@@ -61,13 +69,31 @@ TMAG5170 magneticSensor;
 // init the NeoPixelBus instance with Spi and alternate Pins
 // NeoPixelBus<DotStarBgrFeature, DotStarMethod> strip(pixelCount, LED_CLOCK_PIN, LED_DATA_PIN);
 
+// ESP_NOW :: Konfiguriere Peer-Adresse (MAC-Adresse des ESP)
+// weitere peers können hier angelegt werden
+uint8_t peerAddress[] = {0xBC, 0xFF, 0x4D, 0xF8, 0x84, 0x55};
+esp_now_peer_info_t peerInfo;
+
+// Replace with your network credentials
+const char* ssid     = "Drum-Access-Point";
+const char* password = "supersafe";
+
+// Set web server port number to 80
+AsyncWebServer server(80);
 
 
-// forward declaring functions as this is not written in Arduino IDE
-void sensorChannel(uint8_t muxNr, uint8_t channelNr);
-void readPosition();
-void rotationCounter(void *pvParameters);
-int readMagneticSensor();
+// // Structure to send data
+// // Must match the receiver structure
+// typedef struct struct_message {
+//   int divTime;
+//   int b;
+//   float c;
+//   bool d;
+// } struct_message;
+
+// // Create a struct_message called myData
+// struct_message myData;
+
 
 SPISettings muxSPI(1000000, MSBFIRST, SPI_MODE2); // spi configuration for the ADG731
 
@@ -75,11 +101,29 @@ SPISettings muxSPI(1000000, MSBFIRST, SPI_MODE2); // spi configuration for the A
 TaskHandle_t rotCount;
 SemaphoreHandle_t rotSem;
 
+// forward declaring functions as this is not written in Arduino IDE
+void sensorChannel(uint8_t muxNr, uint8_t channelNr);
+void readPosition();
+void rotationCounter(void *pvParameters);
+int readMagneticSensor();
+void recvMsg(uint8_t *data, size_t len);
+
 void setup()
 {
+  // Connect to Wi-Fi network with SSID and password
+  WiFi.mode(WIFI_AP_STA);
+  WiFi.softAP(ssid, password);
+  Serial.begin(115200);
+  delay(200);
+  D_SerialBegin(&server);
+  D_msgCallback(recvMsg);
+  server.begin();
+  delay(10000);
+  Serial.println("WifiSerial Setup!");
 
-  D_SerialBegin(115200);
-  delay(2000);
+  IPAddress IP = WiFi.softAPIP();
+  Serial.print("AP IP address: ");
+  Serial.println(IP);
 
   FastLED.addLeds<APA102, LED_DATA_PIN, LED_CLOCK_PIN, BGR>(leds, NUM_LEDS); // BGR ordering is typical
 
@@ -158,13 +202,54 @@ void setup()
     D_print("error conf. sensor nr. "); // Error check
     D_println(currentSensor);
   }
-  uint32_t cpuClock = getCpuFrequencyMhz();
-  D_print("CPUfrequency = ");
-  D_println(cpuClock);
-  D_println("TMAG_config_complete");
+
+
+  // uint32_t cpuClock = getCpuFrequencyMhz();
+  // D_print("CPUfrequency = ");
+  // D_println(cpuClock);
+  // D_println("TMAG_config_complete");
+  // D_print("MAC-Address: ");
+  // D_println(WiFi.macAddress());
+
+  // ###################ESPNow Stuff#############################
+  //  Initialisiere ESPNow
+
+  if (esp_now_init() != ESP_OK)
+  {
+    D_println("ESPNow Initialisierung fehlgeschlagen");
+    ESP.restart();
+  }
+
+  memcpy(peerInfo.peer_addr, peerAddress, 6);
+  peerInfo.channel = 0;
+  peerInfo.encrypt = false;
+
+  // Füge den Peer hinzu
+  if (esp_now_add_peer(&peerInfo) != ESP_OK)
+  {
+    D_println("Fehler beim Hinzufügen des Peers");
+    ESP.restart();
+  }
+  // ###########################################################
+  Serial.println("ESP now setup!");
 }
 
-// Callback-Funktion wenn der IR-Sensor ausgelöst wird
+//Webserial Input 
+void recvMsg(uint8_t *data, size_t len){
+  D_println("Received Data...");
+  String d = "";
+  for(int i=0; i < len; i++){
+    d += char(data[i]);
+  }
+  D_println(d);
+  // if (d == "ON"){
+  //   digitalWrite(LED, HIGH);
+  // }
+  // if (d=="OFF"){
+  //   digitalWrite(LED, LOW);
+  // }
+}
+// Funktion die den IR-Sensor überwacht
 // Task // mutex rotSem für Zugriff auf rotTime, divTime, ticksCount
 void rotationCounter(void *pvParameters)
 {
@@ -172,6 +257,7 @@ void rotationCounter(void *pvParameters)
   while (true)
   {
     int rotVal = analogRead(IR_SENSOR_PIN);
+    //D_println(rotVal);
     if (rotVal < ROT_TRESH)
     {
 
@@ -258,6 +344,7 @@ void readPosition()
   // numDiv++;
   // if (numDiv >= angularDivisions)
   numDiv = 0;
+  D_println("read all positions");
 }
 int readMagneticSensor()
 {
@@ -288,8 +375,8 @@ void loop()
     if (magneticArray1[j][0] > 180)
     {
       uint8_t colorSaturation = map(magneticArray1[j][0], 0, 32768, 0, 120);
-      
-      leds[led_ch[j]].setRGB(  colorSaturation/3, colorSaturation, 0);
+
+      leds[led_ch[j]].setRGB(0, colorSaturation, 0);
     }
     else
     {
@@ -298,7 +385,13 @@ void loop()
 
     FastLED.show();
   }
+  
 
-  int rotVal = analogRead(IR_SENSOR_PIN);
-  // D_println(rotVal);
+  // int rotVal = analogRead(IR_SENSOR_PIN);
+  // xSemaphoreTake(rotSem, portMAX_DELAY);
+    // char message[] = "Hi, this is a message from the transmitting ESP";
+    // esp_now_send(peerAddress, (uint8_t *) message, sizeof(message));
+  // xSemaphoreGive(rotSem); // stelle das Semaphor für die Dauer eines Tick zur verfügung
+  // vTaskDelay(1);
+
 }
