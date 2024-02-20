@@ -12,8 +12,9 @@
 #define MOSI_PIN 48
 #define MISO_PIN 14
 #define DUMMY  0x00
+#define trash  0x80
 
-SPISettings TMAG5170_SPI(1000000, MSBFIRST, SPI_MODE0); // spi configuration for the TMAG5170
+SPISettings TMAG5170_SPI(10000000, MSBFIRST, SPI_MODE0); // spi configuration for the TMAG5170
 
 TMAG5170::TMAG5170(){
 
@@ -29,8 +30,9 @@ static uint8_t TMAG5170_calculate_crc ( uint8_t crc_source[ 4 ] );
 void TMAG5170::begin(uint8_t chipSelectPin){
   setChipSelectPin(chipSelectPin);
   // print system time to check update status
+  Serial.print("SysTime");
   Serial.println(__TIME__);
-  Serial.println("dhhgdn");
+
 }
 
 void TMAG5170::end() {
@@ -41,7 +43,7 @@ void TMAG5170::disable_crc() {
     uint8_t data_buf[4] = {0x0F,0x00,0x04,0x07};
     SPI.beginTransaction(TMAG5170_SPI); 
     // trash transfer um die clock polarity zu switchen
-    SPI.transfer(0x0);
+    SPI.transfer(trash);
     digitalWrite(spiChipSelectPin, LOW);
     // buffer array and size
     SPI.transfer(data_buf, 4);
@@ -108,7 +110,7 @@ void TMAG5170::write_frame (uint8_t reg_addr, uint16_t data_in, bool *error_dete
     data_buf[ 3 ] = TMAG5170_calculate_crc ( data_buf );
     SPI.beginTransaction(TMAG5170_SPI); 
     // trash transfer um die clock polarity zu switchen
-    SPI.transfer(0x0);
+    SPI.transfer(trash);
     digitalWrite(spiChipSelectPin, LOW);
     // buffer array and size
     SPI.transfer(data_buf, 4);
@@ -128,7 +130,7 @@ void TMAG5170::simple_read(uint8_t reg_addr) {
 
     SPI.beginTransaction(TMAG5170_SPI); 
     // trash transfer um die clock polarity zu switchen
-    SPI.transfer(0x0);
+    SPI.transfer(trash);
     digitalWrite(spiChipSelectPin, LOW);
     
         SPI.transfer(data_buf[0]);
@@ -172,7 +174,7 @@ void TMAG5170::read_frame (uint8_t reg_addr, uint16_t *data_out, uint16_t *statu
     
     SPI.beginTransaction(TMAG5170_SPI); 
     // trash transfer um die clock polarity zu switchen
-    SPI.transfer(0x0);
+    SPI.transfer(trash);
     digitalWrite(spiChipSelectPin, LOW);
     
     //SPI.transfer(data_buf, 4);

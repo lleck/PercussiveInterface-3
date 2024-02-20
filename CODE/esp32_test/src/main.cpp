@@ -9,7 +9,7 @@
 #define D_println(...) WebSerial.println(__VA_ARGS__)
 #else
 #define D_SerialBegin(...)
-#define D_msgCallback(...) 
+#define D_msgCallback(...)
 #define D_print(...)
 #define D_write(...)
 #define D_println(...)
@@ -23,7 +23,6 @@
 #include <ESPAsyncWebServer.h>
 #include <esp_now.h>
 #include <WebSerial.h>
-
 
 #define LED_CLOCK_PIN 12
 #define LED_DATA_PIN 11
@@ -40,7 +39,6 @@
 #define ROT_TRESH 500
 
 // Globals
-const uint8_t pixelCount = 52;
 const uint8_t sensorCount = 26;
 const uint16_t angularDivisions = 360;
 
@@ -52,8 +50,8 @@ uint8_t currentSensor = 0;
 // Zähler für die aktuelle angulare Division
 uint16_t numDiv = 0;
 // two 2D array buffers for the magnetic sensors (left & right arm)
-int magneticArray1[(sensorCount * 2) + 1][angularDivisions];
-int magneticArray2[(sensorCount * 2) + 1][angularDivisions];
+int magneticArray1[NUM_LEDS][angularDivisions] = {};
+int magneticArray2[NUM_LEDS][angularDivisions] = {};
 
 // Channel select commands for ADG731 Mux (center first)
 uint8_t mux1_ch[27] = {128, 30, 31, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 16, 17, 18, 19, 20, 21, 22, 23};
@@ -64,10 +62,14 @@ uint8_t brightness;
 uint8_t led_ch[52] = {51, 0, 50, 1, 49, 2, 48, 3, 47, 4, 46, 5, 45, 6, 44, 7, 43, 8, 42, 9, 41, 10, 40, 11, 39, 12, 38, 13, 37, 14, 36, 15, 35, 16, 34,
                       17, 33, 18, 32, 19, 31, 20, 30, 21, 29, 22, 28, 23, 27, 24, 26, 25};
 
+uint8_t image[angularDivisions][NUM_LEDS][3];
+
+
+
 // init the TMAG5170 Class
 TMAG5170 magneticSensor;
 // init the NeoPixelBus instance with Spi and alternate Pins
-// NeoPixelBus<DotStarBgrFeature, DotStarMethod> strip(pixelCount, LED_CLOCK_PIN, LED_DATA_PIN);
+// NeoPixelBus<DotStarBgrFeature, DotStarMethod> strip(NUM_LEDS, LED_CLOCK_PIN, LED_DATA_PIN);
 
 // ESP_NOW :: Konfiguriere Peer-Adresse (MAC-Adresse des ESP)
 // weitere peers können hier angelegt werden
@@ -75,12 +77,11 @@ uint8_t peerAddress[] = {0xBC, 0xFF, 0x4D, 0xF8, 0x84, 0x55};
 esp_now_peer_info_t peerInfo;
 
 // Replace with your network credentials
-const char* ssid     = "Drum-Access-Point";
-const char* password = "supersafe";
+const char *ssid = "Drum-Access-Point";
+const char *password = "supersafe";
 
 // Set web server port number to 80
 AsyncWebServer server(80);
-
 
 // // Structure to send data
 // // Must match the receiver structure
@@ -94,8 +95,7 @@ AsyncWebServer server(80);
 // // Create a struct_message called myData
 // struct_message myData;
 
-
-SPISettings muxSPI(1000000, MSBFIRST, SPI_MODE2); // spi configuration for the ADG731
+SPISettings muxSPI(10000000, MSBFIRST, SPI_MODE2); // spi configuration for the ADG731
 
 // Task related definitions
 TaskHandle_t rotCount;
@@ -118,14 +118,14 @@ void setup()
   D_SerialBegin(&server);
   D_msgCallback(recvMsg);
   server.begin();
-  delay(10000);
+  delay(200);
   Serial.println("WifiSerial Setup!");
 
   IPAddress IP = WiFi.softAPIP();
   Serial.print("AP IP address: ");
   Serial.println(IP);
 
-  FastLED.addLeds<APA102, LED_DATA_PIN, LED_CLOCK_PIN, BGR>(leds, NUM_LEDS); // BGR ordering is typical
+  FastLED.addLeds<APA102, LED_DATA_PIN, LED_CLOCK_PIN, BGR>(leds, NUM_LEDS); // BGR ordering is typical  / bitbanging vs. HArdware SPI ???
 
   SPI.begin(CLOCK_PIN, MISO_PIN, MOSI_PIN);
   pinMode(MUX1_SYNC_PIN, OUTPUT); // set the SS pin as an output
@@ -162,6 +162,7 @@ void setup()
   FastLED.setBrightness(brightness);
   FastLED.show();
 
+
   for (int i = 1; i <= sensorCount && !error; i++)
   {
     sensorChannel(1, i);
@@ -187,7 +188,7 @@ void setup()
     delay(1);
     magneticSensor.default_cfg(&error);
     delay(1);
-    leds[led_ch[(j + sensorCount) - 1]] = CRGB::CornflowerBlue;
+    leds[led_ch[(j + sensorCount) - 1]] = CRGB::GreenYellow;
     FastLED.show();
     delay(50);
     leds[led_ch[(j + sensorCount) - 1]] = CRGB::Black;
@@ -202,7 +203,6 @@ void setup()
     D_print("error conf. sensor nr. "); // Error check
     D_println(currentSensor);
   }
-
 
   // uint32_t cpuClock = getCpuFrequencyMhz();
   // D_print("CPUfrequency = ");
@@ -234,11 +234,13 @@ void setup()
   Serial.println("ESP now setup!");
 }
 
-//Webserial Input 
-void recvMsg(uint8_t *data, size_t len){
+// Webserial Input
+void recvMsg(uint8_t *data, size_t len)
+{
   D_println("Received Data...");
   String d = "";
-  for(int i=0; i < len; i++){
+  for (int i = 0; i < len; i++)
+  {
     d += char(data[i]);
   }
   D_println(d);
@@ -257,7 +259,7 @@ void rotationCounter(void *pvParameters)
   while (true)
   {
     int rotVal = analogRead(IR_SENSOR_PIN);
-    //D_println(rotVal);
+    // D_println(rotVal);
     if (rotVal < ROT_TRESH)
     {
 
@@ -282,20 +284,20 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
     digitalWrite(MUX1_SYNC_PIN, LOW);
     SPI.transfer(mux1_ch[channelNr]); // send a command to select channel
     digitalWrite(MUX1_SYNC_PIN, HIGH);
-    currentSensor = channelNr; // keep track of current sensor for debugging
     SPI.endTransaction();
-    digitalWrite(MUX2_SYNC_PIN, LOW);
-    digitalWrite(MUX2_SYNC_PIN, HIGH);
+    currentSensor = channelNr; // keep track of current sensor for debugging
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
     break;
   case 2:
     SPI.beginTransaction(muxSPI);
     digitalWrite(MUX2_SYNC_PIN, LOW);
     SPI.transfer(mux2_ch[channelNr]); // send a command to select channel
     digitalWrite(MUX2_SYNC_PIN, HIGH);
-    currentSensor = channelNr + sensorCount; // keep track of current sensor for debugging
     SPI.endTransaction();
-    digitalWrite(MUX1_SYNC_PIN, LOW);
-    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    currentSensor = channelNr + sensorCount; // keep track of current sensor for debugging
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
     break;
   default:
     break;
@@ -304,7 +306,7 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
 
 void readPosition()
 {
-  for (int sensorIndex = 0; sensorIndex <= 51; sensorIndex++)
+  for (int sensorIndex = 0; sensorIndex < NUM_LEDS; sensorIndex++)
   {
     // bei geraden Indexzahlen
     if (sensorIndex % 2 == 0)
@@ -327,7 +329,7 @@ void readPosition()
       magneticArray2[sensorIndex][numDiv] = sensorValue2;
       sensorChannel(2, 0);
     }
-    else
+    else if (sensorIndex % 2 != 0)
     { // bei ungeraden Indexzahlen
       if (sensorIndex == 51)
       {
@@ -336,15 +338,15 @@ void readPosition()
       }
       else
       {
-        magneticArray1[sensorIndex][numDiv] = (magneticArray1[sensorIndex + 1][numDiv] + magneticArray1[sensorIndex - 1][numDiv]) / 2;
-        magneticArray2[sensorIndex][numDiv] = (magneticArray2[sensorIndex + 1][numDiv] + magneticArray2[sensorIndex - 1][numDiv]) / 2;
+      magneticArray1[sensorIndex][numDiv] = (magneticArray1[sensorIndex + 1][numDiv] + magneticArray1[sensorIndex - 1][numDiv]) / 2;
+      magneticArray2[sensorIndex][numDiv] = (magneticArray2[sensorIndex + 1][numDiv] + magneticArray2[sensorIndex - 1][numDiv]) / 2;
       }
     }
   }
   // numDiv++;
   // if (numDiv >= angularDivisions)
   numDiv = 0;
-  D_println("read all positions");
+  // D_println("read all positions");
 }
 int readMagneticSensor()
 {
@@ -359,39 +361,53 @@ int readMagneticSensor()
   return value;
 }
 
+void showImage(){
+ 
+}
 void loop()
 {
-
+   
   // delay(200);
-  //  // u_long start_time = micros();
-  readPosition();
-  // // u_long end_time = micros();
-  // // u_long duration = end_time - start_time;
-  // // D_println(duration);
-  //  delay(50);
 
-  for (int j = 0; j < sensorCount * 2; j++)
+  readPosition();
+
+  for (int j = 0; j < NUM_LEDS; j++)
   {
-    if (magneticArray1[j][0] > 180)
+    if (magneticArray1[j][0] > 200)
     {
-      uint8_t colorSaturation = map(magneticArray1[j][0], 0, 32768, 0, 120);
+      uint8_t colorSaturation = map(magneticArray1[j][0], 0, 32600, 0, 180);
 
       leds[led_ch[j]].setRGB(0, colorSaturation, 0);
     }
+
     else
     {
       leds[led_ch[j]] = CRGB::Black;
+
     }
 
-    FastLED.show();
   }
-  
+     FastLED.show();
+
+  // for (int j = 0; j < NUM_LEDS; j++)
+  // {
+  //   if (magneticArray2[j][0] > 180)
+  //   {
+  //     uint8_t colorSaturation = map(magneticArray2[j][0], 0, 32000, 0, 120);
+
+  //     leds[led_ch[j]].setRGB(colorSaturation, 0, 0);
+  //   }
+
+  //   else
+  //   {
+  //     leds[led_ch[j]] = CRGB::Black;
+  //   }
+  // }
 
   // int rotVal = analogRead(IR_SENSOR_PIN);
   // xSemaphoreTake(rotSem, portMAX_DELAY);
-    // char message[] = "Hi, this is a message from the transmitting ESP";
-    // esp_now_send(peerAddress, (uint8_t *) message, sizeof(message));
+  char message[] = "Hi, this is a message from the transmitting ESP";
+  esp_now_send(peerAddress, (uint8_t *)message, sizeof(message));
   // xSemaphoreGive(rotSem); // stelle das Semaphor für die Dauer eines Tick zur verfügung
   // vTaskDelay(1);
-
 }
