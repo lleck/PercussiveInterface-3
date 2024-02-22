@@ -52,20 +52,23 @@ uint16_t numDiv = 0;
 // two 2D array buffers for the magnetic sensors (left & right arm)
 int magneticArray1[NUM_LEDS][angularDivisions] = {};
 int magneticArray2[NUM_LEDS][angularDivisions] = {};
+unsigned long previousRed = 0;
+unsigned long previousGreen = 0;
+// constants won't change:
+const long interval = 4; // interval at which to fade (milliseconds)
 
 // Channel select commands for ADG731 Mux (center first)
-uint8_t mux1_ch[27] = {128, 30, 31, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 16, 17, 18, 19, 20, 21, 22, 23};
-uint8_t mux2_ch[27] = {128, 23, 22, 21, 20, 19, 18, 17, 16, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 31, 30};
+uint16_t mux1_ch[27] = {128, 30, 31, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 16, 17, 18, 19, 20, 21, 22, 23};
+uint16_t mux2_ch[27] = {128, 23, 22, 21, 20, 19, 18, 17, 16, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 31, 30};
 
 CRGB leds[NUM_LEDS];
 uint8_t brightness;
 uint8_t led_ch[52] = {51, 0, 50, 1, 49, 2, 48, 3, 47, 4, 46, 5, 45, 6, 44, 7, 43, 8, 42, 9, 41, 10, 40, 11, 39, 12, 38, 13, 37, 14, 36, 15, 35, 16, 34,
                       17, 33, 18, 32, 19, 31, 20, 30, 21, 29, 22, 28, 23, 27, 24, 26, 25};
 
-uint8_t image[angularDivisions][NUM_LEDS][3];
-
-
-
+uint8_t pixels[NUM_LEDS][angularDivisions][3];
+int k;
+bool impact = false;
 // init the TMAG5170 Class
 TMAG5170 magneticSensor;
 // init the NeoPixelBus instance with Spi and alternate Pins
@@ -95,7 +98,7 @@ AsyncWebServer server(80);
 // // Create a struct_message called myData
 // struct_message myData;
 
-SPISettings muxSPI(10000000, MSBFIRST, SPI_MODE2); // spi configuration for the ADG731
+SPISettings muxSPI(10000000, MSBFIRST, SPI_MODE1); // spi configuration for the ADG731
 
 // Task related definitions
 TaskHandle_t rotCount;
@@ -131,6 +134,7 @@ void setup()
   pinMode(MUX1_SYNC_PIN, OUTPUT); // set the SS pin as an output
   pinMode(MUX2_SYNC_PIN, OUTPUT); // set the SS pin as an output
   pinMode(IR_SENSOR_PIN, INPUT);
+  pinMode(IR_VIBROMETER_PIN, INPUT);
 
   digitalWrite(MUX1_SYNC_PIN, HIGH);
   digitalWrite(MUX2_SYNC_PIN, HIGH);
@@ -162,10 +166,10 @@ void setup()
   FastLED.setBrightness(brightness);
   FastLED.show();
 
-
   for (int i = 1; i <= sensorCount && !error; i++)
   {
     sensorChannel(1, i);
+    sensorChannel(2, i);
     delay(1);
     magneticSensor.disable_crc();
     delay(1);
@@ -173,30 +177,23 @@ void setup()
     delay(1);
     leds[led_ch[i - 1]] = CRGB::GreenYellow;
     FastLED.show();
-    delay(50);
+    delay(10);
     leds[led_ch[i - 1]] = CRGB::Black;
     FastLED.show();
   }
   // turn all channels off on mux 1
-  sensorChannel(1, 0);
 
   for (int j = 1; j <= sensorCount && !error; j++)
   {
-    sensorChannel(2, j);
-    delay(1);
-    magneticSensor.disable_crc();
-    delay(1);
-    magneticSensor.default_cfg(&error);
-    delay(1);
     leds[led_ch[(j + sensorCount) - 1]] = CRGB::GreenYellow;
     FastLED.show();
-    delay(50);
+    delay(10);
     leds[led_ch[(j + sensorCount) - 1]] = CRGB::Black;
     FastLED.show();
     //
   }
-  // turn all channels off on mux 2
-  sensorChannel(2, 0);
+  // // turn all channels off on mux 2
+  // sensorChannel(2, 0);
 
   if (error)
   {
@@ -281,23 +278,26 @@ void sensorChannel(uint8_t muxNr, uint8_t channelNr)
   {
   case 1:
     SPI.beginTransaction(muxSPI);
+    digitalWrite(MUX2_SYNC_PIN, LOW);
+    digitalWrite(MUX2_SYNC_PIN, HIGH);
+    SPI.transfer(mux2_ch[channelNr]); // send a command to select channel
     digitalWrite(MUX1_SYNC_PIN, LOW);
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
     SPI.transfer(mux1_ch[channelNr]); // send a command to select channel
-    digitalWrite(MUX1_SYNC_PIN, HIGH);
     SPI.endTransaction();
-    currentSensor = channelNr; // keep track of current sensor for debugging
-    digitalWrite(MUX1_SYNC_PIN, LOW);
-    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    currentSensor = channelNr + sensorCount; // keep track of current sensor for debugging
+    break;
     break;
   case 2:
     SPI.beginTransaction(muxSPI);
+    digitalWrite(MUX1_SYNC_PIN, LOW);
+    digitalWrite(MUX1_SYNC_PIN, HIGH);
+    SPI.transfer(mux1_ch[channelNr]); // send a command to select channel
     digitalWrite(MUX2_SYNC_PIN, LOW);
-    SPI.transfer(mux2_ch[channelNr]); // send a command to select channel
     digitalWrite(MUX2_SYNC_PIN, HIGH);
+    SPI.transfer(mux2_ch[channelNr]); // send a command to select channel
     SPI.endTransaction();
     currentSensor = channelNr + sensorCount; // keep track of current sensor for debugging
-    digitalWrite(MUX2_SYNC_PIN, LOW);
-    digitalWrite(MUX2_SYNC_PIN, HIGH);
     break;
   default:
     break;
@@ -311,42 +311,34 @@ void readPosition()
     // bei geraden Indexzahlen
     if (sensorIndex % 2 == 0)
     {
-      sensorChannel(1, (sensorIndex / 2) + 1);
+      sensorChannel(2, (sensorIndex / 2) + 1);
       // Read from the SPI-controlled sensor
       int sensorValue1 = readMagneticSensor();
       // D_print(sensorValue1);
       // D_print("\t");
       // Store the sensor value in the array
       magneticArray1[sensorIndex][numDiv] = sensorValue1;
-      sensorChannel(1, 0);
-
-      // Select the appropriate channel on the second multiplexer
-      sensorChannel(2, (sensorIndex / 2) + 1);
-      // Read from the SPI-controlled sensor
-      int sensorValue2 = readMagneticSensor();
-      // D_println(sensorValue2);
-      // Store the sensor value in the array
-      magneticArray2[sensorIndex][numDiv] = sensorValue2;
-      sensorChannel(2, 0);
     }
     else if (sensorIndex % 2 != 0)
     { // bei ungeraden Indexzahlen
       if (sensorIndex == 51)
       {
         magneticArray1[sensorIndex][numDiv] = magneticArray1[sensorIndex - 1][numDiv];
-        magneticArray2[sensorIndex][numDiv] = magneticArray2[sensorIndex - 1][numDiv];
+        // magneticArray2[sensorIndex][numDiv] = magneticArray2[sensorIndex - 1][numDiv];
       }
       else
       {
-      magneticArray1[sensorIndex][numDiv] = (magneticArray1[sensorIndex + 1][numDiv] + magneticArray1[sensorIndex - 1][numDiv]) / 2;
-      magneticArray2[sensorIndex][numDiv] = (magneticArray2[sensorIndex + 1][numDiv] + magneticArray2[sensorIndex - 1][numDiv]) / 2;
+        magneticArray1[sensorIndex][numDiv] = (magneticArray1[sensorIndex + 1][numDiv] + magneticArray1[sensorIndex - 1][numDiv]) / 2;
+        // magneticArray2[sensorIndex][numDiv] = (magneticArray2[sensorIndex + 1][numDiv] + magneticArray2[sensorIndex - 1][numDiv]) / 2;
       }
     }
+    // sensorChannel(1, 0);
+
+    // numDiv++;
+    // if (numDiv >= angularDivisions)
+    numDiv = 0;
+    // D_println("read all positions");
   }
-  // numDiv++;
-  // if (numDiv >= angularDivisions)
-  numDiv = 0;
-  // D_println("read all positions");
 }
 int readMagneticSensor()
 {
@@ -361,33 +353,67 @@ int readMagneticSensor()
   return value;
 }
 
-void showImage(){
- 
+void showImage()
+{
 }
 void loop()
 {
-   
+  unsigned long currentRed = micros();
+  unsigned long currentGreen = micros();
+  int trigger = analogRead(IR_VIBROMETER_PIN);
+  //int k;
   // delay(200);
 
   readPosition();
 
   for (int j = 0; j < NUM_LEDS; j++)
   {
+    if (magneticArray1[j][0] < (-200))
+    {
+      uint8_t red = map(magneticArray1[j][0], 0, -32000, 0, 255);
+      pixels[j][0][1] = red;
+      previousRed = currentRed;
+    }
     if (magneticArray1[j][0] > 200)
     {
-      uint8_t colorSaturation = map(magneticArray1[j][0], 0, 32600, 0, 180);
-
-      leds[led_ch[j]].setRGB(0, colorSaturation, 0);
+      uint8_t green = map(magneticArray1[j][0], 0, 32000, 0, 255);
+      pixels[j][0][2] = green;
+      previousGreen = currentGreen;
     }
 
     else
     {
-      leds[led_ch[j]] = CRGB::Black;
-
+      if (currentRed - previousRed >= interval && pixels[j][0][1] > 0)
+      {
+        pixels[j][0][1] = pixels[j][0][1] -1;
+      }
+      if (currentGreen - previousGreen >= interval && pixels[j][0][2] > 0 )
+      {
+        pixels[j][0][2] = pixels[j][0][2] -1;
+      }
     }
 
+    leds[led_ch[j]].setRGB(pixels[j][0][1], pixels[j][0][2], 0);
   }
-     FastLED.show();
+
+
+  if (k > NUM_LEDS)
+  {
+    k = 0;
+    impact = false;
+  }
+  if (trigger < 4095)
+  {
+    impact = true;
+  }
+  if (impact){
+    leds[led_ch[k]] = CRGB::Orchid;
+    k++;
+  }  
+
+
+
+
 
   // for (int j = 0; j < NUM_LEDS; j++)
   // {
@@ -410,4 +436,5 @@ void loop()
   esp_now_send(peerAddress, (uint8_t *)message, sizeof(message));
   // xSemaphoreGive(rotSem); // stelle das Semaphor für die Dauer eines Tick zur verfügung
   // vTaskDelay(1);
+    FastLED.show();
 }

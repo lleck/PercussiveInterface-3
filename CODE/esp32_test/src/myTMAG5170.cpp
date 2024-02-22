@@ -12,7 +12,6 @@
 #define MOSI_PIN 48
 #define MISO_PIN 14
 #define DUMMY  0x00
-#define trash  0x80
 
 SPISettings TMAG5170_SPI(10000000, MSBFIRST, SPI_MODE0); // spi configuration for the TMAG5170
 
@@ -43,7 +42,7 @@ void TMAG5170::disable_crc() {
     uint8_t data_buf[4] = {0x0F,0x00,0x04,0x07};
     SPI.beginTransaction(TMAG5170_SPI); 
     // trash transfer um die clock polarity zu switchen
-    SPI.transfer(trash);
+    SPI.transfer(0x80);
     digitalWrite(spiChipSelectPin, LOW);
     // buffer array and size
     SPI.transfer(data_buf, 4);
@@ -110,7 +109,7 @@ void TMAG5170::write_frame (uint8_t reg_addr, uint16_t data_in, bool *error_dete
     data_buf[ 3 ] = TMAG5170_calculate_crc ( data_buf );
     SPI.beginTransaction(TMAG5170_SPI); 
     // trash transfer um die clock polarity zu switchen
-    SPI.transfer(trash);
+    SPI.transfer(0x0);
     digitalWrite(spiChipSelectPin, LOW);
     // buffer array and size
     SPI.transfer(data_buf, 4);
@@ -130,7 +129,7 @@ void TMAG5170::simple_read(uint8_t reg_addr) {
 
     SPI.beginTransaction(TMAG5170_SPI); 
     // trash transfer um die clock polarity zu switchen
-    SPI.transfer(trash);
+    SPI.transfer(0x0);
     digitalWrite(spiChipSelectPin, LOW);
     
         SPI.transfer(data_buf[0]);
@@ -174,7 +173,7 @@ void TMAG5170::read_frame (uint8_t reg_addr, uint16_t *data_out, uint16_t *statu
     
     SPI.beginTransaction(TMAG5170_SPI); 
     // trash transfer um die clock polarity zu switchen
-    SPI.transfer(trash);
+    SPI.transfer(0x0);
     digitalWrite(spiChipSelectPin, LOW);
     
     //SPI.transfer(data_buf, 4);
@@ -305,7 +304,7 @@ int TMAG5170::getZresult( bool *error_detected ){
             {   
                 // Serial.println("read frame");
                 data = ( ( int16_t ) reg_data ) ;//TMAG5170_XYZ_RESOLUTION;
-                return data;
+                //return data;
                 // switch ( sensor_config & TMAG5170_Z_RANGE_BIT_MASK )
                 // {
                 //     case TMAG5170_Z_RANGE_25mT:
